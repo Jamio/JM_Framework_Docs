@@ -92,16 +92,26 @@ nav:
 
   - Mission Making:
       - Start Here: mission-makers/index.md
-      - Getting Started:
-          - Install and Set Up: mission-makers/getting-started.md
-          - Build Your First Mission: mission-makers/first-mission.md
-          - Eden Modules: mission-makers/eden.md
-          - Sides and TvT: mission-makers/side-aware.md
-      - Components: components/index.md
-      - Zeus:
-          - Overview: zeus/index.md
-          - ZEN Modules: zeus/zen-modules.md
-          - Troubleshooting: zeus/troubleshooting.md
+      - Mission Concept:
+          - Start with the Idea: mission-makers/concept/index.md
+          - Common Pitfalls: mission-makers/concept/pitfalls.md
+          - Basic Mission Setup: mission-makers/concept/basic-setup.md
+      - Mission Design:
+          - Design the Operation: mission-makers/design/index.md
+          - Context and Briefing: mission-makers/design/context-briefing.md
+          - Objectives and Flow: mission-makers/design/objectives-flow.md
+          - Player Roles and Loadouts: mission-makers/design/players-loadouts.md
+          - Opposition and Challenge: mission-makers/design/opposition.md
+          - Win, Fail, and End Conditions: mission-makers/design/outcomes.md
+      - JM Framework:
+          - Framework Overview: mission-makers/framework/index.md
+          - Install and Core Setup: mission-makers/framework/core-setup.md
+          - Component Catalogue: components/index.md
+      - Testing and Validation:
+          - Testing Overview: mission-makers/testing/index.md
+          - Local and Editor Testing: mission-makers/testing/local.md
+          - Multiplayer and Server: mission-makers/testing/server.md
+          - Final Checklist: mission-makers/testing/checklist.md
 
   - Development:
       - Start Here: technical/index.md
