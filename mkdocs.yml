@@ -70,15 +70,25 @@ nav:
 
   - Player Guide:
       - Start Here: players/index.md
+      - Welcome to the Misfits:
+          - About Our Community: players/welcome/about.md
+          - What We Expect: players/welcome/expectations.md
+          - Joining the Community: players/welcome/joining.md
       - Before the Operation:
-          - Join the Community: players/getting-started.md
-          - Prepare for a Mission: community/index.md
-          - Briefings and Roles: community/roles.md
-      - In Game:
-          - ACE and Keybinds: players/interactions.md
-          - Medical: community/ace-medical.md
-          - TFAR: community/tfar.md
-          - Framework Systems: components/index.md
+          - Operations and Scheduling: players/before/operations.md
+          - Setting Up Your Mods: players/before/mods.md
+          - Mission Briefings: players/before/briefings.md
+          - Choosing a Role: players/before/roles.md
+      - During the Operation:
+          - Teamwork and Communication: players/during/teamwork.md
+          - Keybinds and Controls: players/during/keybinds.md
+          - Using ACE: players/during/ace.md
+          - ACE Medical: players/during/ace-medical.md
+          - Using TFAR: players/during/tfar.md
+          - JM Framework Systems: players/during/framework-systems.md
+      - After the Operation:
+          - Debriefing: players/after/debriefing.md
+          - Feedback and Media: players/after/feedback-media.md
 
   - Mission Making:
       - Start Here: mission-makers/index.md

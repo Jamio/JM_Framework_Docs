@@ -1,42 +1,52 @@
-# Player Guide
+<div class="jmf-page-hero" style="--jmf-page-image: url('../assets/images/player-guide.jpg');" markdown>
+<span class="jmf-eyebrow">PLAYER GUIDE</span>
+# Playing with the Misfits
+Everything you need before, during, and after one of our Arma 3 operations.
+</div>
 
-Everything a player needs—from joining the community to using JM Framework systems in the middle of an operation.
+<!-- Optional header image: docs/assets/images/player-guide.jpg -->
 
 <div class="grid cards" markdown>
 
--   :material-calendar-check:{ .lg .middle } **Before the operation**
+-   :material-account-group:{ .lg .middle } **Welcome to the Misfits**
 
     ---
 
-    Learn how we prepare, where to find the briefing, how roles are selected, and what you should have ready before slotting begins.
+    Who we are, how we play, and what we expect from one another.
 
-    [:octicons-arrow-right-24: Start here](getting-started.md)
+    [:octicons-arrow-right-24: Start here](welcome/about.md)
 
--   :material-radio-handheld:{ .lg .middle } **In-game essentials**
-
-    ---
-
-    Understand ACE interactions, keybinds, medical expectations, teamwork, communication, and TFAR radio procedure.
-
-    [:octicons-arrow-right-24: Common interactions](interactions.md)
-
--   :material-cog-play:{ .lg .middle } **Framework systems**
+-   :material-calendar-check:{ .lg .middle } **Before the Operation**
 
     ---
 
-    Find practical guides for spawning, redeploying, rally points, aid stations, arsenals, tickets, and other mission systems.
+    Scheduling, mods, briefings, and selecting a role.
 
-    [:octicons-arrow-right-24: Browse systems](../components/index.md)
+    [:octicons-arrow-right-24: Get prepared](before/operations.md)
+
+-   :material-crosshairs-gps:{ .lg .middle } **During the Operation**
+
+    ---
+
+    Teamwork, keybinds, ACE, TFAR, medical, and framework systems.
+
+    [:octicons-arrow-right-24: In-game guides](during/teamwork.md)
+
+-   :material-clipboard-text:{ .lg .middle } **After the Operation**
+
+    ---
+
+    Debriefs, feedback, screenshots, and clips.
+
+    [:octicons-arrow-right-24: After-action guidance](after/debriefing.md)
 
 </div>
 
-## Suggested journey
+## How to use this guide
 
-1. **Join and prepare** — confirm the modset, controls, briefing location, and operation time.
-2. **Read the briefing** — understand the situation, your objective, command structure, and special rules.
-3. **Choose a role** — pick something you can confidently perform and ask before taking a specialist slot.
-4. **Know the essentials** — check ACE, TFAR, and the key framework interactions used in the mission.
-5. **Play as a team** — communicate clearly, follow the plan, and help make the operation enjoyable for everyone.
+<!-- Replace this paragraph with a short explanation of who the guide is for and whether new members should read it in order. -->
 
-!!! tip "This guide teaches our setup"
-    ACE and TFAR are enormous systems. These pages focus on the controls, settings, and conventions actually used by the Misfits community, with links to deeper reference where useful.
+Use the four sections as a journey through an operation, or open an individual page whenever you need a quick reminder.
+
+!!! note "Editor space"
+    Add important newcomer links, a Discord invite, or a contact/help route here.
