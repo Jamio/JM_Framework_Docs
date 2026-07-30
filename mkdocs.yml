@@ -12,6 +12,8 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.tabs
+    - navigation.sections
+    - navigation.expand
     - navigation.path
     - navigation.top
     - navigation.footer
