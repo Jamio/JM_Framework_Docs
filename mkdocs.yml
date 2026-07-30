@@ -1,0 +1,103 @@
+site_name: JM Framework
+site_description: Official documentation for JM Framework and the Misfits Arma 3 community
+site_url: https://jamio.github.io/JM_Framework_Docs/
+repo_url: https://github.com/Jamio/JM_Framework_Docs
+repo_name: Jamio/JM_Framework_Docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Players:
+      - Player Guide: players/index.md
+      - Getting Started: players/getting-started.md
+      - Common Interactions: players/interactions.md
+  - Community Guides:
+      - Community Guide: community/index.md
+      - ACE Medical: community/ace-medical.md
+      - TFAR Communications: community/tfar.md
+      - Roles and Responsibilities: community/roles.md
+  - Mission Makers:
+      - Mission Maker Guide: mission-makers/index.md
+      - Getting Started: mission-makers/getting-started.md
+      - Building Your First Mission: mission-makers/first-mission.md
+      - Eden Modules and Attributes: mission-makers/eden.md
+      - Side-aware Missions and TvT: mission-makers/side-aware.md
+  - Zeus:
+      - Zeus Guide: zeus/index.md
+      - ZEN Modules: zeus/zen-modules.md
+      - Live Troubleshooting: zeus/troubleshooting.md
+  - Components:
+      - Component Catalogue: components/index.md
+      - Aid Station: components/aid-station.md
+      - Rally Points: components/rally-points.md
+      - Redeployment: components/redeployment.md
+      - Garage: components/garage.md
+      - Vehicle Support: components/vehicle-support.md
+      - Restricted Arsenal and Loadouts: components/arsenal-loadouts.md
+      - Tickets and Respawn: components/tickets-respawn.md
+      - Logistics and FOBs: components/logistics-fobs.md
+      - Safezones and AO Limits: components/safezones-ao.md
+      - Civilian Interaction: components/civilian-interaction.md
+      - Mission Administration: components/mission-administration.md
+  - Technical Reference:
+      - Technical Reference: technical/index.md
+      - Architecture: technical/architecture.md
+      - Configuration: technical/configuration.md
+      - Events and Public API: technical/events-api.md
+      - Compatibility: technical/compatibility.md
+      - Troubleshooting: technical/troubleshooting.md
+  - Contributing: contributing.md
+
+copyright: Copyright &copy; JM Framework contributors
