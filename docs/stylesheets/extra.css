@@ -56,11 +56,54 @@
   color: var(--jmf-orange);
 }
 
+/* Major sections: Player Guide, Mission Making and Development. */
+.md-nav--primary > .md-nav__list > .md-nav__item--nested {
+  margin-block: .3rem;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link {
+  min-height: 2.15rem;
+  padding: .45rem .55rem;
+  color: var(--jmf-orange);
+  border-left: .18rem solid var(--jmf-orange);
+  border-radius: .2rem;
+  background: color-mix(in srgb, var(--jmf-orange) 10%, transparent);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .015em;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link:hover {
+  background: color-mix(in srgb, var(--jmf-orange) 16%, transparent);
+}
+
+/* Minor section headings inside each major section. */
+.md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav > .md-nav__list > .md-nav__item--nested > .md-nav__link {
+  color: color-mix(in srgb, var(--jmf-orange) 82%, var(--md-default-fg-color));
+  font-size: .7rem;
+  font-weight: 750;
+}
+
+/* Keep disclosure arrows prominent so every branch reads as collapsible. */
+.md-nav--primary .md-nav__item--nested > .md-nav__link label,
+.md-nav--primary .md-nav__item--nested > .md-nav__link .md-nav__icon {
+  cursor: pointer;
+}
+
+.md-nav--primary .md-nav__item--nested > .md-nav__link .md-nav__icon {
+  transition: transform .18s ease;
+}
+
 @media screen and (min-width: 76.25em) {
   .md-nav--primary .md-nav__list .md-nav__list {
     margin-left: .45rem;
     padding-left: .55rem;
     border-left: 1px solid color-mix(in srgb, var(--md-default-fg-color) 13%, transparent);
+  }
+
+  /* Material's native checkbox tree permits independent, multi-branch expansion. */
+  .md-nav--primary .md-nav__toggle:not(:checked) ~ .md-nav {
+    display: none;
   }
 }
 
