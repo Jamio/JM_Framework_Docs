@@ -12,7 +12,6 @@ theme:
     - navigation.instant
     - navigation.instant.progress
     - navigation.tabs
-    - navigation.sections
     - navigation.path
     - navigation.top
     - navigation.footer
@@ -69,59 +68,44 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+
   - Player Guide:
-      - Overview: players/index.md
+      - Start Here: players/index.md
       - Before the Operation:
-          - Joining the Community: players/getting-started.md
-          - Mission Preparation: community/index.md
-          - Briefings and Role Selection: community/roles.md
-      - In-game Essentials:
-          - ACE and Common Interactions: players/interactions.md
-          - ACE Medical: community/ace-medical.md
-          - TFAR Communications: community/tfar.md
-      - Framework Systems:
-          - System Guide: components/index.md
-          - Aid Stations: components/aid-station.md
-          - Rally Points: components/rally-points.md
-          - Redeployment: components/redeployment.md
-          - Arsenal and Loadouts: components/arsenal-loadouts.md
-          - Tickets and Respawn: components/tickets-respawn.md
+          - Join the Community: players/getting-started.md
+          - Prepare for a Mission: community/index.md
+          - Briefings and Roles: community/roles.md
+      - In Game:
+          - ACE and Keybinds: players/interactions.md
+          - Medical: community/ace-medical.md
+          - TFAR: community/tfar.md
+          - Framework Systems: components/index.md
+
   - Mission Making:
-      - Overview: mission-makers/index.md
+      - Start Here: mission-makers/index.md
       - Getting Started:
-          - Installation and Setup: mission-makers/getting-started.md
-          - Your First Mission: mission-makers/first-mission.md
-          - Eden Modules and Attributes: mission-makers/eden.md
-          - Side-aware Missions and TvT: mission-makers/side-aware.md
-      - Component Reference:
-          - Component Catalogue: components/index.md
-          - Aid Station: components/aid-station.md
-          - Rally Points: components/rally-points.md
-          - Redeployment: components/redeployment.md
-          - Garage: components/garage.md
-          - Vehicle Support: components/vehicle-support.md
-          - Arsenal and Loadouts: components/arsenal-loadouts.md
-          - Tickets and Respawn: components/tickets-respawn.md
-          - Logistics and FOBs: components/logistics-fobs.md
-          - Safezones and AO Limits: components/safezones-ao.md
-          - Civilian Interaction: components/civilian-interaction.md
-          - Mission Administration: components/mission-administration.md
-      - Running the Operation:
-          - Zeus and ZEN Controls: zeus/index.md
+          - Install and Set Up: mission-makers/getting-started.md
+          - Build Your First Mission: mission-makers/first-mission.md
+          - Eden Modules: mission-makers/eden.md
+          - Sides and TvT: mission-makers/side-aware.md
+      - Components: components/index.md
+      - Zeus:
+          - Overview: zeus/index.md
           - ZEN Modules: zeus/zen-modules.md
-          - Live Troubleshooting: zeus/troubleshooting.md
+          - Troubleshooting: zeus/troubleshooting.md
+
   - Development:
-      - Overview: technical/index.md
-      - Design and Architecture:
-          - Design Philosophy: technical/architecture.md
-          - Configuration Model: technical/configuration.md
+      - Start Here: technical/index.md
+      - Design:
+          - Philosophy and Architecture: technical/architecture.md
+          - Configuration: technical/configuration.md
           - Compatibility: technical/compatibility.md
-      - Developer Reference:
-          - Events and Public API: technical/events-api.md
-          - Technical Troubleshooting: technical/troubleshooting.md
+      - Reference:
+          - Events and API: technical/events-api.md
+          - Troubleshooting: technical/troubleshooting.md
       - Project:
           - Changelog: development/changelog.md
-          - Roadmap and Ideas: development/roadmap.md
+          - Roadmap: development/roadmap.md
           - Contributing: contributing.md
 
 copyright: Copyright &copy; JM Framework contributors
