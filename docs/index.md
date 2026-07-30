@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-<div class="jmf-hero jmf-hero--simple" markdown>
+<div class="jmf-hero jmf-hero--simple jmf-hero--home" markdown>
 
 <span class="jmf-eyebrow">MISFITS ARMA 3</span>
 
@@ -24,7 +24,7 @@ A single, practical handbook for playing, building, and developing our Arma 3 mi
 
     [:octicons-arrow-right-24: Player Guide](players/index.md)
 
--   :material-map-edit:{ .lg .middle } **Mission Making**
+-   :material-hammer-wrench:{ .lg .middle } **Mission Making**
 
     ---
 
