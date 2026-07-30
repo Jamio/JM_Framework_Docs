@@ -5,8 +5,6 @@
   --md-accent-fg-color: #d97a36;
   --jmf-orange: #d97a36;
   --jmf-gold: #e4a64a;
-  --jmf-ink: #151b20;
-  --jmf-surface: #f4f1eb;
 }
 
 [data-md-color-scheme="jmf-light"] {
@@ -29,51 +27,66 @@
   background: #202830;
 }
 
+.md-tabs__link {
+  font-weight: 650;
+}
+
+.md-tabs__item--active .md-tabs__link {
+  color: #fff;
+}
+
+.md-path {
+  margin-bottom: .8rem;
+  padding-bottom: .55rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+  font-size: .72rem;
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: var(--jmf-orange);
+  font-weight: 700;
+}
+
 .md-typeset h1,
 .md-typeset h2 {
   font-weight: 750;
-  letter-spacing: -0.025em;
+  letter-spacing: -.025em;
 }
 
 .md-typeset h2 {
-  border-bottom: 1px solid color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
   padding-bottom: .35rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--md-default-fg-color) 14%, transparent);
 }
 
 .jmf-hero {
   margin: -1.2rem 0 2rem;
   padding: clamp(2rem, 6vw, 4.5rem);
   color: #fff;
+  border-left: .28rem solid var(--jmf-orange);
   border-radius: .7rem;
   background:
-    linear-gradient(110deg, rgba(18,23,28,.98) 15%, rgba(27,34,42,.86) 68%, rgba(102,54,25,.78)),
-    repeating-linear-gradient(135deg, transparent 0 28px, rgba(255,255,255,.025) 29px 30px);
-  border-left: .28rem solid var(--jmf-orange);
-  box-shadow: 0 1rem 2.5rem rgba(0,0,0,.18);
+    linear-gradient(110deg, rgba(18, 23, 28, .98) 15%, rgba(27, 34, 42, .86) 68%, rgba(102, 54, 25, .78)),
+    repeating-linear-gradient(135deg, transparent 0 28px, rgba(255, 255, 255, .025) 29px 30px);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, .18);
+}
+
+.jmf-hero--simple {
+  margin-bottom: 1.4rem;
+  padding-block: clamp(2.2rem, 5vw, 3.5rem);
 }
 
 .jmf-hero h1 {
   max-width: 800px;
-  margin: .25rem 0 1rem;
+  margin: .25rem 0 .7rem;
   color: #fff;
-  font-size: clamp(2rem, 6vw, 4.1rem);
-  line-height: .98;
+  font-size: clamp(2.3rem, 6vw, 4rem);
+  line-height: 1;
 }
 
 .jmf-hero > p {
   max-width: 680px;
-  font-size: 1.08rem;
-}
-
-.jmf-hero .md-button {
-  margin: .45rem .4rem 0 0;
-  color: #fff;
-  border-color: rgba(255,255,255,.6);
-}
-
-.jmf-hero .md-button--primary {
-  background: var(--jmf-orange);
-  border-color: var(--jmf-orange);
+  margin-bottom: 0;
+  font-size: 1.05rem;
 }
 
 .jmf-eyebrow {
@@ -83,60 +96,27 @@
   letter-spacing: .2em;
 }
 
-.jmf-status {
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  margin: 0 0 2rem;
-  padding: .75rem 1rem;
-  border: 1px solid color-mix(in srgb, var(--jmf-orange) 38%, transparent);
-  border-radius: .4rem;
-  background: color-mix(in srgb, var(--jmf-orange) 8%, transparent);
-  font-size: .78rem;
-}
-
-.jmf-status__dot {
-  width: .55rem;
-  height: .55rem;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  background: var(--jmf-orange);
-  box-shadow: 0 0 0 .2rem color-mix(in srgb, var(--jmf-orange) 20%, transparent);
+.jmf-route-cards {
+  margin-top: 0;
 }
 
 .jmf-route-cards > ul > li {
-  position: relative;
   overflow: hidden;
   border-top: .18rem solid var(--jmf-orange);
   transition: transform .18s ease, box-shadow .18s ease;
 }
 
 .jmf-route-cards > ul > li:hover {
-  transform: translateY(-.2rem);
-  box-shadow: 0 .7rem 1.4rem rgba(0,0,0,.12);
+  transform: translateY(-.15rem);
+  box-shadow: 0 .65rem 1.3rem rgba(0, 0, 0, .1);
 }
 
-.jmf-tag {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  color: var(--jmf-orange);
-  font-size: .58rem;
-  font-weight: 800;
-  letter-spacing: .12em;
-}
-
-.jmf-quicklinks {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.jmf-quicklinks > p {
-  margin: 0;
-  padding: 1rem;
-  border-left: .16rem solid var(--jmf-orange);
-  background: color-mix(in srgb, var(--md-default-fg-color) 4%, transparent);
+.jmf-home-note {
+  margin: 1.5rem auto 0;
+  max-width: 42rem;
+  color: color-mix(in srgb, var(--md-default-fg-color) 68%, transparent);
+  font-size: .75rem;
+  text-align: center;
 }
 
 .md-typeset .admonition,
@@ -149,9 +129,5 @@
   .jmf-hero {
     margin-top: -.5rem;
     padding: 1.6rem;
-  }
-
-  .jmf-quicklinks {
-    grid-template-columns: 1fr;
   }
 }
