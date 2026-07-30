@@ -1,79 +1,72 @@
-# JM Framework Docs
+# JM Framework Documentation
 
-The central documentation hub for the **JM Framework** and the **Misfits Arma 3 community**.
+The official handbook for **JM Framework** and the **Misfits Arma 3 community**.
 
-This repository will provide a single, easy-to-navigate source of guidance for:
-
-- Players taking part in Misfits operations
-- Mission Makers building missions with JM Framework
-- Zeus operators running and adjusting missions
-- Developers maintaining or extending the framework
+[Open the documentation site](https://jamio.github.io/JM_Framework_Docs/)
 
 > [!NOTE]
-> This documentation is currently under development alongside the new version of JM Framework. Pages, examples, and navigation may change as framework components are completed.
+> The framework and its documentation are in active development. Pages marked as planned may describe intended rather than released functionality.
 
-## Documentation areas
+## Documentation structure
 
-### Community guides
+### Player Guide
 
-Player-facing guides covering the shared systems and standards used during Misfits operations, including:
+Practical guidance from joining the community through to playing an operation:
 
-- Getting started and required setup
-- ACE medical
+- Preparing for missions and reading briefings
+- Selecting roles
+- ACE interactions and medical
 - TFAR communications
-- Roles and responsibilities
-- Common controls and interactions
-- Community conventions and gameplay guidance
+- Teamwork and communication expectations
+- Using JM Framework systems such as aid stations, rally points, redeployment, arsenals, tickets, and respawn
 
-### Mission Maker guides
+### Mission Making
 
-Practical documentation for building missions with JM Framework, including:
+Detailed guidance for building and running missions with JM Framework:
 
-- Installing and enabling the framework
-- Initial mission setup
-- Eden Editor modules and attributes
-- Configuring individual framework components
-- Side-aware and TvT configuration
-- Examples and troubleshooting
+- Installation and initial mission setup
+- Eden modules and attributes
+- Component-by-component configuration
+- Recommended settings and design trade-offs
+- Side-aware and TvT missions
+- Zeus and ZEN controls for live operations
+- Troubleshooting
 
-### Zeus guides
+### Development
 
-Guidance for using the framework during live operations, including:
+The design and technical record for the framework:
 
-- ZEN modules
-- Runtime configuration
-- Spawning and managing framework features
-- Administrative and troubleshooting tools
+- Design philosophy and architecture
+- Configuration model
+- Events and public APIs
+- Compatibility
+- Changelog
+- Roadmap and future ideas
+- Contribution guidance
 
-### Component reference
+## Documentation approach
 
-Detailed reference material for each framework component, including its purpose, dependencies, configuration options, Eden functionality, Zeus functionality, and usage examples.
+Each framework component has one authoritative reference page. Where applicable, that page explains:
 
-Planned component documentation includes systems such as:
+1. The component's purpose and intended experience
+2. What players see and do
+3. Mission Maker setup and configuration
+4. Zeus controls and live adjustment
+5. Technical behaviour, locality, events, limitations, and troubleshooting
 
-- Aid stations
-- Rally points and redeployment
-- Restricted arsenals and loadouts
-- Garages and vehicle support
-- Tickets and respawn
-- Logistics and FOB building
-- Civilian interaction
-- Safezones and AO limits
-- Mission administration utilities
+This keeps player, Mission Maker, Zeus, and developer information connected without maintaining conflicting copies.
 
-## Related repositories
+## Local development
+
+Install the pinned documentation dependency and run the development server:
+
+```bash
+pip install -r requirements.txt
+mkdocs serve
+```
+
+The site is built with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and deployed to GitHub Pages through the repository's **Deploy documentation** workflow.
+
+## Related repository
 
 - [JM Framework](https://github.com/Jamio/JM_Framework) — framework source code
-- [JM Mission Framework Docs](https://github.com/Jamio/JM_MissionFrameworkDocs) — documentation for the previous framework setup
-
-## Project status
-
-JM Framework is being rebuilt as a modular Arma 3 addon using CBA, ACE3, ZEN, and HEMTT. The documentation will grow alongside development so that released components have clear player, Mission Maker, Zeus, and technical guidance.
-
-## Contributing
-
-Documentation improvements, corrections, and examples are welcome. Please open an issue or submit a pull request if you find something unclear, outdated, or missing.
-
-## Licence
-
-Licensing information will be added as the project is established.
