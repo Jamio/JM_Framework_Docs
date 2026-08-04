@@ -9,10 +9,10 @@ A compact reminder of the structure, conventions and development loop.
 | Item | Current convention |
 |---|---|
 | Build tool | HEMTT |
-| Addon prefix | \`z\\jmf\\addons\\<component>\` |
-| Tag | \`jmf\` |
+| Addon prefix | `z\jmf\addons\<component>` |
+| Tag | `jmf` |
 | Lifecycle | CBA XEH preInit / postInit |
-| Function preparation | \`PREP\` through \`XEH_PREP.hpp\` |
+| Function preparation | `PREP` through `XEH_PREP.hpp` |
 | Multiplayer | Server-authoritative state; CBA events for requests and broadcasts |
 | Editor integration | Eden configuration; ZEN live controls where useful |
 
@@ -30,7 +30,7 @@ A compact reminder of the structure, conventions and development loop.
 
 ## Before changing an old component
 
-- Read its \`config.cpp\`, XEH files and prepared functions.
+- Read its `config.cpp`, XEH files and prepared functions.
 - Find the authoritative state and every CBA event.
 - Check Eden attributes and ZEN registrations.
 - Search for compatibility aliases before renaming anything.
