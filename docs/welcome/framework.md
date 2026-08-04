@@ -1,7 +1,7 @@
 <div class="jmf-page-hero" style="--jmf-page-image: url('../assets/images/welcome-framework.jpg');" markdown>
 <span class="jmf-eyebrow">WELCOME</span>
 # Welcome to JM Framework
-The shared systems behind Misfits operations—for players, Mission Makers and developers.
+The SQF system behind Misfits operations, developed by Jamio
 </div>
 
 <div class="grid cards jmf-feature-cards" markdown>
@@ -10,19 +10,19 @@ The shared systems behind Misfits operations—for players, Mission Makers and d
 
     ---
 
-    Consistent gear, respawning, redeployment, vehicles and mission interactions.
+    Consistent interactions, systems and behaviour across operations.
 
 -   :material-map-edit:{ .lg .middle } **For Mission Makers**
 
     ---
 
-    Eden-first configuration with clear component controls and sensible defaults.
+    3DEN configuration for individual components.
 
 -   :material-lightning-bolt:{ .lg .middle } **For Zeus**
 
     ---
 
-    Live adjustment, recovery and escalation through focused ZEN modules.
+    Live adjustment through focused ZEN modules.
 
 -   :material-code-braces:{ .lg .middle } **For development**
 
@@ -34,9 +34,9 @@ The shared systems behind Misfits operations—for players, Mission Makers and d
 
 ## What the framework is
 
-JM Framework is the common layer used to build and run our Arma 3 operations. It packages frequently used mission systems into reusable addon components instead of requiring each Mission Maker to rebuild them with copied scripts and init code.
+JM Framework is the common layer used to build and run our Arma 3 operations. It packages frequently used mission systems into reusable addon components instead of requiring mission-makers to rebuild them with copied scripts and init code.
 
-<span class="jmf-accent">The aim is consistency without sameness:</span> missions share dependable foundations while Mission Makers remain free to change the setting, scale, rules and experience.
+<span class="jmf-accent">The aim is consistency:</span> missions share dependable foundations while mission-makers remain free to configure and adjust for the kind of operation they wish to make.
 
 !!! info "Choose your route"
     **Playing?** Start with the [Player Guide](../players/index.md).  
@@ -47,8 +47,8 @@ JM Framework is the common layer used to build and run our Arma 3 operations. It
 
 | Principle | What it means |
 |---|---|
-| :material-puzzle-outline: **Modular** | Enable and configure only the components a mission needs. |
-| :material-server-network: **Multiplayer-aware** | Locality, persistence, JIP and server authority are designed in. |
-| :material-tune: **Configurable** | Eden handles setup; ZEN handles appropriate live changes. |
+| :material-puzzle-outline: **Modular** | Easy to enable and configure only components that are required |
+| :material-server-network: **Multiplayer-aware** | Locality, persistence, JIP and server authourity are embedded. Hopefully. |
+| :material-tune: **Configurable** | 3DEN to handle setup, ZEN for on-the-fly adjustment |
 | :material-account-multiple-check: **Side-aware** | PvE remains simple while TvT systems can separate teams cleanly. |
-| :material-book-open-page-variant: **Documented** | Player use, Mission Maker setup and technical flow stay distinct. |
+| :material-book-open-page-variant: **Documented** | Player-facing and mission-making systems are cleanly defined |
