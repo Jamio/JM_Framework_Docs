@@ -87,15 +87,6 @@ You can also contribute by:
 
 <div class="jmf-link-grid" markdown>
 
-- **[Prepare for an Operation](../before-the-operation/operations-and-scheduling.md)**  
-  Learn how operations are scheduled and what to do before joining.
-
-- **[Teamwork and Communication](../during-the-operation/teamwork-and-communication.md)**  
-  Read the basic habits that keep our missions coordinated.
-
-- **[Join the Community](ADD_DISCORD_INVITE_LINK)**  
-  Join our Discord and find upcoming operations.
-
 </div>
 
 !!! tip "The short version"
