@@ -1,42 +1,41 @@
-# Development
+<div class="jmf-page-hero" style="--jmf-page-image: url('../assets/images/framework-development.jpg');" markdown>
+<span class="jmf-eyebrow">FRAMEWORK DEVELOPMENT</span>
+# Development Reference
+The compact record of how JM Framework is built and how its components execute.
+</div>
 
-The design record and technical reference for JM Framework: why it is built this way, how its pieces fit together, and where it goes next.
+<div class="grid cards jmf-feature-cards" markdown>
 
-<div class="grid cards" markdown>
+-   :material-history:{ .lg .middle } **Returning after a break**
 
--   :material-compass-outline:{ .lg .middle } **Intent and philosophy**
+    Tooling, paths, conventions and the normal test loop in one place.
 
-    ---
+    [:octicons-arrow-right-24: Quick reference](quick-reference.md)
 
-    Read the principles guiding component boundaries, configurability, multiplayer behaviour, Eden integration, and Zeus support.
+-   :material-sitemap:{ .lg .middle } **Shared architecture**
 
-    [:octicons-arrow-right-24: Design philosophy](architecture.md)
+    Component boundaries, CBA XEH lifecycle, locality and configuration patterns.
 
--   :material-code-braces:{ .lg .middle } **Technical reference**
+    [:octicons-arrow-right-24: Architecture](architecture.md)
 
-    ---
+-   :material-graph-outline:{ .lg .middle } **Component flow maps**
 
-    Explore configuration, public events, APIs, compatibility, architecture, and troubleshooting information.
+    Trace entry points, parameters, CBA events, server processing, state and broadcasts.
 
-    [:octicons-arrow-right-24: Events and API](events-api.md)
+    [:octicons-arrow-right-24: View flow maps](component-flows.md)
 
 -   :material-source-branch:{ .lg .middle } **Project direction**
 
-    ---
+    Changes, planned work and decisions still being explored.
 
-    Follow released changes, work in progress, future components, design questions, and ideas still being explored.
-
-    [:octicons-arrow-right-24: Roadmap and ideas](../development/roadmap.md)
+    [:octicons-arrow-right-24: Roadmap](../development/roadmap.md)
 
 </div>
 
-## Development principles
+## Keep these notes useful
 
-- Components should be modular, side-aware where practical, and independently useful.
-- Eden configuration should be approachable without hiding meaningful consequences.
-- ZEN modules should support live adjustment, recovery, and troubleshooting.
-- CBA and ACE conventions should be followed for events, settings, interactions, and initialization.
-- Multiplayer locality and persistence are design inputs, not final-stage fixes.
-- Documentation should distinguish **released**, **in development**, and **planned** behaviour.
-
-Component-specific implementation details belong on the relevant [component page](../components/index.md); this section holds the shared architecture and project-wide decisions.
+- Record decisions that will be hard to reconstruct months later.
+- Prefer short examples and diagrams over broad programming tutorials.
+- Use exact function and event names once an interface is stable.
+- Mark behaviour as **released**, **in development** or **planned**.
+- Keep player instructions and Mission Maker setup out of technical flow pages.
