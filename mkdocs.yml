@@ -42,6 +42,10 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - https://unpkg.com/mermaid@11/dist/mermaid.min.js
+  - javascripts/mermaid.js
+
 plugins:
   - search
 
@@ -58,7 +62,11 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - tables
@@ -68,59 +76,62 @@ markdown_extensions:
 nav:
   - Home: index.md
 
+  - Welcome:
+      - Welcome to the Misfits: players/welcome/about.md
+      - Joining the Community: players/welcome/joining.md
+      - Welcome to the Framework: welcome/framework.md
+
   - Player Guide:
       - Start Here: players/index.md
-      - Welcome to the Misfits:
-          - About Our Community: players/welcome/about.md
-          - Joining the Community: players/welcome/joining.md
-      - Before the Operation:
-          - Operations and Scheduling: players/before/operations.md
-          - Setting Up Your Mods: players/before/mods.md
-          - Mission Briefings: players/before/briefings.md
-          - Choosing a Role: players/before/roles.md
-      - During the Operation:
-          - Teamwork and Communication: players/during/teamwork.md
-          - Keybinds and Controls: players/during/keybinds.md
-          - Using ACE: players/during/ace.md
-          - ACE Medical: players/during/ace-medical.md
-          - Using TFAR: players/during/tfar.md
-          - JM Framework Systems: players/during/framework-systems.md
-      - After the Operation:
-          - Debriefing: players/after/debriefing.md
-          - Feedback and Media: players/after/feedback-media.md
+      - Joining an Operation:
+          - Attendance: players/before/operations.md
+          - Mods: players/before/mods.md
+          - Briefings: players/before/briefings.md
+      - Basics: players/basics.md
+      - In-Game Briefing: players/in-game-briefing.md
+      - Roles and Gear: players/before/roles.md
+      - Respawning: players/respawning.md
+      - Redeployment: players/redeployment.md
+      - Vehicles and Garage: players/vehicles-garage.md
+      - ACE3:
+          - General: players/during/ace.md
+          - Medical: players/during/ace-medical.md
+      - TFAR:
+          - Setup: players/during/tfar-setup.md
+          - Usage: players/during/tfar.md
 
   - Mission Making:
       - Start Here: mission-makers/index.md
-      - Mission Concept:
-          - Start with the Idea: mission-makers/concept/index.md
-          - Common Pitfalls: mission-makers/concept/pitfalls.md
+      - Mission Setup and Design:
           - Basic Mission Setup: mission-makers/concept/basic-setup.md
-      - Mission Design:
-          - Design the Operation: mission-makers/design/index.md
-          - Context and Briefing: mission-makers/design/context-briefing.md
-          - Objectives and Flow: mission-makers/design/objectives-flow.md
-          - Player Roles and Loadouts: mission-makers/design/players-loadouts.md
-          - Opposition and Challenge: mission-makers/design/opposition.md
-          - Win, Fail, and End Conditions: mission-makers/design/outcomes.md
-      - JM Framework:
+          - Design Philosophy: mission-makers/design-philosophy.md
+      - Framework Components:
           - Framework Overview: mission-makers/framework/index.md
           - Install and Core Setup: mission-makers/framework/core-setup.md
           - Component Catalogue: components/index.md
-      - Testing and Validation:
-          - Testing Overview: mission-makers/testing/index.md
-          - Local and Editor Testing: mission-makers/testing/local.md
-          - Multiplayer and Server: mission-makers/testing/server.md
-          - Final Checklist: mission-makers/testing/checklist.md
+          - Aid Station: components/aid-station.md
+          - Rally Points: components/rally-points.md
+          - Redeployment: components/redeployment.md
+          - Garage: components/garage.md
+          - Vehicle Support: components/vehicle-support.md
+          - Arsenal and Loadouts: components/arsenal-loadouts.md
+          - Tickets and Respawn: components/tickets-respawn.md
+          - Logistics and FOBs: components/logistics-fobs.md
+          - Safezones and AO Limits: components/safezones-ao.md
+          - Civilian Interaction: components/civilian-interaction.md
+          - Mission Administration: components/mission-administration.md
 
-  - Development:
+  - Framework Development:
       - Start Here: technical/index.md
-      - Design:
-          - Philosophy and Architecture: technical/architecture.md
+      - Developer Notes:
+          - Returning to the Project: technical/quick-reference.md
+          - Architecture: technical/architecture.md
           - Configuration: technical/configuration.md
           - Compatibility: technical/compatibility.md
-      - Reference:
           - Events and API: technical/events-api.md
-          - Troubleshooting: technical/troubleshooting.md
+          - Testing and Debugging: technical/troubleshooting.md
+      - Component Architecture:
+          - Function and Event Maps: technical/component-flows.md
       - Project:
           - Changelog: development/changelog.md
           - Roadmap: development/roadmap.md
