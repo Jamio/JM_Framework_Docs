@@ -1,52 +1,68 @@
 <div class="jmf-page-hero" style="--jmf-page-image: url('../../assets/images/player-joining.jpg');" markdown>
 <span class="jmf-eyebrow">WELCOME TO THE MISFITS</span>
 # Joining the Community
-From first contact to joining your first operation.
+Join our Discord, meet the group and get ready for your first operation.
 </div>
 
 <!-- Optional header image: docs/assets/images/player-joining.jpg -->
 
-## How to join
+## Join our Discord
 
-Joining an operation is very simple. When a signup is posted, you only need to do the following:
+Discord is the centre of the Misfits community. It is where we announce operations, share briefings and mod presets, organise roles, provide technical help and spend time together outside Arma.
 
-1. Select your attendance option (Confirmed, Declined or Tentative)
-2. Post your role preference when the briefing document is posted and ready
-3. Join the server on mission day
+**[Join the Misfits Discord](ADD_PERMANENT_DISCORD_INVITE_LINK)**
 
-In the meantime, please make sure you are prepared with the correct mods and familiar with the game systems.
+<!-- Replace ADD_PERMANENT_DISCORD_INVITE_LINK with the permanent community invite. -->
 
-<!-- Add the joining process in simple numbered steps. -->
+Once you have joined, say hello in **arma-chat**. Let us know whether you are new to Arma, returning to the game or already familiar with ACE and TFAR—it helps us give you the right level of support.
 
-## Getting started
+## How we welcome new players
 
-We do not have a rigid newcomer induction process. We instead have opted to set out our expectations in this section, and we let players decide what sort of assistance/training they require.
+We do not use applications, mandatory training courses or formal assessments. Our induction is a short, friendly introduction designed to make sure you can join an operation without being left to work everything out alone.
 
-If you do require assistance, you only need to ask for help in arma-chat, and several people will be on-hand to help.
+A new player will normally:
 
-At the bare minimum, you should have:
+1. Join Discord and introduce themselves.
+2. Read the short community welcome and the essential Player Guide pages.
+3. Download the current mod preset.
+4. Ask for help testing ACE, TFAR or unfamiliar controls if needed.
+5. Sign up for an operation and join a little early for final checks.
 
-1. Read through the welcome section of this site
-2. Read and understood each section of our Player Guide
-3. Have a basic familiarity with using ACE, TFAR, and our Framework systems
+Where possible, we will help you choose a straightforward first role, introduce you to your team and make sure the relevant leader knows that you are new. More experienced players can talk you through unfamiliar systems during the mission.
 
-<!-- Explain introductions, verification, orientation, or any newcomer process. -->
+!!! tip "You do not need to know everything"
+    Basic Arma familiarity is helpful, but a willingness to listen, communicate and ask questions matters far more than knowing every keybind or procedure.
 
-## Useful community channels
+## Before your first operation
 
-Here is a short list of useful community channels and their purpose:
+Before joining your first mission, please make sure you have:
 
-| Channel Name        | Channel Purpose                                                       |
-|---------------------|-----------------------------------------------------------------------|
-| arma-chat           | General text chat for Arma-related conversation                       |
-| mission-info        | Announcements for mission-related and non mission-related information |
-| mission-signup      | Server information and mission signup events                          |
-| framework           | A channel for framework information and links                         |
-| mission-gallery     | Threads for each mission, a place to post screenshots and clips       |
-| leadership-planning | Threads for leadership roles to plan pre-mission based on briefings   |
+- Installed the current mod preset and allowed all downloads to finish.
+- Read the operation briefing and checked your requested role.
+- Set up your essential ACE and TFAR controls.
+- Joined the appropriate Discord voice channel a little before the start time.
+- Asked about anything you are unsure of.
 
-<!-- Add a short table: Channel | What it is for | When to use it. -->
+You can find the detailed steps in [Setting Up Your Mods](../before/mods.md), [Mission Briefings](../before/briefings.md) and [Choosing a Role](../before/roles.md).
 
-## Important links
+## Important Discord channels
 
-<!-- Add the Discord invite, rules, events page, mod preset, and support links here. -->
+| Channel | What it is for |
+|---|---|
+| **arma-chat** | General Arma discussion, newcomer questions and technical help. |
+| **mission-info** | Important mission announcements, changes and supporting information. |
+| **mission-signup** | Upcoming operation events, server details and attendance sign-ups. |
+| **mission-gallery** | Mission threads for screenshots, videos and clips. |
+| **leadership-planning** | Pre-mission planning for players taking leadership roles. |
+| **framework** | JM Framework news, development discussion and useful links. |
+
+Other channels cover the wider community, but these are the main places to follow when getting started with Arma.
+
+## Getting help
+
+Ask in **arma-chat** if you need help with mods, controls, radios, medical systems or joining an operation. There is no expectation that you struggle through technical problems alone.
+
+For a problem immediately before an operation, explain what is happening and include any useful error message or screenshot. This makes it much easier for someone to help quickly.
+
+!!! note "The quickest route in"
+    Join Discord, say hello, install the preset and sign up for an operation. We will help with the rest.
