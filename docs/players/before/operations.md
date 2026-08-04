@@ -16,9 +16,9 @@ The bot will adjust the start time to your local time zone, so there is no need 
 
 Use the response options on the Discord event to show whether you expect to attend:
 
-- :check_mark_button: **Accepted** — you intend to attend.
-- **Tentative** — you may be able to attend but cannot confirm yet.
-- **Declined** — you do not expect to attend.
+- ✅ **Accepted** — you intend to attend.
+- ❔ **Tentative** — you may be able to attend but cannot confirm yet.
+- ❌ **Declined** — you do not expect to attend.
 
 Responses help the Mission Maker plan roles, vehicles and player numbers. They are not rigid commitments, but please update yours if your plans change.
 
