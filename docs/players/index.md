@@ -1,20 +1,20 @@
 <div class="jmf-page-hero" style="--jmf-page-image: url('../assets/images/player-guide.jpg');" markdown>
 <span class="jmf-eyebrow">PLAYER GUIDE</span>
 # Playing with the Misfits
-Quick explanations for joining an operation and using its player-facing systems.
+Joining an operation, and how both mods and framework systems impact you.
 </div>
 
 <div class="grid cards jmf-feature-cards" markdown>
 
 -   :material-calendar-check:{ .lg .middle } **Join an operation**
 
-    Attendance, mod setup and the written briefing.
+    Attendance, mod setup and briefing documents.
 
     [:octicons-arrow-right-24: Get ready](before/operations.md)
 
 -   :material-gamepad-variant:{ .lg .middle } **Learn the basics**
 
-    The essential controls and habits needed to play with the group.
+    The essentials of playing in an operation.
 
     [:octicons-arrow-right-24: Player basics](basics.md)
 
@@ -36,9 +36,9 @@ Quick explanations for joining an operation and using its player-facing systems.
 
     [:octicons-arrow-right-24: Vehicles and garage](vehicles-garage.md)
 
--   :material-medical-bag:{ .lg .middle } **Use ACE3 and TFAR**
+-   :material-medical-bag:{ .lg .middle } **ACE3**
 
-    Interaction, medical care and radio setup without unnecessary detail.
+    Interactions, medical and much more.
 
     [:octicons-arrow-right-24: ACE3](during/ace.md)
 
