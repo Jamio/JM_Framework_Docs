@@ -12,7 +12,7 @@ Discord is the centre of the Misfits community. It is where we announce operatio
 
 **Discord invite:** `ADD PERMANENT DISCORD INVITE HERE`
 
-<!-- Replace ADD_PERMANENT_DISCORD_INVITE_LINK with the permanent community invite. -->
+<!-- Replace the placeholder above with the permanent community invite. -->
 
 Once you have joined, say hello in **arma-chat**. Let us know whether you are new to Arma, returning to the game or already familiar with ACE and TFAR—it helps us give you the right level of support.
 
