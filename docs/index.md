@@ -10,17 +10,25 @@ hide:
 
 # JM Framework
 
-A single, practical handbook for playing, building, and developing our Arma 3 missions.
+A practical home for our community, player systems, mission making and framework development.
 
 </div>
 
 <div class="grid cards jmf-route-cards" markdown>
 
+-   :material-hand-wave:{ .lg .middle } **Welcome**
+
+    ---
+
+    Meet the Misfits and understand what JM Framework is trying to achieve.
+
+    [:octicons-arrow-right-24: Start here](players/welcome/about.md)
+
 -   :material-account-group:{ .lg .middle } **Player Guide**
 
     ---
 
-    Everything you need before and during an operation: joining, preparation, roles, ACE, TFAR, teamwork, and framework systems.
+    Join an operation and learn the player-facing systems used in our missions.
 
     [:octicons-arrow-right-24: Player Guide](players/index.md)
 
@@ -28,20 +36,20 @@ A single, practical handbook for playing, building, and developing our Arma 3 mi
 
     ---
 
-    Install JM Framework, build missions in Eden, configure components, and control systems during an operation with Zeus.
+    Set up a mission, apply the design philosophy and configure framework components.
 
     [:octicons-arrow-right-24: Mission Making](mission-makers/index.md)
 
--   :material-code-braces:{ .lg .middle } **Development**
+-   :material-code-braces:{ .lg .middle } **Framework Development**
 
     ---
 
-    Design philosophy, architecture, technical reference, releases, roadmap, and future ideas.
+    Return to the codebase quickly and trace how component functions, events and state connect.
 
     [:octicons-arrow-right-24: Development](technical/index.md)
 
 </div>
 
 <p class="jmf-home-note">
-JM Framework and these docs are under active development. Planned features are identified on their individual pages.
+JM Framework and these docs are under active development. Planned behaviour is marked on its individual page.
 </p>
