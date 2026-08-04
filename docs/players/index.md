@@ -42,7 +42,7 @@ Joining an operation, and how both mods and framework systems impact you.
 
     [:octicons-arrow-right-24: ACE3](during/ace.md)
 
--   :material-medical-bag:{ .lg .middle } **TFAR**
+-   :material-radio-handheld:{ .lg .middle } **TFAR**
 
     Setup and radio usage.
 
