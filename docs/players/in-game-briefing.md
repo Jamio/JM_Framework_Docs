@@ -19,4 +19,4 @@ The final information given before the operation begins.
 The in-game briefing confirms the plan and covers last-minute changes. It does not normally repeat the full written [Mission Briefing](before/briefings.md).
 
 !!! question "Something unclear?"
-    Ask before step-off. Keep the question short and relevant to what your character or role should know.
+    Ask before step-off, but keep questions concise. If its something your Squad Leader could answer during preparations, then consider asking them instead.
