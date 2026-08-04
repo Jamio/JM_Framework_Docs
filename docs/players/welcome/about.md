@@ -1,45 +1,102 @@
-<div class="jmf-page-hero" style="--jmf-page-image: url('../../assets/images/player-about.jpg');" markdown>
-<span class="jmf-eyebrow">WELCOME TO THE MISFITS</span>
-# About Our Community
-Who we are, how we play, and what we want the community to be.
+<div class="jmf-page-hero" style="--jmf-page-image: url('../../assets/images/player-welcome.jpg');" markdown>
+<span class="jmf-eyebrow">PLAYER GUIDE</span>
+# Welcome to the Misfits
+A relaxed Arma 3 community built around teamwork, memorable missions and enjoying the game together.
 </div>
 
-<!-- Optional header image: docs/assets/images/player-about.jpg -->
+<!-- Optional header image: docs/assets/images/player-welcome.jpg -->
 
-## An Introduction to The Misfits Arma 3
+## Who we are
 
-<!-- Describe the Misfits community, its history, typical attendance, time zone, and the people it is intended for. -->
+The Misfits are a primarily UK/EU-based Arma 3 community running cooperative, story-driven operations in a wide range of settings.
 
-The Misfits community was founded following the dissolution of our original Hell Let Loose clan - Helly's Heroes. The community was setup to retain the close friendships made between several members, without the impersonality of a growing, exer-expanding behemoth of a full "clan".
+We describe our playstyle as **semi-realistic**: we use teamwork, leadership and tactics where they make the mission more engaging, but we are not a strict milsim group. There are no ranks to earn, nobody is expected to address others by title, and fun always takes priority over unnecessary realism.
 
-We started playing Arma 3 missions at the tail end of Helly's, and continued into The Misfits. The game itself scratched our itch of wanting to coordinate and communicate as a team, whilst also having the freedom to play our way and have nice casual fun along the way.
+Our operations can be serious and atmospheric, but the community around them remains relaxed, welcoming and full of questionable jokes.
 
-Initially, our missions were scrappy, cobbled together, with a handful of players. Since then, we've grown into an experienced group, with 100+ operations under our belts, and a whole load of great memories. We've also developed a mission development framework (one that has been brutally tested over several years) which allows us to create and play a variety of operations with a huge variety in mods, eras, themes, objectives and assets. Our framework allows us finite control over game systems used by both mission-makers and players. Over time, we've also expanded our player base, bringing in friends from near and far to join in on our curated sessions.
+## Our story
 
-We aim to play on Friday nights at 7pm GMT/BST, but sometimes have operations on over Saturday and Sunday nights too.
+The Misfits began in 2022 following the dissolution of a large Hell Let Loose clan. The members that would eventually comprise the Misfits stayed in contact, and would eventuall form this community. We are a close-knit group of friends who have played various games together for several years.
 
-## Our Community Goals
+In the very early days of The Misfits, several members of our community started up some very basic Arma 3 missions. We had a blast, and eventually started bringing in more and more members of our community - introducing them to the fun, tactical, teamwork-focused style of gaming that Arma 3 caters to so well.
 
-We aim to foster a community of casual fun, combined with semi-realism, teamwork and coordination. Our operations and community structure are designed to encourage engagement, accessibility, and immersion.
+Since then, the community has grown through the contributions of its players, Mission Makers, leaders and technical volunteers. Our missions, mods and JM Framework continue to develop as people share ideas, create new experiences and help improve the way we play.
 
-Whilst some groups may prefer a more "realistic" approach to Arma operations, we strive to find the balance between authenticity, realism and fun. At the end of the day, Arma is a game that we enjoy playing, and it should always stay that way even if compromises are required.
+<!-- Optional: add a short timeline, old group image, or screenshot from an early operation. -->
 
-We expect all of our players to engage with the hard work that goes into the community, and treat eachother with respect. We value feedback, and it is what most of our systems, tweaks and rules are based on, but it is imperative that feedback is delivered positively and at the right time.
+## How we play
 
-<!-- Explain the balance between cooperation, authenticity, accessibility, and fun. -->
+Our operations are designed around cooperation rather than individual performance. Players work as part of a team, communicate clearly and contribute towards a shared objective.
 
-## Our community goals
+We aim to strike a balance between:
 
-<!-- State the atmosphere and long-term community you want to build. -->
+- **Coordination** without excessive formality.
+- **Authenticity** where it improves the experience.
+- **Variety** in missions, roles, factions and settings.
+- **Accessibility** for players with different levels of experience.
+- **Fun** as the reason we are all here.
 
-## Semi-realism and “fun first”
+Some missions may be carefully planned military operations; others may be chaotic, experimental or narrative-led. Whatever the setting, we want players to feel involved in something memorable.
 
-<!-- Explain what semi-realism means in practice, including what the group deliberately does not simulate. -->
+## Our culture
 
-## Gallery or feature image
+We want the Misfits to be somewhere people enjoy spending their time, not simply a server they join once a week.
 
-<!-- Add an image using: ![Alt text](../../assets/images/your-image.jpg) -->
+That means treating people with respect, being patient when mistakes happen and helping others learn. Jokes and banter are part of the community, but discrimination, harassment, personal attacks and deliberate disruption are not welcome.
 
-## Useful links
+You do not need to be an Arma expert or have any real-world military knowledge. A willingness to communicate, cooperate and learn is much more valuable than knowing every system immediately.
 
-<!-- Add Discord, event calendar, mod collection, or other community links here. -->
+## What we expect
+
+Our expectations are deliberately simple:
+
+- Arrive with the required mods installed and read the important mission information.
+- Stay involved and work with your assigned team.
+- Listen to others and communicate useful information.
+- Treat players, leaders and Mission Makers with respect.
+- Give feedback constructively and at an appropriate time.
+- Help make the operation enjoyable for everyone.
+
+Mistakes are expected. What matters is how you respond to them and whether you support the people around you.
+
+## What we are working towards
+
+Our goal is to build a sustainable community where:
+
+- New players can join without feeling intimidated.
+- Experienced players can lead, teach and try new ideas.
+- Mission Makers have the tools and support to create ambitious operations.
+- Feedback leads to meaningful improvements, and players feel heard
+- Members can contribute without the community becoming a second job.
+- Operations remain varied, accessible and enjoyable.
+
+The community will continue to change, but our central principle remains the same: **organised enough to create great missions, relaxed enough to enjoy them.**
+
+## Getting involved
+
+The best way to become part of the community is simply to join an operation, communicate with your team and get involved at your own pace.
+
+You can also contribute by:
+
+- Giving constructive mission feedback.
+- Sharing screenshots and clips.
+- Helping other players with setup or controls.
+- Trying leadership or specialist roles.
+- Creating missions or community resources.
+- Suggesting improvements to our mods, framework or events.
+
+<div class="jmf-link-grid" markdown>
+
+- **[Prepare for an Operation](../before-the-operation/operations-and-scheduling.md)**  
+  Learn how operations are scheduled and what to do before joining.
+
+- **[Teamwork and Communication](../during-the-operation/teamwork-and-communication.md)**  
+  Read the basic habits that keep our missions coordinated.
+
+- **[Join the Community](ADD_DISCORD_INVITE_LINK)**  
+  Join our Discord and find upcoming operations.
+
+</div>
+
+!!! tip "The short version"
+    Be respectful, work with your team, ask when you are unsure and help everyone have a good operation.
