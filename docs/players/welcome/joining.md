@@ -10,7 +10,7 @@ Join our Discord, meet the group and get ready for your first operation.
 
 Discord is the centre of the Misfits community. It is where we announce operations, share briefings and mod presets, organise roles, provide technical help and spend time together outside Arma.
 
-**[Join the Misfits Discord](ADD_PERMANENT_DISCORD_INVITE_LINK)**
+**Discord invite:** `ADD PERMANENT DISCORD INVITE HERE`
 
 <!-- Replace ADD_PERMANENT_DISCORD_INVITE_LINK with the permanent community invite. -->
 
