@@ -56,7 +56,7 @@
   color: var(--jmf-orange);
 }
 
-/* Major sections: Player Guide, Mission Making and Development. */
+/* Major sections: Welcome, Player Guide, Mission Making and Framework Development. */
 .md-nav--primary > .md-nav__list > .md-nav__item--nested {
   margin-block: .3rem;
 }
@@ -226,14 +226,18 @@
 }
 
 .jmf-route-cards > ul > li:nth-child(1) {
-  --jmf-card-image: url("../assets/images/home-player.jpg");
+  --jmf-card-image: url("../assets/images/home-welcome.jpg");
 }
 
 .jmf-route-cards > ul > li:nth-child(2) {
-  --jmf-card-image: url("../assets/images/home-mission-making.jpg");
+  --jmf-card-image: url("../assets/images/home-player.jpg");
 }
 
 .jmf-route-cards > ul > li:nth-child(3) {
+  --jmf-card-image: url("../assets/images/home-mission-making.jpg");
+}
+
+.jmf-route-cards > ul > li:nth-child(4) {
   --jmf-card-image: url("../assets/images/home-development.jpg");
 }
 
@@ -266,4 +270,110 @@
 .jmf-page-hero p {
   max-width: 42rem;
   margin: .55rem 0 0;
+}
+
+
+/* Compact visual vocabulary for guide and reference pages. */
+.jmf-accent {
+  color: var(--jmf-orange);
+  font-weight: 750;
+}
+
+.jmf-feature-cards > ul > li {
+  border-left: .16rem solid color-mix(in srgb, var(--jmf-orange) 78%, transparent);
+  background: color-mix(in srgb, var(--md-default-bg-color) 95%, var(--jmf-orange));
+}
+
+.jmf-feature-cards .twemoji,
+.jmf-feature-cards .emojione {
+  color: var(--jmf-orange);
+}
+
+.jmf-step-grid {
+  margin: 1rem 0 1.4rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid color-mix(in srgb, var(--jmf-orange) 28%, transparent);
+  border-radius: .45rem;
+  background: color-mix(in srgb, var(--jmf-orange) 7%, transparent);
+}
+
+.jmf-step-grid ol {
+  margin-block: 0;
+}
+
+.jmf-status-strip {
+  margin: 1rem 0 1.4rem;
+  padding: .85rem 1rem;
+  overflow-x: auto;
+  color: color-mix(in srgb, var(--md-default-fg-color) 88%, var(--jmf-orange));
+  border-left: .2rem solid var(--jmf-orange);
+  border-radius: .25rem;
+  background: color-mix(in srgb, var(--jmf-orange) 9%, transparent);
+  font-size: .85rem;
+  white-space: nowrap;
+}
+
+.jmf-checklist {
+  padding: .85rem 1rem;
+  border-radius: .4rem;
+  background: color-mix(in srgb, var(--jmf-orange) 7%, transparent);
+}
+
+.jmf-checklist ul {
+  margin-block: 0;
+  list-style: none;
+}
+
+.jmf-checklist li .twemoji,
+.jmf-checklist li .emojione {
+  color: #4f9a65;
+}
+
+.jmf-flow {
+  display: inline-block;
+  margin: 0 .25rem .45rem 0;
+  padding: .2rem .5rem;
+  border-radius: 999px;
+  font-size: .62rem;
+  font-weight: 800;
+  letter-spacing: .055em;
+}
+
+.jmf-flow--client {
+  color: #24556f;
+  background: #dceff8;
+}
+
+.jmf-flow--network {
+  color: #77531e;
+  background: #faeacb;
+}
+
+.jmf-flow--server {
+  color: #792f2f;
+  background: #f6dddd;
+}
+
+.jmf-flow--state {
+  color: #3c653d;
+  background: #dff0df;
+}
+
+[data-md-color-scheme="slate"] .jmf-flow {
+  filter: brightness(.82) saturate(.9);
+}
+
+.mermaid {
+  margin: 1.2rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+  border-radius: .45rem;
+  background: color-mix(in srgb, var(--md-default-bg-color) 96%, var(--jmf-orange));
+}
+
+@media screen and (max-width: 760px) {
+  .jmf-status-strip {
+    white-space: normal;
+  }
 }
