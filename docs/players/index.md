@@ -1,52 +1,48 @@
 <div class="jmf-page-hero" style="--jmf-page-image: url('../assets/images/player-guide.jpg');" markdown>
 <span class="jmf-eyebrow">PLAYER GUIDE</span>
 # Playing with the Misfits
-Everything you need before, during, and after one of our Arma 3 operations.
+Quick explanations for joining an operation and using its player-facing systems.
 </div>
 
-<!-- Optional header image: docs/assets/images/player-guide.jpg -->
+<div class="grid cards jmf-feature-cards" markdown>
 
-<div class="grid cards" markdown>
+-   :material-calendar-check:{ .lg .middle } **Join an operation**
 
--   :material-account-group:{ .lg .middle } **Welcome to the Misfits**
+    Attendance, mod setup and the written briefing.
 
-    ---
+    [:octicons-arrow-right-24: Get ready](before/operations.md)
 
-    Who we are, how we play, and what we expect from one another.
+-   :material-gamepad-variant:{ .lg .middle } **Learn the basics**
 
-    [:octicons-arrow-right-24: Start here](welcome/about.md)
+    The essential controls and habits needed to play with the group.
 
--   :material-calendar-check:{ .lg .middle } **Before the Operation**
+    [:octicons-arrow-right-24: Player basics](basics.md)
 
-    ---
+-   :material-account-details:{ .lg .middle } **Prepare your role**
 
-    Scheduling, mods, briefings, and selecting a role.
+    Understand the in-game briefing, role expectations and gear restrictions.
 
-    [:octicons-arrow-right-24: Get prepared](before/operations.md)
+    [:octicons-arrow-right-24: Roles and gear](before/roles.md)
 
--   :material-crosshairs-gps:{ .lg .middle } **During the Operation**
+-   :material-refresh:{ .lg .middle } **Return to the fight**
 
-    ---
+    Respawning, redeployment destinations and reinforcement flow.
 
-    Teamwork, keybinds, ACE, TFAR, medical, and framework systems.
+    [:octicons-arrow-right-24: Respawning](respawning.md)
 
-    [:octicons-arrow-right-24: In-game guides](during/teamwork.md)
+-   :material-garage:{ .lg .middle } **Use vehicles**
 
--   :material-clipboard-text:{ .lg .middle } **After the Operation**
+    Garage spawning, vehicle limits, servicing and customisation.
 
-    ---
+    [:octicons-arrow-right-24: Vehicles and garage](vehicles-garage.md)
 
-    Debriefs, feedback, screenshots, and clips.
+-   :material-medical-bag:{ .lg .middle } **Use ACE3 and TFAR**
 
-    [:octicons-arrow-right-24: After-action guidance](after/debriefing.md)
+    Interaction, medical care and radio setup without unnecessary detail.
+
+    [:octicons-arrow-right-24: ACE3](during/ace.md)
 
 </div>
 
-## How to use this guide
-
-<!-- Replace this paragraph with a short explanation of who the guide is for and whether new members should read it in order. -->
-
-Use the four sections as a journey through an operation, or open an individual page whenever you need a quick reminder.
-
-!!! note "Editor space"
-    Add important newcomer links, a Discord invite, or a contact/help route here.
+!!! tip "Use this as a reference"
+    New players can read the guide in order. Returning players can jump directly to the system they need.
