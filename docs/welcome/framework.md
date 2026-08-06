@@ -1,7 +1,7 @@
 <div class="jmf-page-hero" style="--jmf-page-image: url('../assets/images/welcome-framework.jpg');" markdown>
 <span class="jmf-eyebrow">WELCOME</span>
 # Welcome to JM Framework
-The SQF system behind Misfits operations, developed by Jamio
+The system to help run our missions, developed by Jamio
 </div>
 
 <div class="grid cards jmf-feature-cards" markdown>
