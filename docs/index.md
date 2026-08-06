@@ -20,7 +20,7 @@ A practical home for our community, player systems, mission making and framework
 
     ---
 
-    Meet the Misfits and understand what JM Framework is trying to achieve.
+    Understand what our community and framework is trying to achieve.
 
     [:octicons-arrow-right-24: Start here](players/welcome/about.md)
 
@@ -36,7 +36,7 @@ A practical home for our community, player systems, mission making and framework
 
     ---
 
-    Set up a mission, apply the design philosophy and configure framework components.
+    Set up a mission and learn how to configure framework components.
 
     [:octicons-arrow-right-24: Mission Making](mission-makers/index.md)
 
@@ -44,7 +44,7 @@ A practical home for our community, player systems, mission making and framework
 
     ---
 
-    Return to the codebase quickly and trace how component functions, events and state connect.
+    This is mainly for Jamio to find his way again after a hiatus...
 
     [:octicons-arrow-right-24: Development](technical/index.md)
 
