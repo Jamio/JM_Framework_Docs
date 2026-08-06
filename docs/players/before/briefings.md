@@ -10,7 +10,7 @@ Where to find mission information and what you should know before joining.
 
 Each operation has a briefing document shared through Google Drive. A link will be included alongside the Discord event or posted in the mission-info channel at a later date.
 
-The document should ideally not be updated after being posted, but a mission-maker may inform you of any changes that have been made after the fact.
+The document should ideally not be updated after it is posted, but a mission-maker may inform you of any changes made after the fact.
 
 Our briefing documents normally contain four tabs:
 
@@ -23,17 +23,13 @@ Our briefing documents normally contain four tabs:
 
 At minimum, read the main **Briefing** tab and check the **Mods** and **Roles** tabs before joining.
 
-The briefing may include:
+**The Briefing** tab is your primary source of information for objectives, loadouts, enemies, avaialble assets, and other critical information.
 
-- **Situation** — where and when the mission takes place, friendly forces, known opposition and recent events.
-- **Mission** — what the players are expected to achieve.
-- **Execution** — the intended approach, phases, objectives and leadership structure.
-- **Support** — available vehicles, supplies, medical facilities, artillery or other assets.
-- **Signals** — radio channels, callsigns and communication arrangements.
-- **Special rules** — mission-specific restrictions, mechanics or unusual conditions.
-- **Required equipment** — anything players must carry, understand or configure before starting.
+**The Mods** tab is where you'll find the mission-specific modlist. This may be the same modlist from a previous mission, but it is provided again for clarity.
 
-You do not need to memorise the document, but it may provide useful information about intent and execution, as well as specific restrictions.
+**The Roles** tab is where you'll find all available roles for the mission, along with squad compositions and any mission-maker notes.
+
+You do not need to memorise the document, but please at least read it and make sure you understand it.
 
 !!! tip "The essentials"
     Know what your team is trying to achieve, who you are working with and whether your role has any special responsibilities.
@@ -44,22 +40,13 @@ Briefings describe what your characters or headquarters reasonably know before t
 
 Enemy strength, locations, intentions and available equipment may be incomplete or inaccurate. Some objectives may change as new information is discovered, and unexpected events may be deliberately omitted.
 
-Treat uncertain information as part of the mission rather than a mistake.
-
 ## In-game briefing
 
 Before step-off, the Mission Maker or mission leadership will normally provide a short verbal briefing. This will typically take place during in-game preparation, or just before loading in.
 
-The verbal briefing should reinforce the important points rather than repeat the entire document. It may cover:
+The verbal briefing should reinforce the important points of the written briefing.
 
-- The immediate situation and mission.
-- Team organisation and command structure.
-- The opening plan and first objective.
-- Radio checks and channel assignments.
-- Mission-specific rules or framework features.
-- Last-minute changes and questions.
-
-Listen even if you have read the written briefing, as details may have changed since it was posted, or more may be revealed...
+You should listen even if you have read the written briefing, as details may have changed since it was posted, or more may be revealed...
 
 ## Questions before the mission
 
