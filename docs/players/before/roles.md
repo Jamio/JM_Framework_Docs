@@ -21,31 +21,37 @@ Roles ultimately need to form a balanced and workable team. We always look to fi
 !!! tip "Be flexible"
     Every role contributes to the operation. Being willing to fill a gap can often make all the difference to how an operation plays out.
 
-## Leadership and specialist roles
+## Specialist roles
 
-Some positions carry additional responsibilities or require familiarity with particular systems.
+Some positions carry additional responsibilities or require familiarity with particular systems:
 
-### Commanders and team leaders
+<div class="grid cards jmf-feature-cards" markdown>
 
-Leadership roles should understand the briefing, communicate a clear plan, coordinate their players and adapt when circumstances change.
+-   :material-star-circle: **Leadership**
 
-You do not need real-world military knowledge, but you should be comfortable making decisions, using the radio and helping your team remain organised and focused.
+    Leadership roles should understand the briefing, be able to communicate a clear plan, coordinate their players, and adapt to changing conditions on the battlefield.
 
-### Medics
+-   :material-medical-bag: **Medics**
 
-Medics should understand the Misfits current ACE Medical settings and be comfortable treating serious casualties. Other players are still expected to provide basic first aid and assist with casualty movement when required.
+    Medic roles should be confident in basic triage, the ACE medical system, and administering aid to casualties. All players are expected to support medical treatment and provide basic first aid where required.
 
-### Vehicle crew
+-   :material-cog: **Vehicle Crew & Pilots**
 
-Drivers, gunners and commanders should be familiar with their vehicle and work as a coordinated crew. Some vehicles may use unfamiliar weapon systems, sensors or controls, so ask for help before the mission if needed.
+    Vehicle crew should be familiar with their vehicle and be able to operate it effectively to support the operation. Some vehicles may contain unfamiliar systems, sensors or conrtols.
 
-### Pilots and aircrew
+-   :material-binoculars: **JTAC**
 
-Pilots should be able to operate their assigned aircraft reliably in the conditions expected during the mission. This may include navigation, communications, takeoff/landing and coordinating with ground forces.
+    JTAC roles are expected to be able to effectively use the support menus to deliver air and fire support as needed.
+    
+-   :material-binoculars: **EOD**
 
-### Other specialists
+    EOD roles are expected to understand mine detectors and explosive defusal mechanisms, particularly with ACE.
 
-Forward observers, engineers, explosive specialists, radio operators and similar roles may have mission-specific tasks or equipment. Check the briefing and ask the Mission Maker what will be expected before requesting one.
+-   :material-binoculars: **Other**
+
+    Other specialist roles may be available depending on the operation. The mission-maker should highlight roles that have special mechanics in the briefing or role selection.
+
+</div>
 
 !!! note "Experience requirements"
     Specialist roles are not restricted for the sake of exclusivity. Their requirements exist because other players and the mission may depend on them!
@@ -53,16 +59,6 @@ Forward observers, engineers, explosive specialists, radio operators and similar
 ## Trying something new
 
 We encourage players to try unfamiliar roles. You do not need to wait until you know everything, and nobody is expected to perform perfectly on their first attempt.
-
-If you want to learn a role:
-
-1. Let the Mission Maker know that you are new to it.
-2. Read any linked role guide before the operation.
-3. Ask an experienced player for help with important controls or systems.
-4. Consider starting as an assistant, crew member or second-in-command.
-5. Speak up during the mission if you are unsure what to do.
-
-Where practical, we will pair new players with someone experienced or provide time for a short explanation before step-off.
 
 ## Role references
 
