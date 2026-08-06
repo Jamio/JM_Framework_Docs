@@ -10,7 +10,7 @@ How to install, update and troubleshoot the mods required for our operations.
 
 We use a curated mod preset so everyone has the same content and compatible mod versions. We do not generally allow client-side mods, due to previous experiences.
 
-Modlists are posted alongside the mission briefings, or in the sign-up channel.
+**Modlists are posted alongside the mission briefings, or in the sign-up channel.**
 
 ## Installing the preset
 
