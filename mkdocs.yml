@@ -1,9 +1,9 @@
 site_name: JM Framework
-site_description: Official handbook for JM Framework and the Misfits Arma 3 community
+site_description: Mission-maker and developer documentation for JM Framework
 site_url: https://jamio.github.io/JM_Framework_Docs/
-repo_url: https://github.com/Jamio/JM_Framework_Docs
-repo_name: Jamio/JM_Framework_Docs
-edit_uri: edit/main/docs/
+repo_url: https://github.com/Jamio/JM_Framework
+repo_name: Jamio/JM_Framework
+edit_uri: ""
 
 theme:
   name: material
@@ -14,9 +14,9 @@ theme:
     - navigation.path
     - navigation.top
     - navigation.footer
+    - navigation.indexes
     - search.suggest
     - search.highlight
-    - content.action.edit
     - content.code.copy
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -75,66 +75,60 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-
-  - Welcome:
-      - Welcome to the Misfits: players/welcome/about.md
-      - Joining the Community: players/welcome/joining.md
-      - Welcome to the Framework: welcome/framework.md
-
-  - Player Guide:
-      - Start Here: players/index.md
-      - Joining an Operation:
-          - Attendance: players/before/operations.md
-          - Mods: players/before/mods.md
-          - Briefings: players/before/briefings.md
-      - Basics: players/basics.md
-      - In-Game Briefing: players/in-game-briefing.md
-      - Roles and Gear: players/before/roles.md
-      - Respawning: players/respawning.md
-      - Redeployment: players/redeployment.md
-      - Vehicles and Garage: players/vehicles-garage.md
-      - ACE3:
-          - General: players/during/ace.md
-          - Medical: players/during/ace-medical.md
-      - TFAR:
-          - Setup: players/during/tfar-setup.md
-          - Usage: players/during/tfar.md
-
-  - Mission Making:
-      - Start Here: mission-makers/index.md
-      - Mission Setup and Design:
-          - Basic Mission Setup: mission-makers/concept/basic-setup.md
-          - Design Philosophy: mission-makers/design-philosophy.md
-      - Framework Components:
-          - Framework Overview: mission-makers/framework/index.md
-          - Install and Core Setup: mission-makers/framework/core-setup.md
-          - Component Catalogue: components/index.md
-          - Aid Station: components/aid-station.md
-          - Rally Points: components/rally-points.md
-          - Redeployment: components/redeployment.md
-          - Garage: components/garage.md
-          - Vehicle Support: components/vehicle-support.md
-          - Arsenal and Loadouts: components/arsenal-loadouts.md
-          - Tickets and Respawn: components/tickets-respawn.md
-          - Logistics and FOBs: components/logistics-fobs.md
-          - Safezones and AO Limits: components/safezones-ao.md
-          - Civilian Interaction: components/civilian-interaction.md
-          - Mission Administration: components/mission-administration.md
-
-  - Framework Development:
-      - Start Here: technical/index.md
-      - Developer Notes:
-          - Returning to the Project: technical/quick-reference.md
-          - Architecture: technical/architecture.md
-          - Configuration: technical/configuration.md
-          - Compatibility: technical/compatibility.md
-          - Events and API: technical/events-api.md
-          - Testing and Debugging: technical/troubleshooting.md
-      - Component Architecture:
-          - Function and Event Maps: technical/component-flows.md
-      - Project:
-          - Changelog: development/changelog.md
-          - Roadmap: development/roadmap.md
-          - Contributing: contributing.md
+  - Getting Started:
+      - Overview: getting-started/index.md
+      - Installation: getting-started/installation.md
+      - Dependencies: getting-started/dependencies.md
+      - Build Your First Mission: getting-started/first-mission.md
+  - Component Guides:
+      - Catalogue: components/index.md
+      - Foundation:
+          - Core and UI: components/foundation/core.md
+          - Optional Systems: components/foundation/optional-systems.md
+      - Presentation:
+          - Briefing: components/presentation/briefing.md
+          - Cutscenes: components/presentation/cutscenes.md
+          - Debriefing: components/presentation/debriefing.md
+          - Intel: components/presentation/intel.md
+      - Player Lifecycle:
+          - Player Lifecycle: components/lifecycle/player-lifecycle.md
+          - Identities and Death Camera: components/lifecycle/identities-death-camera.md
+          - Medical: components/lifecycle/medical.md
+          - Tickets: components/lifecycle/tickets.md
+          - Permadeath: components/lifecycle/permadeath.md
+          - Player Statistics: components/lifecycle/player-stats.md
+      - Logistics and Movement:
+          - Arsenal and Roles: components/logistics/arsenal-roles.md
+          - Supply: components/logistics/supply.md
+          - Garage: components/logistics/garage.md
+          - Fortify: components/logistics/fortify.md
+          - Rally Points: components/logistics/rally-points.md
+          - Redeployment: components/logistics/redeployment.md
+          - Aid Stations: components/logistics/aid-stations.md
+      - Gameplay and QoL:
+          - CBRN: components/gameplay/cbrn.md
+          - Minigames: components/gameplay/minigames.md
+          - Forestry: components/gameplay/forestry.md
+          - Nametags: components/gameplay/nametags.md
+          - Unknown Weapons: components/gameplay/unknown-weapons.md
+      - Mission Administration:
+          - Tasks: components/administration/tasks.md
+          - JTAC: components/administration/jtac.md
+          - Sound Player: components/administration/sound-player.md
+          - Private Messages: components/administration/private-messages.md
+          - Zeus Tools: components/administration/zeus-tools.md
+  - Zeus Guide:
+      - Overview: zeus/index.md
+  - Reference:
+      - Configuration Files: reference/configuration.md
+      - Public API: reference/public-api.md
+      - Mission Validator: reference/mission-validator.md
+      - Troubleshooting: reference/troubleshooting.md
+  - Development:
+      - Architecture: development/architecture.md
+      - Locality and JIP: development/locality-jip.md
+      - Component Page Template: development/component-page-template.md
+      - Contributing: development/contributing.md
+      - Changelog: development/changelog.md
 
 copyright: Copyright &copy; JM Framework contributors

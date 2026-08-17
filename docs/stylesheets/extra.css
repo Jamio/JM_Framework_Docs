@@ -56,7 +56,7 @@
   color: var(--jmf-orange);
 }
 
-/* Major sections: Welcome, Player Guide, Mission Making and Framework Development. */
+/* Major sections: Getting Started, Component Guides, Zeus, Reference and Development. */
 .md-nav--primary > .md-nav__list > .md-nav__item--nested {
   margin-block: .3rem;
 }
