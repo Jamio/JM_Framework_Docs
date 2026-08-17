@@ -1,6 +1,8 @@
 # Component Catalogue
 
-Each guide explains how the component is enabled, which Eden modules it uses, what players experience, which Zeus controls are available and what multiplayer behaviour to expect.
+Component guides are the detailed mission-maker reference for JM Framework. Each begins with the component's purpose, then documents its 3DEN modules and attributes, setup flow, related Zeus modules, multiplayer behaviour and common faults.
+
+**Module names, defaults and dialog fields are taken from the implemented framework configuration.**{ .jmf-emphasis }
 
 | Area | Components |
 | --- | --- |
