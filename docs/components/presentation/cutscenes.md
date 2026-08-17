@@ -1,7 +1,88 @@
 # Cutscenes
 
-Cutscenes are assembled from a Sequence Controller and ordered Camera Shot modules.
+Cutscenes assemble reusable cinematic sequences from ordered 3DEN camera shots. A sequence can be an automatic intro, a triggered mid-mission scene or an outro that hands directly into Debriefing.
 
-Give the controller a sequence ID, then give each shot the same ID and a unique order number. A shot can use fixed positions, synchronized helper objects, moving cameras, tracked targets, music, screen text and per-shot code. Intro sequences may exclude JIP players; outro sequences can hand over to Debriefing.
+## Enable the component
 
-Triggered and mid-mission sequences are transient events. Test them with every client already connected. Outro sequences apply the ending lock and maintain the final black screen through debriefing.
+Place one **[JMF] - Cutscenes > Cutscene Settings** module, one **Cutscene Sequence Controller** for each sequence, and at least one matching **Cutscene Camera Shot**.
+
+## 3DEN modules
+
+### Cutscene Settings
+
+| Attribute | Default | What it does |
+| --- | --- | --- |
+| Enable Cutscenes | Enabled | Master switch for sequence playback. |
+| Default Fade Time | `1.5` | Shared fallback fade duration. |
+| Letterbox Height | `0.10` | Fraction of safe-zone height occupied by each cinematic bar. |
+
+### Cutscene Sequence Controller
+
+| Attribute group | Attribute | Default | What it does |
+| --- | --- | --- | --- |
+| Sequence | Sequence ID | `intro` | Tag shared with every shot in this sequence. |
+| Sequence | Sequence Type | Intro | Automatic intro, triggered/mid-mission, or outro. |
+| Playback | CfgMusic Classname | Empty | Optional mission/addon music class. |
+| Playback | Outro Entry Fade to Black | `3` | Smooth gameplay-to-black transition for outros only. |
+| Playback | Black Hold Between Views | `0.35` | Brief hold while cameras are created or removed. |
+| Playback | Play for JIP Clients | Disabled | Allows a JIP client to receive the sequence. Usually leave off for intros. |
+| Playback | Allow Spacebar Skip | Enabled | Lets each viewer skip when appropriate. |
+| Playback | Use Letterbox Bars | Enabled | Shows the configured cinematic bars. |
+| Playback | Protect Player During Sequence | Enabled | Protects players while the sequence owns their view. |
+| Outro and Debrief | Open Debrief After Sequence | Disabled | Hands the completed outro into the debrief flow. |
+| Outro and Debrief | Successful Mission | Enabled | Result used by the debrief hand-off. |
+| Outro and Debrief | Debrief Summary Override | Empty | Optional result text for this ending. |
+
+### Cutscene Camera Shot
+
+Place the module where the camera begins. Its rotation supplies the fallback view direction.
+
+| Attribute group | Attribute | Default | What it does |
+| --- | --- | --- | --- |
+| Shot Identity | Sequence ID | `intro` | Must exactly match the controller. |
+| Shot Identity | Shot Order | `10` | Playback order. Use `10`, `20`, `30` to leave insertion gaps. |
+| Camera | Duration | `8` | Shot duration in seconds. |
+| Camera | Start FOV / End FOV | `0.7` / `0.7` | Creates static framing or a zoom over the shot. |
+| Camera | Target Offset `[x,y,z]` | `[0,0,0]` | Aim offset relative to the synchronized target. |
+| Camera | Attach Camera to Target | Disabled | Moves the camera with a synchronized moving target. |
+| Camera | Attachment Offset `[x,y,z]` | `[0,-6,2]` | Camera position relative to an attached target. |
+| On-screen Text | Text | Empty | Structured text displayed during this shot. |
+| On-screen Text | Colour, size and position | White / `1.4` / Lower third | Presentation of shot text. |
+| On-screen Text | Delay, fade-in, hold and fade-out | `0.5`, `0.5`, `6`, `0.5` | Text timing within the shot. |
+| Transition | Fade In From Black / Fade Out To Black | `1.5` / `1.5` | Shot transitions. |
+| Shot Code | Local Code - Start / End | Empty | Runs on each viewing client. |
+| Shot Code | Server Code - Start / End | Empty | Runs once on the server, not once per viewer. |
+
+### Cutscene Camera End Point
+
+Synchronize this optional helper to one Camera Shot. The camera moves from the shot module to the endpoint during the shot. It is **not** a target or controller.
+
+## Targeting and moving cameras
+
+- Synchronize a target object to a Camera Shot to keep the camera focused on it.
+- Synchronize an End Point to pan between two world positions.
+- Enable **Attach Camera to Target** when the camera itself must travel with a vehicle or character.
+- Hidden helper objects are suitable static targets when the camera should focus on empty terrain.
+
+Per-shot code is ordinary SQF. For example, server-start code can set an objective variable:
+
+```sqf
+missionNamespace setVariable ["objective_camera_seen", true, true];
+```
+
+## Zeus modules
+
+| ZEN module | Place on | Dialog options / result |
+| --- | --- | --- |
+| Play Cutscene Sequence | Empty ground | Selects a registered Sequence ID and starts it for the intended viewers. |
+
+## Multiplayer
+
+Client cameras, text and local shot code run for each viewer. Server shot code is executed once. Triggered sequences are transient; JIP behaviour follows the controller's setting. Outro protection and the final black screen remain active through the debrief hand-off.
+
+## Troubleshooting
+
+- If no shots play, compare the controller and shot **Sequence ID** values exactly.
+- If shots play out of order, give each one a unique numeric **Shot Order**.
+- If the camera faces the wrong place, synchronize the intended target or rotate the Camera Shot module.
+- If an intro unexpectedly fades gameplay first, confirm the controller type is **Intro**, not **Outro**.
