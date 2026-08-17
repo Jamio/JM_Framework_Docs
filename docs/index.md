@@ -4,52 +4,51 @@ hide:
   - toc
 ---
 
-<div class="jmf-hero jmf-hero--simple jmf-hero--home" markdown>
+<div class="jmf-hero jmf-hero--simple" markdown>
 
-<span class="jmf-eyebrow">MISFITS ARMA 3</span>
+<span class="jmf-eyebrow">ARMA 3 MISSION FRAMEWORK</span>
 
 # JM Framework
 
-A practical home for our community, player systems, mission making and framework development.
+Build modular Arma 3 missions with configurable Eden systems, multiplayer-safe runtime services and live Zeus control.
 
 </div>
 
 <div class="grid cards jmf-route-cards" markdown>
 
--   :material-hand-wave:{ .lg .middle } **Welcome**
+-   :material-rocket-launch:{ .lg .middle } **Getting Started**
 
     ---
 
-    Understand what our community and framework is trying to achieve.
+    Install the addon, place the Core module and assemble a first mission.
 
-    [:octicons-arrow-right-24: Start here](players/welcome/about.md)
+    [:octicons-arrow-right-24: Start here](getting-started/index.md)
 
--   :material-account-group:{ .lg .middle } **Player Guide**
-
-    ---
-
-    Join an operation and learn the player-facing systems used in our missions.
-
-    [:octicons-arrow-right-24: Player Guide](players/index.md)
-
--   :material-hammer-wrench:{ .lg .middle } **Mission Making**
+-   :material-view-grid-plus:{ .lg .middle } **Component Guides**
 
     ---
 
-    Set up a mission and learn how to configure framework components.
+    Configure each system and understand what players and Zeus operators receive.
 
-    [:octicons-arrow-right-24: Mission Making](mission-makers/index.md)
+    [:octicons-arrow-right-24: Browse components](components/index.md)
 
--   :material-code-braces:{ .lg .middle } **Framework Development**
+-   :material-lightning-bolt:{ .lg .middle } **Zeus Guide**
 
     ---
 
-    This is mainly for Jamio to find his way again after a hiatus...
+    Adjust framework state and create mission effects safely during play.
 
-    [:octicons-arrow-right-24: Development](technical/index.md)
+    [:octicons-arrow-right-24: Open Zeus guide](zeus/index.md)
+
+-   :material-code-braces:{ .lg .middle } **Development**
+
+    ---
+
+    Learn the addon architecture, locality model, JIP strategy and contribution workflow.
+
+    [:octicons-arrow-right-24: Read architecture](development/architecture.md)
 
 </div>
 
-<p class="jmf-home-note">
-JM Framework and these docs are under active development. Planned behaviour is marked on its individual page.
-</p>
+!!! note "Pre-v1 documentation"
+    JM Framework is still being prepared for its first public release. Pages describe implemented behaviour unless they are explicitly marked as planned or experimental.

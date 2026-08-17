@@ -1,43 +1,15 @@
-<div class="jmf-page-hero" style="--jmf-page-image: url('../assets/images/mm-components.jpg');" markdown>
-<span class="jmf-eyebrow">JM FRAMEWORK</span>
 # Component Catalogue
-Set up, configure, run, and test each JM Framework system.
-</div>
 
-<!-- Optional header image: docs/assets/images/mm-components.jpg -->
+Each guide explains how the component is enabled, which Eden modules it uses, what players experience, which Zeus controls are available and what multiplayer behaviour to expect.
 
-Component pages are the authoritative Mission Maker guides for individual framework features. Player-facing pages may link here for extra detail, but setup and live Zeus controls should not be duplicated elsewhere.
+| Area | Components |
+| --- | --- |
+| Foundation | Core, shared UI, world labels and Optional Systems |
+| Presentation | Briefing, Intel, Cutscenes and Debriefing |
+| Player lifecycle | Medical, Identities, Death Camera, Tickets, Permadeath and Statistics |
+| Logistics and movement | Arsenal, Roles, Supply, Garage, Fortify, Rally Points, Redeployment and Aid Stations |
+| Gameplay and QoL | CBRN, Minigames, Forestry, Nametags and Unknown Weapons |
+| Administration | Tasks, JTAC, Sound Player, Private Messages and Zeus Tools |
 
-## What every component page contains
-
-1. **Overview and player experience** — what the feature is for and what players encounter.
-2. **Requirements** — dependencies, modules, objects, roles, sides, and other prerequisites.
-3. **Mission Maker setup** — clear steps from an empty mission to a working component.
-4. **How it functions** — a brief, non-technical explanation of behaviour and lifecycle.
-5. **Configuration** — settings, defaults, consequences, and example recipes for different missions.
-6. **Zeus functionality** — available ZEN modules, live-operation uses, limitations, and recovery.
-7. **Testing and troubleshooting** — local, multiplayer, JIP/respawn, and dedicated-server checks.
-8. **Technical notes** — locality, state, events, functions, and compatibility where useful.
-
-!!! note "Authoring template"
-    New component documentation should follow the [component writing template](../mission-makers/framework/component-template.md). The template itself is not shown in the navigation because it is an authoring aid rather than a reader-facing guide.
-
-## Components
-
-| Component | Purpose | Status |
-| --- | --- | --- |
-| [Aid Station](aid-station.md) | Deployable medical facilities | Initial implementation |
-| [Rally Points](rally-points.md) | Squad and platoon rally deployment | Planned |
-| [Redeployment](redeployment.md) | Side-aware player redeployment | Planned |
-| [Garage](garage.md) | Side-aware vehicle selection and spawning | Planned |
-| [Vehicle Support](vehicle-support.md) | Customisation, servicing, and loadouts | Planned |
-| [Restricted Arsenal and Loadouts](arsenal-loadouts.md) | Role- and side-aware equipment | Planned |
-| [Tickets and Respawn](tickets-respawn.md) | Casualty, respawn, and reinforcement rules | Planned |
-| [Logistics and FOBs](logistics-fobs.md) | Supply and deployable infrastructure | Planned |
-| [Safezones and AO Limits](safezones-ao.md) | Mission-area protection and boundaries | Planned |
-| [Civilian Interaction](civilian-interaction.md) | Civilian presence, reputation, and intel | Planned |
-| [Mission Administration](mission-administration.md) | Admin messages and support utilities | Planned |
-
-## Component images and examples
-
-<!-- Add overview screenshots, component status graphics, example mission downloads, or links to featured guides here. -->
+!!! tip
+    Place one settings module per component. The Mission Validator reports duplicate singleton settings modules because their initialization order would otherwise decide which values win.

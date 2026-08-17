@@ -1,24 +1,12 @@
 # Changelog
 
-A readable record of user-facing JM Framework changes.
+The public changelog will begin with the v1 release candidate. Until then, development history is tracked through the framework repository's `dev` branch and commit history.
 
-!!! note "Changelog bones"
-    Version entries will be added as the new component-based framework reaches testable releases.
+Release notes should group changes under:
 
-## Unreleased
-
-### Added
-
-- Initial Material for MkDocs documentation site.
-- Player Guide, Mission Making, and Development documentation routes.
-- Shared component documentation model.
-
-### In development
-
-- Aid Station documentation vertical slice.
-- Rally Point component and documentation.
-- Migration of legacy framework systems into independent addons.
-
-## Entry format
-
-Each release should group changes under **Added**, **Changed**, **Fixed**, **Deprecated**, and **Removed** where relevant. Technical commit history can remain on GitHub; this page should explain changes in terms useful to players, Mission Makers, and Zeus.
+- Added
+- Changed
+- Fixed
+- Multiplayer/JIP
+- Mission-maker migration notes
+- Known limitations
