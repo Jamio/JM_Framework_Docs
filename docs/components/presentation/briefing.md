@@ -1,6 +1,6 @@
 # Briefing
 
-Briefing turns structured 3DEN text fields into a consistently formatted diary entry. Mission makers supply the operational content; the framework handles headings, ordering, fonts and side-specific delivery.
+Briefing turns structured 3DEN text fields into a consistently formatted diary entry. Mission makers only need to enter the information, and the framework handles headings, ordering, fonts, and any side-specific restrictions.
 
 ## Enable the component
 
@@ -10,14 +10,16 @@ Place one **[JMF] - Briefing > Briefing Setup** module. Empty fields are ignored
 
 ### Briefing Setup
 
-Builds one continuous briefing record. **Use this for the main mission briefing rather than creating one module per heading.**{ .jmf-emphasis }
+Builds one continuous briefing record. 
+
+**Use this for the main mission briefing rather than creating one module per heading.**{ .jmf-emphasis }
 
 | Attribute group | Attribute | Default | What it does |
 | --- | --- | --- | --- |
 | Briefing Organisation | Diary Subject ID | `Diary` | Places the record in the standard diary subject. Enter a shared custom ID without spaces to create another subject. |
 | Briefing Organisation | Custom Subject Name | Mission Briefing | Display name used only for a custom subject ID. |
 | Briefing Organisation | Audience | All players | Restricts the whole record to one side when required. |
-| Situation | Situation | Empty | Overall context and current operational picture. |
+| Situation | Situation | Empty | Overall operational context. |
 | Situation | Area of Operations | Empty | Terrain, weather, population centres and relevant features. |
 | Situation | OPFOR | Empty | Enemy composition, disposition, capabilities and likely intent. |
 | Situation | Civilians | Empty | Civilian presence, behaviour and considerations. |
@@ -50,9 +52,9 @@ Creates a separate formatted diary record for supplementary information that sho
 
 1. Place one **Briefing Setup** module.
 2. Leave **Diary Subject ID** as `Diary` for the normal briefing screen.
-3. Select the intended audience.
+3. Select the intended audience for that particular briefing record.
 4. Fill only the relevant content fields.
-5. Add **Briefing Entry** modules for appendices, technical notes or other separate records.
+5. Add **Briefing Entry** modules for appendices, technical notes, or any other records you want to use as supplements.
 
 ## Zeus modules
 
