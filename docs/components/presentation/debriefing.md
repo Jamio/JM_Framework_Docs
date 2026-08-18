@@ -31,11 +31,11 @@ Synchronize this module to a trigger to start the ending from normal mission log
 ## Setup walkthrough
 
 1. Place and configure **Debriefing Settings**.
-2. Place **End Mission with Debriefing** and synchronize it to the ending trigger.
+2. Place **End Mission with Debriefing** and synchronize it to the ending trigger, or use the Zeus module to trigger it.
 3. Choose the result and optional one-off summary override.
 4. If using an outro, enable **Open Debrief After Sequence** on the Cutscene Sequence Controller instead of firing both systems independently.
 
-**Do not trigger a separate debrief module and an outro hand-off at the same time.**{ .jmf-emphasis } This can create two competing ending requests.
+**Do not trigger a separate debrief module and an outro hand-off at the same time.**{ .jmf-emphasis } This can create two competing ending requests and might cause the early heat death of the universe.
 
 ## Zeus modules
 
@@ -45,10 +45,10 @@ Synchronize this module to a trigger to start the ending from normal mission log
 
 ## Multiplayer
 
-The server requests a final Player Statistics flush before publishing the debrief payload. Every client opens the themed dialog from the same result state. Automatic ending remains server-authoritative.
+The server requests a final Player Statistics flush before publishing the debrief setup with them attached. Every client opens the themed dialog from the same result state. Automatic ending remains server-initiated and held.
 
 ## Troubleshooting
 
 - If statistics are blank, verify Player Statistics is enabled in **Core Settings** and allow its final flush to complete.
-- If no image appears, use a valid mission-relative or addon PAA path, or configure `overviewPicture`/`loadScreen`.
-- If the mission ends without a dialog, confirm the module is synchronized to the intended trigger and the trigger activates on the server.
+- If no image appears, make sure you are using a valid mission path or addon PAA path, or configure `overviewPicture`/`loadScreen`.
+- If the mission ends without a dialog, confirm the module is synchronised to the intended trigger and the trigger activates on the server.
