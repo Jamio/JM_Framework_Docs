@@ -1,16 +1,20 @@
-# Briefing
+# BRIEFING
 
-Briefing turns structured 3DEN text fields into a consistently formatted diary entry. Mission makers only need to enter the information, and the framework handles headings, ordering, fonts, and any side-specific restrictions.
+The Briefing component is an easy way for mission-makers to provide nicely formatted diary entries for briefing information, without having to use the vanilla tools. The aim is the same, but the framework system uses a single module rather than several new diary modules which often ends up happening in vanilla.
 
-## Enable the component
+The module functions will take basic text entries and handle headings, ordering, fonts and any side-specific restrictions.
 
-Place one **[JMF] - Briefing > Briefing Setup** module. Empty fields are ignored, so the same module works for short and detailed missions.
+## How to set up the component
 
-## 3DEN modules
+Place one **[JMF] - Briefing > Briefing Setup** module. Edit its attributes to configure the briefing. Empty fields are safely ignored, so the same module works for short and detailed mission briefs.
+
+## 3DEN Module Settings
+
+These settings are present in the respective 3DEN modules, and can be edited to the mission-makers preferences:
 
 ### Briefing Setup
 
-Builds one continuous briefing record. 
+*This module builds one continious, neatly formatted and structured briefing record from the supplied information.*
 
 **Use this for the main mission briefing rather than creating one module per heading.**{ .jmf-emphasis }
 
@@ -35,7 +39,7 @@ Builds one continuous briefing record.
 
 ### Briefing Entry
 
-Creates a separate formatted diary record for supplementary information that should not be folded into the main briefing.
+*This module is used to create separate diary records for supplementary information, notes etc. that you dont want to fold into the main briefing entry.*
 
 | Attribute group | Attribute | Default | What it does |
 | --- | --- | --- | --- |
@@ -48,24 +52,13 @@ Creates a separate formatted diary record for supplementary information that sho
 | Organisation | Display Order | `10` | Lower values appear first. Use gaps such as `10`, `20`, `30`. |
 | Organisation | Audience | All players | Limits the entry to a side. |
 
-## Setup walkthrough
 
-1. Place one **Briefing Setup** module.
-2. Leave **Diary Subject ID** as `Diary` for the normal briefing screen.
-3. Select the intended audience for that particular briefing record.
-4. Fill only the relevant content fields.
-5. Add **Briefing Entry** modules for appendices, technical notes, or any other records you want to use as supplements.
-
-## Zeus modules
+## ZEN Modules
 
 Briefing has no ZEN module. Its records are authored in 3DEN and created locally for eligible players when the briefing state is refreshed.
 
-## Multiplayer
+## Common Troubleshooting
 
-Every client builds its own diary records from the synchronized module data. The component refreshes when the playable unit changes, allowing respawned and JIP clients to receive the correct side-restricted content.
-
-## Troubleshooting
-
-- If a custom subject does not appear, ensure every entry uses the same subject ID and that it contains no spaces.
-- If the main briefing is split across records, replace multiple setup modules with one **Briefing Setup** module.
-- If a section is missing, confirm the field is not empty and the audience includes the local player's side.
+* If a custom subject does not appear, ensure every entry uses the same subject ID and that it contains no spaces.
+* If the main briefing is split across records, replace multiple setup modules with one **Briefing Setup** module.
+* If a section is missing, confirm the field is not empty and the audience includes the local player's side.
