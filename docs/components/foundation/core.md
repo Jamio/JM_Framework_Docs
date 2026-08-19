@@ -1,18 +1,22 @@
-# Core
+# CORE
 
-Core establishes the shared fonts, colours, dialog theme, world-label behaviour and runtime services used by the rest of JM Framework. It also maintains the component registry and creates the in-game Framework Status diary subject.
+The Core module establishes the shared fonts, colours, dialog themes, world label behaviour and basic runtime services that the rest of the framework uses. It also maintains the overall component registry to decide which additional components should be active, and marked as such.
 
-## Enable the component
+## How to set up the component
 
-Place exactly one **[JMF] - Core > Core Settings** module. 
+Place one **[JMF] - Core > Core Settings** module in the 3DEN editor. Edit its attributes to configure settings.
 
-**Mission that intends to use the JM Framework should contain this module.**{ .jmf-emphasis }
+**Missions that intend to use anything from the framework should always contain this module.**{ .jmf-emphasis }
 
-## 3DEN modules
+## 3DEN Module Settings
 
-### Core Settings
+These settings are present in the respective 3DEN modules, and can be edited to the mission-makers preferences:
+
+### Core Settings Module
 
 #### Framework Appearance
+
+*These settings govern the physical appearance of framework dialogs, menus, notifications etc.*
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -29,12 +33,16 @@ Use HTML hex colours including the leading `#`. Dialogs will query the Core modu
 
 #### Framework Behaviour
 
+*These settings are to be used for some default framework behaviours. Fairly barebones at the moment but may include more in the future.*
+
 | Attribute | Default | What it does |
 | --- | --- | --- |
 | Default Text Duration | `2` | Default duration for formatted framework screen text. |
 | Debug Logging | Disabled | Adds detailed component diagnostics to the RPT. Only use for debugging. |
 
 #### World Labels
+
+*These settings govern global behaviour of "world labels", which is just the term I started using for 3D text markers.*
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -46,30 +54,21 @@ Individual component modules can still control their own label text, height and 
 
 #### Player Statistics
 
+*These settings control whether player statistics are tracked.*
+
 | Attribute | Default | What it does |
 | --- | --- | --- |
 | Enable Player Statistics | Enabled | Records player statistics and data, ready for export to debrief or something else. |
 | Track Travel Distance | Enabled | Enables foot and vehicle distance tracking. |
 | Track Medical Activity | Enabled | Enables ACE treatments tracking. |
 
-## Setup walkthrough
 
-1. Place a **Core Settings** module in the 3DEN editor.
-2. Choose a text font, title font and dialog theme.
-3. Leave the accent and semantics colours alone unless you desperately want to change them to someting specific 
-4. Leave world labels and statistics enabled unless the mission deliberately does not use them.
-5. Enable debug logging only while diagnosings problems/testing.
+## ZEN Modules
 
-## Zeus modules
+Core has no associated ZEN modules.
 
-Core has no ZEN modules.
+## Common Troubleshooting
 
-## Multiplayer
-
-Core publishes mission-wide settings and the component registry. Clients use those synchronized values when constructing dialogs, notifications, labels and diary entries. The Framework Status entry lists only components that report themselves active.
-
-## Troubleshooting
-
-- If dialogs use mixed fonts or themes, check for duplicate **Core Settings** modules.
-- If a colour is ignored or doesnt appear to apply, check that you are using a six-digit HTML hex value with `#`.
-- If labels are globally absent, check **Enable World Labels** is actually enabled, and not globally overwriting them per-object setups.
+* If dialogs appear to use mixed fonts or themes, or not the fonts you intended, check that you have only placed **one** core settings module.
+* If a colour is ignored, or not appearing, check that you are using a six-digit HTML hex value beginning with a '#'
+* If world labels dont appear, or appear when you dont want them, check the **Enable World Labels** checkbox in the attributes.
