@@ -1,16 +1,20 @@
-# Optional
+# OPTIONAL
 
-THe Optional module is a collection of smaller features that (in my eyes) do not justify a completely separate 3DEN category. Each subsection has its own master toggle, so placing this module does not force every optional feature to run.
+The Optional Systems module is a collection of smaller features that (in my eyes) do not justify a completely separate 3DEN category. Each subsection has its own master toggle, so placing this module does not force every optional feature to run.
 
-## Enable the component
+The smaller features include very tiny QOL things like a HUD-remover for screenshots, all the way up to grass-cutting, cinematic death cameras etc.
 
-Place at most one **[JMF] - Core > Optional Systems** module and enable only the features needed by the mission.
+## How to set up the component
 
-## 3DEN modules
+Place one **[JMF] - Core > Optional Systems** module in the 3DEN editor. Edit its attributes to enable the specific sub-components you want, and configure their individual settings.
+
+## 3DEN Module Settings
 
 ### Optional Systems
 
 #### Lightweight Systems
+
+*These settings are simple enable/disable toggles for some minor systems.*
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -19,6 +23,8 @@ Place at most one **[JMF] - Core > Optional Systems** module and enable only the
 | Disable Player Stamina | Enabled | Disables vanilla stamina and legacy fatigue at initialisation and respawn. |
 
 #### Forestry
+
+*These settings are for the forestry optional module which allows grass clearing, tree felling etc.*
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -34,6 +40,8 @@ Place at most one **[JMF] - Core > Optional Systems** module and enable only the
 
 #### Client Quality of Life
 
+*These settings control a few minor QOL functions. They probably could belong in the lightweight systems area but yolo.*
+
 | Attribute | Default | What it does |
 | --- | --- | --- |
 | Hide ACE Arsenal Face and Voice Tabs | Enabled | Hides Face and Voice while leaving Insignia available. |
@@ -42,6 +50,8 @@ Place at most one **[JMF] - Core > Optional Systems** module and enable only the
 | Private Message Sound | Enabled | Plays a short sound for received messages. |
 
 #### Nametags
+
+*These settings control the Nametags framework system which displays nametags above players' heads.*
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -54,6 +64,8 @@ Place at most one **[JMF] - Core > Optional Systems** module and enable only the
 | Show Players in Vehicles | Disabled | Shows player names for vehicle occupants. |
 
 #### Unknown Weapons
+
+*These settings control the Unknown Weapons framework systems that can give negative effects for players using "unfamiliar" weapons systems.*
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -68,6 +80,8 @@ Place at most one **[JMF] - Core > Optional Systems** module and enable only the
 
 #### Character Identities and Death Camera
 
+*These settings control the framework Identities system that can assign a thematic name and birth/death date to players. This is mainly used for the death camera. The system also includes a quote pool like the old Call of Duty death screens.*
+
 | Attribute | Default | What it does |
 | --- | --- | --- |
 | Enable Character Identities | Disabled | Generates a new 'character' for each player life. |
@@ -79,23 +93,14 @@ Place at most one **[JMF] - Core > Optional Systems** module and enable only the
 | Quotation Pool | Mixed | Serious, Fun or Mixed selection of quotes from the hardcoded pools. |
 | Camera Rise Duration / Delay / Height | `8` / `2` / `10` | Cinematic camera timing and final height. |
 
-## Setup walkthrough
 
-1. Place one **Optional Systems** module.
-2. Work through each subsection and disable features the mission does not use.
-3. Configure the detailed fields only for enabled features.
-4. Use the dedicated component guides for player behaviour and dependencies.
+## ZEN Modules
 
-## Zeus modules
+Optional Systems has no umbrella ZEN menu. Some contained systems expose their own live tools elsewhere but most are intentionally 3DEN controlled.
 
-Optional Systems has no umbrella ZEN menu. Some contained systems expose their own live tools elsewhere but most are intentionally mission-author controlled.
 
-## Multiplayer
+## Common Troubleshooting
 
-Each component reads only its own subsection and registers handlers or actions when enabled. Stamina and other per-player behaviour is reapplied after respawn. Server-owned systems continue to validate requests independently.
-
-## Troubleshooting
-
-- If a lightweight feature remains absent, check both its master checkbox and any subordinate toggle.
-- If settings appear duplicated, remove legacy hidden settings modules from older test missions (this only really applies to myself for v1)
-- If identities or the death camera do not run, enable both the relevant presentation and check that the selected identity pool is correct.
+* If an optional feature is absent, check both its master checkbox toggle and any addiitonal settings that might prevent it from appearing (such as required items etc.)
+* If settings appear duplicated, remove legacy hidden settings modules from older test missions (this only really applies to myself for v1 testing as I have older versions of modules present in my testing files)
+* If identities or the death camera do not run, enable both the relevant presentation and check that the selected identity pool is correct.
