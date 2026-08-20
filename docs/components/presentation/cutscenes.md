@@ -1,14 +1,18 @@
-# Cutscenes
+# CUTSCENES
 
-Cutscenes assemble reusable cinematic sequences from ordered 3DEN camera shots. A sequence can be an automatic intro, a triggered mid-mission scene or an outro that hands directly into Debriefing.
+The cutscenes component handles the setup and execution of cinematic sequences that are created in advance by the mission-maker.
 
-## Enable the component
+Cutscenes are divided by into three types, 1) Intro - the cutscene that will player on mission start (or when palyers join, depending on settings), 2) Mid-mission - a cutscene that can be triggered at any point during the mission, 3) Outro - the cutscene that plays at the end of the mission, and can automatically lead directly into the debrief. 
 
-Place one **[JMF] - Cutscenes > Cutscene Settings** module, one **Cutscene Sequence Controller** for each sequence, and at least one matching **Cutscene Camera Shot**.
+## How to set up the component
 
-## 3DEN modules
+Place one **[JMF] - Cutscenes > Cutscene Settings** module. For each cutscene, place one **Cutscene Sequence Controller** and a **Cutscene Camera Shot** module for every "shot".
+
+## 3DEN Module Settings
 
 ### Cutscene Settings
+
+*This module holds the main global settings for cutscenes in the mission.*
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -17,6 +21,8 @@ Place one **[JMF] - Cutscenes > Cutscene Settings** module, one **Cutscene Seque
 | Letterbox Height | `0.10` | Fraction of safe-zone height occupied by each cinematic bar. |
 
 ### Cutscene Sequence Controller
+
+*This module controls the settings for individual sequences of shots.*
 
 | Attribute group | Attribute | Default | What it does |
 | --- | --- | --- | --- |
@@ -35,7 +41,9 @@ Place one **[JMF] - Cutscenes > Cutscene Settings** module, one **Cutscene Seque
 
 ### Cutscene Camera Shot
 
-Place the module where the camera begins. Its rotation supplies the fallback view direction.
+*This module is essentially the "camera" position and controls for the specific camera.*
+
+Place the module where the camera begins. By default, the rotation direction of the module will be the direction of the shot.
 
 | Attribute group | Attribute | Default | What it does |
 | --- | --- | --- | --- |
@@ -55,7 +63,7 @@ Place the module where the camera begins. Its rotation supplies the fallback vie
 
 ### Cutscene Camera End Point
 
-Synchronize this optional helper to one Camera Shot. The camera moves from the shot module to the endpoint during the shot. It is **not** a target or controller.
+Synchronise this optional helper to an existing Camera Shot. The camera moves from the shot module to the endpoint during the shot. It is **not** a target or controller.
 
 ## Targeting and moving cameras
 
@@ -70,19 +78,19 @@ Per-shot code is ordinary SQF. For example, server-start code can set an objecti
 missionNamespace setVariable ["objective_camera_seen", true, true];
 ```
 
-## Zeus modules
+## ZEN Modules
+
+Only one module currently exists for the cutscenes. it is a dialog to control and manually execute cutscenes.
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |
 | Play Cutscene Sequence | Empty ground | Selects a registered Sequence ID and starts it for the intended viewers. |
 
-## Multiplayer
-
-Client cameras, text and local shot code run for each viewer. Server shot code is executed once. Triggered sequences are transient; JIP behaviour follows the controller's setting. Outro protection and the final black screen remain active through the debrief hand-off.
-
 ## Troubleshooting
+
+This is a bit of a nebulous system, but it does work. If you have any issues, check that individual cameras, sequence IDs and all that are properly set up and not duplicated. Good luck.
 
 - If no shots play, compare the controller and shot **Sequence ID** values exactly.
 - If shots play out of order, give each one a unique numeric **Shot Order**.
-- If the camera faces the wrong place, synchronize the intended target or rotate the Camera Shot module.
+- If the camera faces the wrong place, synchronise the intended target or rotate the Camera Shot module.
 - If an intro unexpectedly fades gameplay first, confirm the controller type is **Intro**, not **Outro**.
