@@ -31,8 +31,8 @@ Synchronise this module to each crate, terminal or prop that should open the con
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
-| Enable Floating Text | Enabled | Shows a world label above synchronised objects. |
-| Interaction / Label Name | JMF Arsenal | ACE action and label text. |
+| Enable World Label | Enabled | Shows a world label above synchronised objects. |
+| Interaction / World Label Name | JMF Arsenal | ACE action and world-label text. |
 
 ## Custom `loadouts.hpp`
 

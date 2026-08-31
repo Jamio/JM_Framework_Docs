@@ -34,7 +34,7 @@ Synchronise this module to one or more world objects that players will use to op
 | Attribute | Default | What it does |
 | --- | --- | --- |
 | Display Name | Object display name | Destination and world-label name. |
-| Show Floating Label | Enabled | Enables the world label. |
+| Show World Label | Enabled | Enables the world label. |
 | Label Draw Distance | `25` | Maximum label distance. |
 | Label Height | `2` | Vertical offset above the object. |
 

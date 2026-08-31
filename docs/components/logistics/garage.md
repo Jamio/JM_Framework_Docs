@@ -19,7 +19,7 @@ Place one **[JMF] - Garage > Garage** module, synchronize it to the access objec
 | Attribute group | Attribute | Default | What it does |
 | --- | --- | --- | --- |
 | Interaction and World Label | Interaction Name | Garage | Name shown on synchronized access objects. |
-| Interaction and World Label | Enable Floating Text | Enabled | Shows the same name as a world label. |
+| Interaction and World Label | Enable World Label | Enabled | Shows the same name as a world label. |
 | Vehicle Catalogue | Vehicle Definitions | Example MRAP and truck | Array entries contain classname, optional display name and quantity. Omit quantity, use an empty value or `-1` for unlimited. |
 | Vehicle Services | Enable Repair | Disabled | Full vanilla and ACE-aware repair. |
 | Vehicle Services | Enable Refuel | Disabled | Full refuel. |

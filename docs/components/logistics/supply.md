@@ -36,7 +36,7 @@ Place one **[JMF] - Supply > Supply Settings** module and at least one **Supply 
 | Interaction and World Label | Interaction / Label Name | Supply Point | Player-facing ACE action and label name. |
 | Crate Access | Allowed Definition IDs | Empty | Comma-separated IDs; blank allows every definition available to the player's side. |
 | Crate Access | Require Logistics Role | Disabled | Restricts requests to players with the framework Logistics role. |
-| Crate Access | Enable Floating Text | Enabled | Shows the world label above synchronized objects. |
+| Crate Access | Enable World Label | Enabled | Shows the world label above synchronized objects. |
 
 ## Setup walkthrough
 
@@ -108,7 +108,7 @@ Use `append` as shown when **Include Built-in Crates** is enabled. The built-ins
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |
-| Configure Supply Point | A world object | Interaction name, allowed IDs, Logistics restriction and floating label. |
+| Configure Supply Point | A world object | Interaction name, allowed IDs, Logistics restriction and world label. |
 | Remove Supply Point | A registered object | Removes the live designation and its ACE actions. |
 | Spawn Supply Crate | Empty ground | Selects any loaded crate definition and creates it at the module position. |
 

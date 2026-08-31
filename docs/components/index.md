@@ -46,7 +46,7 @@ Each guide covers one framework component: what it is intended to do, how to con
 | [Tickets](lifecycle/tickets.md) | Side ticket pools, respawn costs and bodybag recovery. |
 | [Unknown Weapons](gameplay/unknown-weapons.md) | Optional handling penalties for unauthorised weapons. |
 | [Vehicle Paths](logistics/vehicle-paths.md) | Exact scripted AI vehicle routes in 3DEN and Zeus. |
-| [World Labels](presentation/world-labels.md) | Shared 3D labels used by framework interaction objects. |
+| [World Labels](presentation/world-labels.md) | Shared world labels used by framework interaction objects. |
 | [Zeus Tools](administration/zeus-tools.md) | Cinematic, environmental and utility effects for Zeus. |
 
 !!! tip

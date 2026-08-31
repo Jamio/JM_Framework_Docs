@@ -2,7 +2,7 @@
 
 ## Overview
 
-World Labels displays 3D text above framework interaction objects such as supply terminals, rally points and intel. They help players recognise objects that would otherwise look like ordinary scenery.
+World Labels displays text above framework interaction objects such as supply terminals, rally points and intel. They help players recognise objects that would otherwise look like ordinary scenery.
 
 Core controls the shared appearance of the labels, while each component provides its own text, height and viewing distance. World Labels can be disabled when the mission should rely entirely on visual recognition. Player names are handled separately by Nametags.
 
@@ -16,7 +16,7 @@ Place **[JMF] - Core > Core Settings** and configure **World Labels**. Then enab
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
-| Enable World Labels | Enabled | Master switch for framework 3D labels. |
+| Enable World Labels | Enabled | Master switch for framework world labels. |
 | Use Core Title Font | Enabled | Uses the title font selected in Core Settings. |
 | Font Override | `RobotoCondensed` | Font used only when the Core font option is disabled. |
 
