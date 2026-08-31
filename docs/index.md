@@ -10,7 +10,7 @@ hide:
 
 # JM Framework
 
-Build modular Arma 3 missions with configurable Eden systems, multiplayer-safe runtime services and live Zeus control.
+This is a modular Arma 3 mission framework for building engaging multiplayer missions, curated by a Zeus. Developed by Jamio.
 
 </div>
 
@@ -35,4 +35,4 @@ Build modular Arma 3 missions with configurable Eden systems, multiplayer-safe r
 </div>
 
 !!! note "Alpha documentation"
-    These pages cover the current alpha build. Settings and behaviour may change as mission-maker testing continues.
+    These pages cover my current alpha build. Settings and behaviour may change as mission-maker testing breaks things, intentionally.
