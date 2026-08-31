@@ -2,11 +2,9 @@
 
 ## Overview
 
-Death Camera gives a player's death a brief, controlled presentation before the normal respawn or permadeath flow continues. Rather than cutting immediately to a respawn screen, it can frame the fallen character and display either their generated identity, a mission quotation or a random choice between the available styles. The feature is intended to add atmosphere and weight without turning death into a long unskippable cutscene.
+Death Camera shows a short cinematic view after a player dies. It can display the character details created by Identities, a mission quotation or a random choice between the two before normal respawn handling continues.
 
-Mission-makers control whether the camera is used, how long it remains, which text mode is available and which quotation pool should be drawn from. When Identities is active, its generated character details can be reused; Death Camera does not generate or persist identity data itself. It also does not decide whether the player may respawn—that authority remains with Tickets, Permadeath and the shared Player Lifecycle.
-
-The presentation runs on the affected client while the lifecycle pipeline maintains the correct ordering around unconsciousness, death, spectator and respawn. It can therefore be enabled or disabled independently without installing a competing killed handler or changing the mission's reinforcement rules.
+Mission-makers can configure the display style, duration and available quotations. Death Camera only controls the presentation; Tickets and Permadeath still decide whether the player can return to the mission.
 
 ## How to set up the component
 

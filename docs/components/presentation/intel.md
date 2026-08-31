@@ -2,11 +2,9 @@
 
 ## Overview
 
-Intel provides two deliberately different ways for players to discover written or visual information in the world. **Collectable intel** represents material that the force records and keeps: once collected, a formatted entry is added to the authorised players' diaries. **Readable intel** opens a document, photograph, screen or other image with supporting text but does not create a permanent record, requiring players to inspect, discuss and remember what they found.
+Intel provides two ways for players to find mission information. **Collectable intel** adds a formatted entry to the diary of the chosen players or side. **Readable intel** opens an image and text that players must inspect and remember without adding a permanent diary record.
 
-The distinction lets the mission-maker decide how reliable and shareable each discovery should be. A commander's log or recovered orders can become a polished diary entry for the whole side, while a hurried note, map photograph or computer display can remain a transient clue. Entries can use a framework default document image or a mission-supplied texture, and their titles, body text, ownership and collection behaviour can be tailored. ACE actions provide a consistent interaction in place of mixed add-actions and hold-actions, with optional World Labels making important objects easier to recognise.
-
-The component builds on familiar BIS diary and leaflet presentation while wrapping the awkward object variables and locality concerns in reusable modules. It is intended for authored narrative and clues rather than random loot generation, and it does not automatically reveal an intel object's contents to players who are not authorised recipients.
+Mission-makers can configure the title, text, image, recipients and interaction object. A default document image is available, or the mission can use its own photograph, note, map or screen texture. Both types use ACE interactions and can have optional World Labels.
 
 <!-- IMAGE PLACEHOLDER: Collectable diary intel beside a readable image-intel display. -->
 

@@ -2,11 +2,9 @@
 
 ## Overview
 
-Sound Player makes mission-specific audio available for dynamic use after the operation has begun. Mission-makers can define voice lines, effects, music cues or other recordings in the mission's `CfgSounds`, and Zeus can then select and play those entries without preparing a separate trigger for every possible moment. This is intended for reactive mission direction: a commander transmission can be held until the players reach the right point, or an effect can be played in response to an unexpected event.
+Sound Player lets Zeus play mission sounds during an operation without relying on pre-placed triggers. Voice lines, effects, music and other recordings can be added to the mission through `CfgSounds` and selected when they are needed.
 
-The component extends the available playback tools rather than introducing a proprietary audio format. Mission sounds remain ordinary `CfgSounds` entries and can therefore be packaged with the mission in the normal way. If Crow's Electronic Warfare is present, the same entries are appended to its sound player automatically; otherwise the framework's ZEN integration provides direct access. This optional compatibility requires no alternate mission setup.
-
-Playback options determine who should hear a sound and how it is presented, while the framework handles the appropriate execution locality. Sound Player is concerned with individual cues and transmissions. It does not create continuous location-based soundscapes; those are configured through [Ambient Sound Areas](ambient-sound-areas.md).
+If Crow's Electronic Warfare is loaded, the framework also adds the mission sounds to its sound player. Sound Player is intended for individual cues and transmissions. Looping sounds tied to a location are handled by [Ambient Sound Areas](ambient-sound-areas.md).
 
 ## How to set up the component
 

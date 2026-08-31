@@ -2,11 +2,9 @@
 
 ## Overview
 
-Identities gives player characters lightweight biographical detail suited to the setting of the mission. It generates a name and birth information from a selected identity pool, allowing a modern Western unit, Second World War formation, Chinese force, Middle Eastern faction, international contingent or a mission-specific culture to feel appropriately populated without hand-writing every playable unit.
+Identities generates a name and birth information for each player character. Mission-makers choose an identity pool that fits the setting, such as a modern Western, Chinese, Middle Eastern, Second World War or international force.
 
-The component is designed around configurable data rather than a fixed list. JM Framework includes reusable pools, additional pools can be added to the framework's identity definitions, and a mission can supply its own entries through `description.ext`. Pools contain enough names to reduce obvious repetition and may be chosen globally or used as a base for more specific mission design. Generated details can persist for the relevant player life and are exposed through a common interface for other components to read.
-
-Identities can stand alone as character flavour, but it also feeds presentation systems such as Death Camera and role-assignment material. It does not assign gameplay qualifications, group positions or Arsenal loadouts; those responsibilities belong to Roles and Arsenal. Keeping biography separate from permissions allows missions to change one without accidentally changing the other.
+JM Framework includes several reusable pools, and missions can add their own names through `description.ext`. The generated identity can be used by systems such as Death Camera, but it does not change a player's role, group or equipment.
 
 ## How to set up the component
 

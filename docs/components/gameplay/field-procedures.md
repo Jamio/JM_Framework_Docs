@@ -2,11 +2,9 @@
 
 ## Overview
 
-Field Procedures turns ordinary mission objects into short, hands-on equipment challenges. Instead of resolving every technical task with a progress bar, the player is presented with an interactive procedure such as cutting the correct wires, picking a lock, entering a keypad code, tuning a radio or carrying out a repair. The original Waldo mission-script aesthetic is deliberately retained because these interfaces are part of the character and readability of the procedures rather than generic framework dialogs.
+Field Procedures adds short interactive challenges to mission objects. Available procedures include wire cutting, lock picking, keypad entry, radio tuning, repair and several other technical tasks. They keep the original Waldo interface style rather than using the normal framework themes.
 
-Mission-makers select the procedure, attach it to an appropriate object and configure its solution, difficulty, timing and success behaviour where supported. The surrounding mission decides what completion means: a successful challenge can set a variable, activate a trigger or form one step in a larger objective. This makes the component useful for bomb-disposal scenes, communications repair, forced entry, technical objectives and other moments where a small amount of player skill is more memorable than waiting for an animation.
-
-The procedures are designed to be self-contained and multiplayer-safe, with interaction ownership and completion state handled consistently. They are not competitive table games; those social activities are provided separately by [Minigames](minigames.md).
+Mission-makers choose the procedure, attach it to an object and configure its solution, difficulty and result. Completion can set a variable or activate other mission logic, making the system useful for tasks such as bomb disposal, communications repair and forced entry. Recreational table games are handled separately by [Minigames](minigames.md).
 
 <!-- IMAGE PLACEHOLDER: A representative Field Procedure interface in use. -->
 

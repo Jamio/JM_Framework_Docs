@@ -2,11 +2,9 @@
 
 ## Overview
 
-Minigames provides self-contained multiplayer table games for downtime, role-playing spaces and mission staging areas. Derived from Waldo's mission systems, the component preserves the distinctive game interfaces and turns a configured table or object into a shared activity that several players can use without affecting the operation around them.
+Minigames adds multiplayer table games for bases, staging areas and mission downtime. Mission-makers choose which games are available and attach them to suitable tables or objects. The framework handles the shared game and allows the table to be reused by other players afterwards.
 
-Mission-makers choose which games are available and where players can access them. The framework manages entry, shared game state and leaving the interface so that the table remains usable by the next participants. Minigames are intentionally optional and have no bearing on character progression, equipment or mission scoring; their purpose is to make bases and waiting periods feel more social and lived-in.
-
-This component is separate from [Field Procedures](field-procedures.md). Minigames are recreational shared activities, while Field Procedures are short interactive challenges used to represent technical mission tasks.
+Minigames are recreational and do not affect equipment, scoring or progression. Technical mission challenges such as wire cutting and lock picking are handled separately by [Field Procedures](field-procedures.md).
 
 <!-- IMAGE PLACEHOLDER: Players using one of the shared minigame interfaces. -->
 

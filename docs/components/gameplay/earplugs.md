@@ -2,9 +2,9 @@
 
 ## Overview
 
-Earplugs provides straightforward reusable hearing protection without requiring mission-makers to place or whitelist a physical inventory item. When enabled, every eligible player receives insert and remove actions under ACE Equipment, keeping the control alongside other personal equipment rather than in the root self-interaction menu.
+Earplugs adds reusable hearing protection without requiring a physical inventory item. Players can insert and remove their earplugs through ACE Equipment, with the available action changing to match their current state.
 
-The feature is intended for groups that want players to manage loud weapons and vehicles but do not need a more elaborate hearing-protection system. The inserted state follows the player appropriately and the actions change to reflect whether the plugs are currently in use. It remains a small optional convenience and does not replace any specialist hearing mechanics supplied by another mod.
+This is a simple optional feature for missions that do not use another hearing-protection system.
 
 ## How to set up the component
 

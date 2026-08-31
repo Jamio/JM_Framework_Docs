@@ -2,11 +2,9 @@
 
 ## Overview
 
-Optional Systems is a shared settings hub for smaller, self-contained framework features. Its purpose is organisational: placing a separate editor module for every quality-of-life option would make the JM Framework category difficult to browse, so related switches and configuration groups are collected in one 3DEN module instead. Features configured here still initialise independently and do not become one monolithic system.
+Optional Systems holds the settings for smaller framework features that do not need their own 3DEN module. Grouping them together keeps the JM Framework module list tidy while still allowing each feature to be enabled and configured separately.
 
-The module contains settings for components such as Death Camera, Identities, Player Statistics, Unknown Weapons, Forestry, private messaging and other optional client or gameplay behaviour. Mission-makers can enable only the features appropriate to a particular operation and adjust their broad behaviour without adding unused runtime systems. Disabling a category is expected to prevent its actions, event handlers and displays from initialising rather than merely hiding its output.
-
-This page explains the role of the settings hub and points to the dedicated guides. Attribute-level details belong to those component pages, where the effect of each option can be explained in context. The arrangement keeps 3DEN tidy while preserving clear documentation and strict enable/disable boundaries in code.
+These settings cover components such as Death Camera, Identities, Player Statistics, Unknown Weapons, Forestry and Private Messages. Each feature has its own guide with full details. If a feature is disabled, its actions and other gameplay functions should not be added to the mission.
 
 ## How to set up the component
 

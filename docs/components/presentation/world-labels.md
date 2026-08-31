@@ -2,11 +2,9 @@
 
 ## Overview
 
-World Labels is the shared renderer for restrained 3D identification text above framework interaction objects. Supply terminals, rally points, intel and other systems often need a player to understand that an otherwise ordinary prop has a special purpose. A common renderer gives those objects a consistent visual language without every component installing its own permanent draw handler.
+World Labels displays 3D text above framework interaction objects such as supply terminals, rally points and intel. They help players recognise objects that would otherwise look like ordinary scenery.
 
-Core controls the global appearance, including broad text styling and visibility behaviour, while each participating component provides the actual label, height and useful viewing distance for its objects. Mission-makers can therefore keep labels subtle across the whole operation and still position an individual label correctly above a table, vehicle or document. Distance and visibility are evaluated locally so labels remain responsive and do not require continuous network updates.
-
-The component identifies configured mission objects; it is not the player Nametags system and does not display medical or Zeus diagnostic state. Labels can be disabled globally or by the relevant feature when a more immersive, unmarked environment is preferred.
+Core controls the shared appearance of the labels, while each component provides its own text, height and viewing distance. World Labels can be disabled when the mission should rely entirely on visual recognition. Player names are handled separately by Nametags.
 
 ## How to set up the component
 

@@ -2,11 +2,11 @@
 
 ## Overview
 
-Core establishes the common runtime and presentation layer used by the rest of JM Framework. It initialises the shared component registry, publishes authoritative mission settings and provides the events, utility functions and user-interface definitions that allow otherwise independent systems to work together. A mission can use only a selection of framework components, but Core supplies the stable foundation that lets each one discover whether its dependencies and settings are available.
+Core contains the shared settings and functions used by the rest of JM Framework. It must be present for the other components to find their mission settings and use common framework features correctly.
 
-The component also defines the framework's visual language. Mission-makers can select the broad dialog theme used by compatible interfaces, configure shared colours and fonts, and control common notification and world-label presentation. Modern, historical and science-fiction themes keep the functional control layouts consistent while changing the artwork behind them, allowing one mission framework to suit very different settings without duplicating every dialog.
+The Core Settings module also controls the shared look of framework interfaces, including dialog themes, colours, fonts, notifications and World Labels. Modern, historical and science-fiction themes change the background artwork while keeping the controls in the same place.
 
-To avoid filling the 3DEN module browser with tiny settings modules, Core Settings also contains configuration groups for several independent presentation and quality-of-life systems. This page documents the shared foundation and acts as an index for those groups; the behaviour and setup of each contained system is described on its own component page.
+Several smaller settings are grouped into Core to keep the 3DEN module list tidy. These features still have their own component pages with full setup instructions.
 
 ## How to set up the component
 

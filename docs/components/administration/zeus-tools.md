@@ -2,11 +2,9 @@
 
 ## Overview
 
-Zeus Tools is a collection of live-directing utilities intended to make an in-progress mission easier to stage, pace and embellish. These tools cover actions that do not warrant a permanent 3DEN component of their own but are valuable when a Zeus needs to respond quickly: presenting cinematic text, starting a countdown, creating weather or battlefield effects, arranging aircraft fly-overs, controlling ambient fire, or applying a deliberately playful effect to a unit.
+Zeus Tools contains extra ZEN modules for running and presenting a mission. These include countdowns, cinematic text and borders, storms, lightning, fly-overs, ambient effects, random anti-aircraft fire, flares, explosions and several smaller utilities.
 
-The tools are organised as **Utilities**, **Effects** and **Fun** so that operational controls remain separate from visual flourishes and intentionally unserious actions. Many are refined ports of systems used in earlier JM Framework missions or compatible community scripts. Where the original idea relied on brittle local execution, the current implementation adds appropriate dialogs, multiplayer routing and cleanup while retaining the character of the original effect.
-
-Zeus Tools are generally immediate and spatial: the curator selects a position or unit, configures the effect and sees it applied. Framework-wide state belongs in [Mission Control](mission-control.md), while reusable vehicle movement belongs in [Vehicle Paths](../logistics/vehicle-paths.md). The toolset can be enabled as part of the framework's administration features and is designed to remain optional for groups that prefer a minimal curator interface.
+The modules are grouped into **Utilities**, **Effects** and **Fun** to keep the ZEN list readable. Most tools are used by selecting a unit or position and configuring the effect in a short dialog. Wider framework settings belong in [Mission Control](mission-control.md), while reusable scripted routes are covered by [Vehicle Paths](../logistics/vehicle-paths.md).
 
 ## How to set up the component
 

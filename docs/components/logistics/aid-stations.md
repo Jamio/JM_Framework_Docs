@@ -2,11 +2,9 @@
 
 ## Overview
 
-Aid Stations allow an authorised medic to establish a recognisable treatment point during an operation. Using an ACE self-interaction, the medic deploys a framework medical-facility composition at a suitable position in front of them, giving the unit a practical place to consolidate casualties without requiring Zeus to build and mark the site manually.
+Aid Stations let an eligible medic place a small medical-facility composition through ACE self-interaction. The station provides an ACE medical facility and a map marker, giving the group a clear place to treat casualties.
 
-The component deliberately maintains one authoritative station for the relevant force or deployment context. Creating a replacement removes the previous composition and updates its map marker, preventing abandoned facilities and markers from accumulating as the front moves. Mission-makers can control who is eligible, which composition is used and how the station is identified, while ACE continues to provide the actual medical treatment mechanics.
-
-Aid Stations are intended as lightweight deployable infrastructure rather than a construction system. They do not provide an unlimited catalogue of objects or replace Fortify; the composition is a consistent mission asset whose lifecycle is managed by the server and whose action is made available through framework roles or ACE medical qualification.
+Only one station is kept at a time. Placing a new one removes the old composition and updates the marker. Mission-makers can configure who may deploy it and which composition is used.
 
 ## How to set up the component
 

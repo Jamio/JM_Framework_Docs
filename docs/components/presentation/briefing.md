@@ -2,11 +2,9 @@
 
 ## Overview
 
-Briefing provides a straightforward way to author polished pre-mission information in the player's diary. It is intended to preserve the familiar Arma briefing experience while avoiding the collection of separate diary modules, repeated formatting markup and unit init code that often grows around the vanilla tools. A single framework module can define the briefing structure and present it consistently to the intended force.
+Briefing creates formatted diary entries for pre-mission information without requiring several vanilla diary modules. Mission-makers provide the text, while the framework handles headings, ordering and the general appearance.
 
-Mission-makers supply the actual operational content—such as situation, mission, execution, administration, signals or scenario-specific sections—while the component handles headings, ordering, common typography and side restrictions. Sections can be shown only to relevant factions, allowing one mission file to contain different plans or intelligence for opposing playable sides without disclosing them to everyone.
-
-Briefing is concerned with information available as players prepare for the operation. Collectable discoveries belong to Intel, and the live roster produced by Roles appears as the ORBAT diary entry. Keeping these sources separate allows the framework to refresh dynamic information without rewriting the mission-maker's authored briefing.
+Entries can cover the situation, mission, execution, administration, signals or any custom topic. Each section can be limited to the correct side, allowing opposing forces to receive different briefings in the same mission. Information discovered during play is handled separately by Intel.
 
 <!-- IMAGE PLACEHOLDER: A formatted briefing diary page with several sections. -->
 

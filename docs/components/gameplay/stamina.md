@@ -2,11 +2,9 @@
 
 ## Overview
 
-Stamina is a small mission-wide switch for groups that do not want Arma's vanilla stamina and legacy fatigue systems to govern player movement. When enabled, it disables those mechanics consistently for players, avoiding the partial or per-unit setup that can otherwise be required in the editor.
+Stamina is a mission-wide option for disabling Arma's vanilla stamina and legacy fatigue. The setting is reapplied after respawn so it does not need to be added to every playable unit.
 
-The component does not introduce its own endurance model, alter ACE Advanced Fatigue settings or attempt to balance carrying capacity. It exists to establish a clear baseline when another mod or the group's mission design is responsible for fatigue. Mission-makers who want vanilla or ACE-controlled stamina simply leave the option disabled.
-
-Because respawn and join-in-progress can recreate or transfer the playable unit, the framework reapplies the chosen state through the player lifecycle rather than relying on a one-off command in a unit's init field.
+This component does not add a replacement stamina system or change ACE Advanced Fatigue. Leave it disabled when another stamina system is being used.
 
 ## How to set up the component
 

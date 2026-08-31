@@ -2,11 +2,11 @@
 
 ## Overview
 
-JTAC provides a complete player-facing fire-support system for calling artillery and simulated close air support during a mission. Its purpose is to make support feel deliberate and coordinated without requiring the mission-maker to build bespoke triggers, aircraft waypoints and projectile scripts for every fire mission. Players work through a themed terminal, select an available support type, acquire a target and choose an ingress direction before transmitting the request.
+JTAC lets players request artillery and close air support through a themed fire-support terminal. Players choose an available fire mission, acquire a target, select an ingress direction and transmit the request. This avoids setting up separate triggers, aircraft waypoints and strike scripts for every support option.
 
-Mission-makers decide which fire missions are available and how players may target them. The system supports map and coordinate targeting, coloured smoke, and captured targets from binoculars or laser-designating optics. Fire missions can be enabled at mission start or held back until an objective is completed, then controlled live through ZEN or Mission Control. Tested presets cover artillery, gun runs, rocket runs and vertical bomb delivery while still allowing their timing, ammunition, spread, aircraft presentation and availability to be tailored.
+Targets can be selected through map clicks, coordinates, coloured smoke, binoculars or laser-designating optics. Mission-makers can provide artillery, gun runs, rocket runs and bomb drops, then configure their ammunition, timing, spread and aircraft presentation. The whole JTAC system or individual support options can also be enabled and disabled during the mission through ZEN or Mission Control.
 
-The server owns validation and execution so that every player observes the same strike and the system remains suitable for multiplayer use. The aircraft used for cosmetic fly-bys does not have to perform unreliable AI attack behaviour: the framework controls the effects and synchronises the presentation while preserving the impression of an aircraft making the run.
+The strikes are handled by the framework rather than relying on AI aircraft to attack correctly. This makes the result more predictable and ensures that players see the same fire mission in multiplayer.
 
 <!-- IMAGE PLACEHOLDER: JTAC terminal showing the target method, fire-mission list and map. -->
 

@@ -2,11 +2,9 @@
 
 ## Overview
 
-Player Lifecycle is the internal coordination layer for systems that need to react when a player is created, becomes unconscious, dies, enters spectator or respawns. Arma missions often accumulate several independent killed and respawn handlers, each trying to move the camera, deduct a ticket, save statistics or initialise the replacement unit. This component provides one ordered pipeline so those responsibilities can coexist without racing or leaving stale state behind.
+Player Lifecycle manages the order in which framework systems respond to unconsciousness, death, spectator and respawn. It prevents Tickets, Permadeath, Identities, Death Camera, Medical and Player Statistics from each running their own conflicting death or respawn process.
 
-Tickets, Permadeath, Identities, Death Camera, Medical and Player Statistics all use lifecycle events, but each retains its own rules and settings. The pipeline determines when they are called and carries the relevant player state between stages. It also gives client-only presentation and server-authoritative decisions a clear boundary, which is particularly important for dedicated servers, respawned units and players joining in progress.
-
-Player Lifecycle is primarily framework infrastructure rather than a feature that players interact with directly. Mission-makers normally configure the participating components and leave the pipeline itself alone. Its guide exists to explain how those systems relate and to help diagnose cases where a custom mission script needs to hook into the same sequence.
+This is mainly an internal framework component and normally needs no direct setup. Mission-makers configure the individual systems that use it. Its page explains how those systems fit together and where custom mission code can connect to the same player events.
 
 ## How to set up the component
 

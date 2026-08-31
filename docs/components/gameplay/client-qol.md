@@ -2,11 +2,9 @@
 
 ## Overview
 
-Client Quality of Life contains small interface conveniences that improve how players use the framework without changing the shared mission simulation. These options are deliberately client-local: they alter what an individual sees or which presentation controls are available, but do not grant equipment, affect AI or change authoritative mission state.
+Client Quality of Life contains small interface options that only affect the individual player. They do not change AI, equipment or other shared parts of the mission.
 
-The current features include hiding ACE Arsenal identity tabs that are not useful in a restricted mission arsenal and providing Screenshot Mode through ACE self-interaction. Screenshot Mode temporarily removes selected interface elements so players, mission-makers and Zeus operators can capture clean images without permanently changing their normal HUD arrangement.
-
-The component exists as a home for similarly modest client improvements, preventing one-line conveniences from becoming separate 3DEN modules. Mission-makers can enable the relevant options from the shared settings while groups that prefer an unmodified interface can leave the component inactive.
+The current options can hide unwanted identity tabs in ACE Arsenal and add Screenshot Mode to ACE self-interaction. Screenshot Mode temporarily hides interface elements so clean mission images can be taken. These features are configured through the shared settings modules rather than separate 3DEN modules.
 
 ## How to set up the component
 

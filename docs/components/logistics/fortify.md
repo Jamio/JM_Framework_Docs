@@ -2,11 +2,9 @@
 
 ## Overview
 
-Fortify builds a mission-configurable construction layer around ACE Fortify. It is intended for operations where players should prepare defensive positions from a controlled catalogue and budget, while avoiding repeated per-mission scripting and the duplicate budget displays that can appear when several systems try to present the same information.
+Fortify builds on ACE Fortify and lets players construct defences from approved crates. Mission-makers choose a preset or custom object list, set the available budget and decide which crates provide access to the system.
 
-Mission-makers choose a fortification preset or define a custom catalogue, set budgets and decide which construction crates provide access. Framework presets can cover common defensive sets, while mission definitions can add faction- or era-specific objects. Construction crates are configured as practical logistics assets, including ACE cargo behaviour, and may be refilled or managed through the framework rather than treated as disposable action holders.
-
-The server owns the current budget and authorised catalogue so every builder works from the same state. ACE continues to provide placement and construction interaction, preserving familiar controls and compatibility, while JM Framework handles configuration, crate access, budget presentation and any live administrative adjustment.
+ACE still handles object placement and construction. The framework manages the shared catalogue, budget, construction crates and refill options, while removing the need for separate setup scripts in each mission.
 
 ## How to set up the component
 

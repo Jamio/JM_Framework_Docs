@@ -2,11 +2,9 @@
 
 ## Overview
 
-Debriefing provides a deliberate end-of-mission presentation before Arma returns players to the standard ending flow. It brings the operation result, mission-maker commentary, imagery, personal statistics and team commendations into one themed sequence so a successful extraction, costly victory or failed objective has more context than a short engine message.
+Debriefing shows a themed mission summary before the normal Arma ending screen. It can combine the mission result, custom text, an image, player statistics and team commendations.
 
-Mission-makers define the available endings and their result text, choose the image used for the operation and decide which supporting information should be shown. When Player Statistics is active, the screen can include each participant's mission-level figures and derive suitable commendations for the group. A framework fallback image is available when the mission does not provide its own artwork, allowing every ending to remain visually complete.
-
-Debriefing can be invoked from mission logic, ZEN or the end of an Outro cutscene. The server coordinates the selected ending while each client presents the interface locally, then all players continue into the correct vanilla debrief state. The component is not a persistent record or campaign progression system; it is the final narrative and statistical summary of the current operation.
+Mission-makers define the available endings and choose which information appears. A framework image is used when the mission does not provide one. Debriefing can be started from mission logic, ZEN or an Outro cutscene, and then continues into the selected vanilla ending.
 
 <!-- IMAGE PLACEHOLDER: Themed Debriefing screen with result, image and statistics. -->
 

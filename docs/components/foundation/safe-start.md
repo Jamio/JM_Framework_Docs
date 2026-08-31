@@ -2,11 +2,9 @@
 
 ## Overview
 
-Safe Start provides a controlled preparation period at the beginning of an operation. It gives players time to load in, organise groups, resolve equipment problems and hear the opening briefing without an accidental shot or early vehicle movement starting the mission prematurely. Depending on the mission's needs, the system can independently prevent weapon fire, player damage and movement of player-controlled vehicles.
+Safe Start gives players time to load in, organise their groups and resolve equipment problems before an operation begins. It can prevent weapon fire, player damage and the movement of player-controlled vehicles until everyone is ready.
 
-The initial state is visible through a dedicated HUD element rather than a recurring hint, and its release can be accompanied by configurable text and sound. Mission-makers can decide whether the platoon leader receives a one-use ACE self-interaction to release the group. Once used, that action disappears: it is intended as a ready-up responsibility, not as permission for the platoon leader to reapply protection later in the mission.
-
-Zeus and authorised Mission Control users retain live control, allowing Safe Start to be removed if the nominated leader disconnects or deliberately reapplied during an administrative pause. The state is managed centrally so that late-loading clients receive the correct restrictions and all participants are released together.
+A HUD message shows that Safe Start is active. The platoon leader can be given a one-use ACE action to release it, with configurable text and sound for the start of the mission. Zeus and Mission Control can also change the state if Safe Start needs to be removed or applied again later.
 
 ## How to set up the component
 
