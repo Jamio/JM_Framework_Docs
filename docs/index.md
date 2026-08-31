@@ -20,7 +20,7 @@ This is a modular Arma 3 mission framework for building engaging multiplayer mis
 
     ---
 
-    Install the addon, place the Core module and assemble a first mission.
+    Install the addon and get started building missions.
 
     [:octicons-arrow-right-24: Start here](getting-started/index.md)
 
@@ -28,7 +28,7 @@ This is a modular Arma 3 mission framework for building engaging multiplayer mis
 
     ---
 
-    Configure each system and understand what players and Zeus operators receive.
+    Configure each system and understand what players and Zeuses receive.
 
     [:octicons-arrow-right-24: Browse components](components/index.md)
 
