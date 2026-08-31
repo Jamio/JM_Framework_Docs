@@ -1,12 +1,14 @@
 # Forestry
 
+## Overview
+
 Forestry adds ACE Equipment actions for clearing grass, removing bushes and felling trees. It is a lightweight quality-of-life system intended for deliberate field preparation, not bulk terrain editing.
 
-## Enable the component
+## How to set up the component
 
 Place **[JMF] - Core > Optional Systems**, open the Forestry subsection and enable **Forestry Tools**.
 
-## 3DEN settings
+## 3DEN Module Settings
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -19,7 +21,7 @@ Place **[JMF] - Core > Optional Systems**, open the Forestry subsection and enab
 | Remove Felled Trees | Enabled | Hides trees after they fall. |
 | Felled Tree Cleanup Delay | `8` | Seconds before removal. |
 
-## Zeus modules
+## ZEN Modules
 
 Forestry has no dedicated ZEN module. Zeus can still delete terrain objects through normal curator/editor tools where supported.
 

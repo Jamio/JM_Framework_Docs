@@ -1,5 +1,7 @@
 # CUTSCENES
 
+## Overview
+
 The cutscenes component handles the setup and execution of cinematic sequences that are created in advance by the mission-maker.
 
 Cutscenes are divided by into three types, 1) Intro - the cutscene that will player on mission start (or when palyers join, depending on settings), 2) Mid-mission - a cutscene that can be triggered at any point during the mission, 3) Outro - the cutscene that plays at the end of the mission, and can automatically lead directly into the debrief. 

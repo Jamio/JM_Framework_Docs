@@ -1,12 +1,14 @@
 # Supply
 
+## Overview
+
 Supply lets players request mission-defined crates through a themed terminal. Definitions can contain fixed cargo or generate ammunition from Arsenal/loadout data, starting loadouts or the inventories of living players.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - Supply > Supply Settings** module and at least one **Supply Point** synchronized to an interaction object.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### Supply Settings
 
@@ -42,7 +44,7 @@ Place one **[JMF] - Supply > Supply Settings** module and at least one **Supply 
 
 **Definition IDs must match exactly between `supplies.hpp`, 3DEN filters and ZEN dialogs.**{ .jmf-emphasis }
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

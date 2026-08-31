@@ -1,12 +1,14 @@
 # Rally Points
 
+## Overview
+
 Rally Points allow explicitly assigned squad and platoon leaders to deploy shared reinforcement anchors through ACE self-actions. Active rallies also become destinations for the Redeployment system.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - Rally > Rally Settings** module and assign the appropriate leader roles through role definitions or ZEN.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### Rally Settings
 
@@ -20,7 +22,7 @@ Place one **[JMF] - Rally > Rally Settings** module and assign the appropriate l
 
 There is no separate rally-object module. Eligible leaders deploy the framework rally from their ACE self-interaction while dismounted, outside and near the required allies.
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

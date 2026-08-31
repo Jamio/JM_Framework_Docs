@@ -1,12 +1,14 @@
 # Fortify
 
+## Overview
+
 Fortify builds on ACE Fortify while moving catalogue, budget, crate and refill behaviour into framework-owned server state. Players construct from authorized crates without ACE's duplicate budget text.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - Fortify > Fortify Settings** module, then synchronize **Construction Crate** and optional **Resource Point** modules to suitable world objects.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### Fortify Settings
 
@@ -46,7 +48,7 @@ Place one **[JMF] - Fortify > Fortify Settings** module, then synchronize **Cons
 
 Mission catalogues are assigned to `JMF_fortifyCatalogues` in `fortify.hpp`. Each buildable entry supplies an object classname and cost. Keep costs proportional to the crate budget and test modded objects for placement collisions.
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

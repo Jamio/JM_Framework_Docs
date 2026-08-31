@@ -1,12 +1,14 @@
 # Player Statistics
 
+## Overview
+
 Player Statistics records combat, survival, medical and movement performance for the custom Debriefing screen. It is designed for mission-level summaries, not persistent player progression.
 
-## Enable the component
+## How to set up the component
 
 Configure Player Statistics inside **[JMF] - Core > Core Settings**. The old standalone settings module is hidden.
 
-## 3DEN settings
+## 3DEN Module Settings
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -20,7 +22,7 @@ The current debrief dataset includes kills, vehicle kills, longest kill, shots f
 
 Team commendations include **Top Killer**, **Marksman**, **Desmond Doss**, **Grenadier**, **Demolitions**, **Sleepy**, **Ironman**, **Lazy**, **Hesitant**, **Trigger Happy**, **Rocket Man**, **Anti-Armour**, **Bullet Sponge**, **Survivor** and **Reincarnated**. The debrief labels state the statistic each award represents.
 
-## Zeus modules
+## ZEN Modules
 
 Player Statistics has no ZEN module in v1. Zeus-triggered Debriefing uses the same final statistics flush as a 3DEN ending.
 

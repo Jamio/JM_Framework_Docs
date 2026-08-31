@@ -1,12 +1,14 @@
 # Minigames and Field Procedures
 
+## Overview
+
 Minigames provides multiplayer table games and object-based field procedures derived from Waldo's mission systems. The procedures intentionally retain their original visual identity while adding framework access, attempts and mission-integration controls.
 
-## Enable the component
+## How to set up the component
 
 Place **Table Games** for multiplayer game tables or **Field Procedure** for an equipment challenge. These modules live under the framework's Core module family to avoid another 3DEN category.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### Table Games
 
@@ -37,7 +39,7 @@ Outcome code receives:
 _this params ["_equipment", "_operator", "_succeeded", "_result"];
 ```
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

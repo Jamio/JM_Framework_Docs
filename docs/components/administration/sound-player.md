@@ -1,10 +1,16 @@
-# Sound Player
+# SOUND PLAYER
 
-Sound Player exposes mission-defined `CfgSounds` entries to Zeus, avoiding one trigger per audio cue. It also integrates with the supported Crow's Electronic Warfare sound player when that mod is loaded.
+## Overview
 
-## 3DEN modules
+Sound Player exposes mission-defined `CfgSounds` entries to Zeus and creates local ambient sound areas. It removes the need to build a separate trigger for every cue and lets an area play a seamless, non-directional loop only for players currently inside it.
 
-Sound Player has no 3DEN module. Add audio classes to the mission's `description.ext` and package the referenced files with the mission.
+If Crow's Electronic Warfare is loaded, mission sounds are added to its player instead of duplicating the normal playback module.
+
+## How to set up the component
+
+For individual Zeus cues, define named `CfgSounds` classes in the mission's `description.ext`. For ambience, place an **[JMF] - Tools > Ambient Sound Area**, resize its 3DEN area and select a framework or mission sound class.
+
+The framework includes `JMF_Ambience_DistantShooting` as a ready-made test and battlefield ambience loop.
 
 ```cpp
 class CfgSounds {
@@ -14,25 +20,41 @@ class CfgSounds {
         name = "Example Mission Sound";
         sound[] = {"sounds\example.ogg", 1, 1, 500};
         titles[] = {};
-        jmfDuration = 5.0;
+        jmfDuration = 30;
+        jmfAmbient = 1;
     };
 };
 ```
 
-`jmfDuration` is optional for normal playback but should match the audio length when an external player schedules attached or repeating sounds.
+`jmfDuration` should match the file length for a clean ambient loop. `jmfAmbient = 1` marks the sound as suitable for area playback.
 
-## Zeus modules
+## 3DEN Module Settings
+
+### Ambient Sound Area
+
+| Attribute | Default | What it does |
+| --- | --- | --- |
+| Area Name | Ambient Sound Area | Label used by Zeus management tools. |
+| CfgSounds Classname | `JMF_Ambience_DistantShooting` | Framework preset or mission-defined sound class. |
+| Start Enabled | Enabled | Starts the area active; synchronised triggers are also respected. |
+| Volume | `1` | Local playback volume multiplier. |
+| Pitch | `1` | Local playback pitch multiplier. |
+
+Use the module's standard 3DEN area attributes to set its shape, dimensions, rotation and height.
+
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |
-| Play Mission Sound | Ground or an object | Sound class, volume, pitch and audible distance. Plays the selected mission sound for the intended clients. |
+| Play Mission Sound | Ground or an object | Sound, volume, pitch and audible distance. Hidden when Crow's EW supplies the sound player. |
+| Create Ambient Sound Area | Ground | Sound, shape, dimensions, direction, height, volume, pitch and initial state. |
+| Manage Ambient Sound Area | Within 100 metres of an area | Enables, disables or permanently removes the nearest area. |
 
-## Multiplayer
-
-The selected class must exist and point to a valid file on every client. The framework sends the playback request; audio itself is read from each client's mission PBO.
+Mission Control can also play mission sounds from its **Support** page.
 
 ## Troubleshooting
 
-- If the list is empty, confirm the classes are inside `CfgSounds` and have non-empty `name` values.
-- If selection works but audio is silent, validate the path, OGG format and volume value.
-- If external scheduling drifts, correct `jmfDuration`.
+- If a sound list is empty, check that each `CfgSounds` class has a non-empty `name` and a valid file path.
+- If an ambient loop restarts too early or overlaps itself, correct its `jmfDuration` value.
+- Ambient areas are intentionally local and non-directional. Use **Play Mission Sound** for positional audio.
+- Overlapping ambient areas may play together; avoid accidental overlap unless that is the intended soundscape.

@@ -1,12 +1,14 @@
 # Tasks
 
+## Overview
+
 Tasks lets mission makers author structured BIS tasks in 3DEN, reveal or resolve them through conditions, and manage them live through ZEN. The server owns state while the vanilla task framework handles client synchronization.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - Tasks > Task Settings** module and one **Task** module per planned objective.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### Task Settings
 
@@ -50,7 +52,7 @@ if (_taskState isEqualTo "SUCCEEDED") then {
 };
 ```
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

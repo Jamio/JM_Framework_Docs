@@ -1,12 +1,14 @@
 # Debriefing
 
+## Overview
+
 Debriefing presents a themed mission-result screen before the vanilla ending. It combines the result, mission text, imagery, personal statistics and team commendations into one controlled end-of-mission sequence.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - Debriefing > Debriefing Settings** module. Player Statistics should remain enabled when personal performance and team awards are wanted.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### Debriefing Settings
 
@@ -37,7 +39,7 @@ Synchronize this module to a trigger to start the ending from normal mission log
 
 **Do not trigger a separate debrief module and an outro hand-off at the same time.**{ .jmf-emphasis } This can create two competing ending requests and might cause the early heat death of the universe.
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

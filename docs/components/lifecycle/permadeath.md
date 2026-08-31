@@ -1,12 +1,14 @@
 # Permadeath
 
+## Overview
+
 Permadeath is a server-controlled respawn gate. When active, dead players enter a waiting spectator state until Zeus releases them or the system is disabled; Tickets may still impose a second requirement.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - Permadeath > Permadeath Settings** module. Leave it disabled at mission start when Zeus should activate the gate later.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### Permadeath Settings
 
@@ -17,7 +19,7 @@ Place one **[JMF] - Permadeath > Permadeath Settings** module. Leave it disabled
 | Permadeath Spectator | Spectate Own Side Only | Enabled | Restricts waiting players to their death-side units. |
 | Permadeath Spectator | Exclude Zeus Players | Enabled | Lets curator players follow normal respawn behaviour. |
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

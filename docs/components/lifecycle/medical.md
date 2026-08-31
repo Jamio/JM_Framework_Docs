@@ -1,12 +1,14 @@
 # Medical
 
+## Overview
+
 Medical augments ACE with a delayed restricted spectator for unconscious players, a compact vitals HUD and optional 3D markers above nearby unconscious friendlies. It does not replace ACE Medical.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - Medical > Medical Settings** module and select the required unconscious behaviour.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### Medical Settings
 
@@ -48,7 +50,7 @@ Place one **[JMF] - Medical > Medical Settings** module and select the required 
 | Font Override | `PuristaSemiBold` | Custom marker font. |
 | Icon Path | Vanilla incapacitated icon | Optional PAA override. |
 
-## Zeus modules
+## ZEN Modules
 
 Medical has no dedicated ZEN configuration module. CBRN's patient inspection and overlay tools are documented separately and do not change these unconscious settings.
 

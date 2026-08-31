@@ -1,12 +1,14 @@
 # Nametags
 
+## Overview
+
 Nametags draws lightweight names above nearby players without adding rank or role clutter. Visibility, distance and line of sight are evaluated locally for responsive rendering.
 
-## Enable the component
+## How to set up the component
 
 Configure Nametags in **[JMF] - Core > Optional Systems**.
 
-## 3DEN settings
+## 3DEN Module Settings
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -20,7 +22,7 @@ Configure Nametags in **[JMF] - Core > Optional Systems**.
 | Require Line of Sight | Enabled | Prevents names through terrain and solid objects. |
 | Show Players in Vehicles | Disabled | Includes vehicle occupants. |
 
-## Zeus modules
+## ZEN Modules
 
 Nametags has no ZEN module. Its visibility policy is fixed by the mission maker.
 

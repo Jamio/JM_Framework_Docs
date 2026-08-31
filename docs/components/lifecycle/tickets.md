@@ -1,12 +1,14 @@
 # Tickets
 
+## Overview
+
 Tickets maintains a server-authoritative reinforcement pool for each side. Death/respawn consumes tickets, while synchronized bodybag recovery points let players return casualties for replenishment.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - Tickets > Tickets Settings** module and enable the system. Add **Bodybag Recovery Point** modules wherever players should return casualties.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### Tickets Settings
 
@@ -35,7 +37,7 @@ Synchronize this module to one or more recovery objects.
 
 The ticket-status action is attached to recovery objects, not the player's self-action menu.
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

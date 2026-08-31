@@ -82,41 +82,40 @@ nav:
       - Build Your First Mission: getting-started/first-mission.md
   - Component Guides:
       - Catalogue: components/index.md
-      - Foundation:
-          - Core and UI: components/foundation/core.md
-          - Optional Systems: components/foundation/optional-systems.md
-      - Presentation:
-          - Briefing: components/presentation/briefing.md
-          - Cutscenes: components/presentation/cutscenes.md
-          - Debriefing: components/presentation/debriefing.md
-          - Intel: components/presentation/intel.md
-      - Player Lifecycle:
-          - Player Lifecycle: components/lifecycle/player-lifecycle.md
-          - Identities and Death Camera: components/lifecycle/identities-death-camera.md
-          - Medical: components/lifecycle/medical.md
-          - Tickets: components/lifecycle/tickets.md
-          - Permadeath: components/lifecycle/permadeath.md
-          - Player Statistics: components/lifecycle/player-stats.md
-      - Logistics and Movement:
-          - Arsenal and Roles: components/logistics/arsenal-roles.md
-          - Supply: components/logistics/supply.md
-          - Garage: components/logistics/garage.md
-          - Fortify: components/logistics/fortify.md
-          - Rally Points: components/logistics/rally-points.md
-          - Redeployment: components/logistics/redeployment.md
-          - Aid Stations: components/logistics/aid-stations.md
-      - Gameplay and QoL:
-          - CBRN: components/gameplay/cbrn.md
-          - Minigames: components/gameplay/minigames.md
-          - Forestry: components/gameplay/forestry.md
-          - Nametags: components/gameplay/nametags.md
-          - Unknown Weapons: components/gameplay/unknown-weapons.md
-      - Mission Administration:
-          - Tasks: components/administration/tasks.md
-          - JTAC: components/administration/jtac.md
-          - Sound Player: components/administration/sound-player.md
-          - Private Messages: components/administration/private-messages.md
-          - Zeus Tools: components/administration/zeus-tools.md
+      - Aid Stations: components/logistics/aid-stations.md
+      - Arsenal and Roles: components/logistics/arsenal-roles.md
+      - Briefing: components/presentation/briefing.md
+      - CBRN: components/gameplay/cbrn.md
+      - Cleanup: components/foundation/cleanup.md
+      - Core and UI: components/foundation/core.md
+      - Cutscenes: components/presentation/cutscenes.md
+      - Debriefing: components/presentation/debriefing.md
+      - Forestry: components/gameplay/forestry.md
+      - Fortify: components/logistics/fortify.md
+      - Garage: components/logistics/garage.md
+      - Identities and Death Camera: components/lifecycle/identities-death-camera.md
+      - Intel: components/presentation/intel.md
+      - JTAC: components/administration/jtac.md
+      - Medical: components/lifecycle/medical.md
+      - Minigames and Field Procedures: components/gameplay/minigames.md
+      - Mission Control: components/administration/mission-control.md
+      - Mission Validator: components/administration/mission-validator.md
+      - Nametags: components/gameplay/nametags.md
+      - Optional Systems: components/foundation/optional-systems.md
+      - Permadeath: components/lifecycle/permadeath.md
+      - Player Lifecycle: components/lifecycle/player-lifecycle.md
+      - Player Statistics: components/lifecycle/player-stats.md
+      - Private Messages: components/administration/private-messages.md
+      - Rally Points: components/logistics/rally-points.md
+      - Redeployment: components/logistics/redeployment.md
+      - Safe Start: components/foundation/safe-start.md
+      - Sound Player: components/administration/sound-player.md
+      - Supply: components/logistics/supply.md
+      - Tasks: components/administration/tasks.md
+      - Tickets: components/lifecycle/tickets.md
+      - Unknown Weapons: components/gameplay/unknown-weapons.md
+      - Vehicle Paths: components/logistics/vehicle-paths.md
+      - Zeus Tools: components/administration/zeus-tools.md
   - Zeus Guide:
       - Overview: zeus/index.md
   - Reference:

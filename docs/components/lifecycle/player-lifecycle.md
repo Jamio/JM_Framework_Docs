@@ -1,12 +1,14 @@
 # Player Lifecycle
 
+## Overview
+
 Player Lifecycle is the shared death-and-respawn pipeline used by Tickets, Permadeath, Identities, Death Camera, Medical and Player Statistics. It keeps those systems ordered and prevents each component from installing competing killed/respawn handlers.
 
-## Enable the component
+## How to set up the component
 
 There is no visible Player Lifecycle settings module. The addon starts automatically and enabled components subscribe to its events.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 Player Lifecycle has no 3DEN attributes. Configure the systems that consume it:
 
@@ -24,7 +26,7 @@ Player Lifecycle has no 3DEN attributes. Configure the systems that consume it:
 4. Respawn creates a new player object.
 5. Per-unit handlers and enabled component state are attached to the new object.
 
-## Zeus modules
+## ZEN Modules
 
 Player Lifecycle has no direct ZEN module. Tickets and Permadeath provide the live controls that affect its respawn decision.
 

@@ -1,57 +1,58 @@
-# Redeployment
+# REDEPLOYMENT
 
-Redeployment combines rally points, living squadmates, fixed terminals, command vehicles and reinsertion requests in one themed map dialog. The server validates every destination before moving the player.
+## Overview
 
-## Enable the component
+Redeployment combines rally points, living squadmates, fixed terminals, a Mobile Redeploy Vehicle (MRV) and reinsertion requests in one themed map dialog. The server validates every destination before moving the player.
 
-Place one **[JMF] - Redeploy > Redeploy Settings** module. Add **Redeployment Point** and **Command Vehicle** modules only for the destination types the mission uses.
+## How to set up the component
 
-## 3DEN modules
+Place one **[JMF] - Redeploy > Redeploy Settings** module. Add **Redeployment Point** modules for fixed access terminals and **Mobile Redeploy Vehicle** when the mission begins with a designated MRV.
+
+## 3DEN Module Settings
 
 ### Redeploy Settings
 
 | Attribute group | Attribute | Default | What it does |
 | --- | --- | --- | --- |
 | Deployment Destinations | Enable Redeployment | Enabled | Master switch. |
-| Deployment Destinations | Allow Rally Deployment | Enabled | Lists eligible squad/platoon rallies. |
+| Deployment Destinations | Allow Rally Deployment | Enabled | Lists eligible squad and platoon rallies. |
 | Deployment Destinations | Allow Squadmate Deployment | Enabled | Lists safe living group members. |
-| Deployment Destinations | Allow Reinsertion Requests | Enabled | Adds the request option for command handling. |
-| Deployment Destinations | Allow Command Vehicle Deployment | Disabled | Enables the current command vehicle as a destination. |
+| Deployment Destinations | Allow Reinsertion Requests | Enabled | Adds the command-handled reinsertion option. |
+| Deployment Destinations | Allow MRV Deployment | Disabled | Enables the current MRV as a destination. |
 | Safety Restrictions | Enemy Exclusion Radius | `30` | Rejects destinations with hostiles inside this distance. |
 | Presentation | Show Redeploying Text | Enabled | Displays transition text during movement. |
 | Presentation | Redeploying Text | REDEPLOYING... | Text used by the transition. |
 
 ### Redeployment Point
 
-Synchronize this module to one or more world objects that players use as terminals.
+Synchronise this module to one or more world objects that players will use to open the redeployment menu.
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
-| Display Name | Object display name | Destination and label name. |
+| Display Name | Object display name | Destination and world-label name. |
 | Show Floating Label | Enabled | Enables the world label. |
 | Label Draw Distance | `25` | Maximum label distance. |
 | Label Height | `2` | Vertical offset above the object. |
 
-### Command Vehicle
+### Mobile Redeploy Vehicle
 
-Synchronize this module to one vehicle to designate the initial command vehicle. It has no additional attributes and requires **Allow Command Vehicle Deployment**.
+Synchronise this module to one vehicle to designate the initial MRV. It has no additional attributes and requires **Allow MRV Deployment**.
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |
-| Set Command Vehicle | A vehicle | Replaces the current command vehicle. |
+| Set Mobile Redeploy Vehicle | A vehicle | Replaces the current MRV. |
 | Designate Redeployment Point | A world object | Name, label toggle, distance and height. |
 | Remove Redeployment Point | A registered object | Removes the live destination. |
-| Manage Redeployment State | Empty ground | Toggles the whole system and each destination family; also changes enemy radius. |
-| Remove Command Vehicle | Empty ground | Clears the current command vehicle. |
+| Manage Redeployment State | Anywhere | Toggles the system and destination families and changes the enemy radius. |
+| Remove Mobile Redeploy Vehicle | Anywhere | Clears the current MRV. |
 
-## Multiplayer
-
-The server validates destination identity, group membership, enemy distance, vehicle existence and available seats. Live registrations and availability state persist for JIP clients.
+Mission Control exposes the system state and MRV controls on its **Logistics** page.
 
 ## Troubleshooting
 
-- If a destination is listed but rejected, clear nearby enemies and confirm the target remains alive/valid.
-- If a command vehicle is absent, enable its destination family and verify a vehicle is designated.
-- If the dialog theme differs from other menus, check **Dialog Theme** in Core Settings.
+- If a destination is listed but rejected, clear nearby enemies and confirm the target remains alive and valid.
+- If the MRV is absent, enable its destination family and verify a vehicle is designated.
+- If a squadmate is missing, confirm they are alive, in the player's group and in a safe location.
+- If the menu theme differs from other dialogs, check **Dialog Theme** in Core Settings.

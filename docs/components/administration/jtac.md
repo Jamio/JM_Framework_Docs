@@ -1,12 +1,14 @@
 # JTAC
 
+## Overview
+
 JTAC provides server-executed artillery and cosmetic CAS through a themed player terminal. Mission makers combine tested delivery presets with per-mission availability, targeting and timing rather than tuning raw projectile trajectories for every strike.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - JTAC > JTAC Settings** module and one **Fire Mission** module per available support. Give eligible players the framework JTAC role.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### JTAC Settings
 
@@ -47,7 +49,7 @@ Built-in presets include 82 mm HE, 155 mm HE, 120 mm smoke, GBU-12, 20 mm and 30
 
 **Prefer a tested preset and change only uses, cooldown, ETA and aircraft classname first.**{ .jmf-emphasis } Modded rocket/bomb ammunition can have unexpected simulation behaviour.
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

@@ -1,12 +1,18 @@
 # Zeus Tools
 
+## Overview
+
 Zeus Tools provides reusable cinematic, environmental and utility effects that do not belong to a gameplay component. Tools are grouped into **Utilities**, **Effects** and **Fun** rather than exposed as mission-maker settings.
 
-## 3DEN modules
+## How to set up the component
+
+Zeus Tools load automatically when ZEN is available. No component-specific settings module is required.
+
+## 3DEN Module Settings
 
 Zeus Tools has no 3DEN module and no mission-level attributes. The addon registers its tools automatically when ZEN is present.
 
-## Zeus modules
+## ZEN Modules
 
 ### Utilities
 

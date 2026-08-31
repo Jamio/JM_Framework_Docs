@@ -1,12 +1,14 @@
 # Private Messages
 
+## Overview
+
 Private Messages adds a compact panel to the right side of the Escape menu for sending text to an individual player, active Zeus operators or logged-in server administrators.
 
-## Enable the component
+## How to set up the component
 
 Configure it in **[JMF] - Core > Optional Systems**.
 
-## 3DEN settings
+## 3DEN Module Settings
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -15,7 +17,7 @@ Configure it in **[JMF] - Core > Optional Systems**.
 
 Recipient choices are built from current multiplayer state. A category with no valid recipients is unavailable, and the sender receives a clear failure response rather than broadcasting the message.
 
-## Zeus modules
+## ZEN Modules
 
 Private Messages has no ZEN module. Zeus operators receive messages because the server resolves current curator assignments.
 

@@ -1,14 +1,24 @@
 # Component Page Template
 
-Component guides are the detailed mission-maker reference for the framework. Write from implemented code, not the planning sheet, and clearly label experimental or planned behaviour.
+Every component guide should be a concise mission-maker reference drawn from the implemented framework. It should explain what the component is for, how to configure it and how to correct common setup mistakes.
 
-## Formatting rules
+## Standard structure
 
-- Put function calls, arrays, configuration classes and complete examples in fenced code blocks with a language identifier such as `sqf` or `cpp`.
-- Use inline code only for short identifiers such as `JMF_supplyDefinitions`, `supplies.hpp` or a classname.
-- Use **bold** for module names, control names and short UI labels.
-- Use **coloured emphasis**{ .jmf-emphasis } sparingly for warnings, required steps and choices that materially change mission behaviour.
-- Never rely on colour alone to convey meaning.
+1. **Overview** — purpose, intention and player experience.
+2. **How to set up the component** — required modules, toggles and synchronisation.
+3. **3DEN Module Settings** — every module and its useful attributes.
+4. **ZEN Modules** — live tools, placement and dialog options.
+5. **Troubleshooting** — common mistakes and direct fixes.
+
+Add another section only when the component genuinely needs it, such as a configuration-file example. Do not add background explanation merely to make the page longer.
+
+## Formatting
+
+- Put module names and dialog labels in **bold**.
+- Put classnames, file names and short identifiers in `inline code`.
+- Use fenced code blocks for functions, configuration classes and complete examples.
+- Use **coloured emphasis**{ .jmf-emphasis } sparingly for required steps and warnings.
+- Use the names and defaults currently shown in 3DEN or ZEN.
 
 ```sqf
 [west, "ADD", 5] call jmf_tickets_fnc_addTickets;
@@ -20,67 +30,3 @@ class MyMissionCrate {
     displayName = "Mission Ammunition";
 };
 ```
-
-## Required guide structure
-
-```markdown
-# Component Name
-
-One clear paragraph explaining the component's purpose, player experience and relationship to other systems.
-
-## Enable the component
-
-Required settings module or Core/Optional Systems toggle.
-
-## 3DEN modules
-
-### Settings Module
-
-What the module controls and whether exactly one is required.
-
-| Attribute | Default | What it does |
-| --- | --- | --- |
-| Enable Component | Enabled | Master switch. |
-
-### Object or Controller Module
-
-Placement, synchronization and activation instructions.
-
-| Attribute | Default | What it does |
-| --- | --- | --- |
-| Display Name | Example | Player-facing name. |
-
-## Setup walkthrough
-
-Ordered setup steps, synchronization and important attributes.
-
-## Mission definitions
-
-File path, schema and a minimal working example.
-
-## Player experience
-
-Actions, dialogs, restrictions and failure feedback.
-
-## Zeus modules
-
-List every related ZEN module, its target and its dialog fields.
-
-| ZEN module | Place on | Dialog options / result |
-| --- | --- | --- |
-| Manage Component | Empty ground | Changes live server state. |
-
-## Multiplayer
-
-Authority, locality, respawn and JIP behaviour.
-
-## Troubleshooting
-
-Common validator codes, mistakes and diagnostic steps.
-
-## Public API
-
-Only supported functions/events with exact signatures.
-```
-
-Omit a section only when it genuinely does not apply. If a component has no 3DEN or ZEN modules, say so explicitly instead of silently leaving the heading out.

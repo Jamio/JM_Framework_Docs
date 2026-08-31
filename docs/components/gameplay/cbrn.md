@@ -1,12 +1,14 @@
 # CBRN
 
+## Overview
+
 CBRN is an ACE-integrated contamination, diagnosis, treatment and decontamination system. Environmental sources expose inadequately protected players; symptoms progress silently; medics diagnose exact agents through bioassay and apply subtype-specific treatment.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - CBRN > CBRN Settings** module. Add **CBRN Threat** modules for hazards, an optional **CBRN Custom Agent**, and **CBRN Decontamination Station** modules for fixed decon points.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### CBRN Settings
 
@@ -32,14 +34,25 @@ Classname lists accept commas, spaces or new lines. **Use inventory classnames, 
 | Chemical/Biological Detector Item | `JMF_CBRN_Detector` | Watch-slot item for chemical and biological readings. |
 | Radiological Detector Item | `JMF_CBRN_Detector` | Watch-slot item for radiological readings. |
 | Audible Detector Feedback | Enabled | Enables detector sounds. |
+| Detector Display Style | Compact Readout | Uses the original compact HUD or places the readings inside the handheld detector artwork. |
 | Enable Threat Particles | Enabled | Global particle switch; individual threats may still choose None. |
 | Particle View Distance | `350` | Local emitter creation range beyond the hazard area. |
+
+#### Surface contamination
+
+| Attribute | Default | What it does |
+| --- | --- | --- |
+| Enable Contaminated Objects | Disabled | Allows vehicles and containers inside a threat core to become mobile contamination sources. |
+| Contaminated Object Radius | `3` | Exposure radius around a contaminated object. |
+| Contaminated Object Exposure Rate | `0.08` | Exposure points per second before PPE. |
+| Maximum Contaminated Objects | `64` | Global limit for automatically contaminated objects. |
 
 #### Diagnosis, treatment and symptoms
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
 | Bioassay Improves Treatment | Enabled | Matching recent diagnosis increases correct treatment strength. |
+| Bioassay Display Style | Field Analyser | Uses the physical analyser artwork or the original clean clinical report. |
 | Bioassay Validity | `300` | Seconds before the indication expires. |
 | Empirical Treatment Strength | `18` | Exposure removed by a correct undiagnosed treatment. |
 | Bioassay-Guided Treatment Strength | `42` | Exposure removed with a current matching assay. |
@@ -48,6 +61,16 @@ Classname lists accept commas, spaces or new lines. **Use inventory classnames, 
 | Enable Physical Symptoms | Enabled | Enables staged effects without framework progression notifications. |
 | Enable Visual Symptoms | Enabled | Adds mild distortion and the non-lethal critical vignette. |
 | Enable ACE Medical Consequences | Enabled | Adds pain, vomiting, collapse and temporary unconsciousness. |
+
+#### Automatic KAT Medical integration
+
+These options take effect only when the matching KAT addon is loaded. No separate compatibility module is required.
+
+| Attribute | Default | What it does |
+| --- | --- | --- |
+| Allow KAT Chemical Burns | Enabled | Advanced dermal exposure can create bandageable chemical-burn wounds. |
+| Allow KAT Airway Complications | Enabled | Pulmonary exposure and vomiting can obstruct or occlude the airway. |
+| Allow KAT Pneumothorax Injuries | Disabled | Pulmonary contamination can create pneumothorax injuries for groups using that part of KAT. |
 
 #### Progression and transmission
 
@@ -102,6 +125,7 @@ Place the module at the centre of a positional hazard, or synchronize it to sour
 | Required Protection | Required PPE Level | Level 1 | None effective, respirator, respirator+suit, or full supplied air. |
 | Containment | Source Can Be Contained | Disabled | Adds progress actions to synchronized source objects. |
 | Containment | Containment Duration | `12` | Progress time in seconds. |
+| Containment | Contaminated Object Procedure | Automatic | Chooses wipes, expanding foam or lined recovery containers for objects contaminated by this source. Automatic uses hazmat recovery for bodies and wipes for other objects. |
 | World Label | Show Source Label | Disabled | Optional hazard label. |
 | World Label | Source Label / Distance | Type name / `20` | Label content and range. |
 
@@ -117,6 +141,8 @@ Synchronize the module to one or more station objects.
 | Label Distance | `20` | Label draw range. |
 
 Decontamination clears contamination state, contagion and symptom loops. It does not remove or alter the player's equipment.
+
+The Personal Decontamination Kit is the portable equivalent of a station and is used through ACE Medical. Contact decontamination showers also play their shower effect and decontaminate eligible people in the active shower area.
 
 ## Diagnosis and treatment
 
@@ -136,7 +162,18 @@ Ordinary status checks show subjective symptoms. A qualified medic carrying `JMF
 | Radiological | Actinide | Ca-DTPA Chelator |
 | Custom | Custom Agent | Experimental Treatment Serum |
 
-## Zeus modules
+Treatment reduces contamination already inside the patient. Decontamination removes the active surface state, contagion and symptom loop so the patient can safely leave the incident area.
+
+Contaminated objects use the procedure inherited from their original threat:
+
+| Procedure | Required item | Intended use |
+| --- | --- | --- |
+| Wipe down | CBRN Decontamination Wipes | Cleans suitable exposed surfaces. |
+| Seal | CBRN Expanding Foam Sealant | Encapsulates contamination that cannot be wiped away safely. |
+| Recover | CBRN Lined Recovery Container | Removes and isolates a contaminated movable object. |
+| Hazmat body bag | CBRN Hazmat Body Bag | Seals a contaminated body and clears its contamination source. |
+
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

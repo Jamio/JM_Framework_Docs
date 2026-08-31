@@ -1,5 +1,7 @@
 # OPTIONAL
 
+## Overview
+
 The Optional Systems module is a collection of smaller features that (in my eyes) do not justify a completely separate 3DEN category. Each subsection has its own master toggle, so placing this module does not force every optional feature to run.
 
 The smaller features include very tiny QOL things like a HUD-remover for screenshots, all the way up to grass-cutting, cinematic death cameras etc.
@@ -48,6 +50,21 @@ Place one **[JMF] - Core > Optional Systems** module in the 3DEN editor. Edit it
 | Enable Screenshot Mode | Enabled | Adds ACE self-actions that hide HUD, chat and framework overlays until Escape restores them. |
 | Enable Private Messages | Enabled | Adds a private-message panel to the Escape menu to contact Zeus/Admins. |
 | Private Message Sound | Enabled | Plays a short sound for received messages. |
+
+#### Deployment Information
+
+*These settings present each player's assignment after mission initialisation and maintain a live ORBAT diary record.*
+
+| Attribute | Default | What it does |
+| --- | --- | --- |
+| Enable Deployment Card | Enabled | Shows a compact Role Assignment card after intro and loadout initialisation. |
+| Card Delay | `8` | Earliest mission time at which the card may appear; active intro cutscenes delay it further. |
+| Card Duration | `10` | Seconds the card remains visible. |
+| Show Card After Respawn | Disabled | Shows the assignment card again after respawn. |
+| Enable ORBAT Diary Entry | Enabled | Creates a live roster grouped by squad. |
+| Roster Scope | Own side | Lists the player's group, side or everyone. |
+| Show Primary Weapons | Enabled | Includes each player's current primary weapon. |
+| Show Qualifications | Enabled | Includes ACE and framework roles such as Medic, Engineer, EOD, JTAC and Pilot. |
 
 #### Nametags
 
@@ -99,7 +116,7 @@ Place one **[JMF] - Core > Optional Systems** module in the 3DEN editor. Edit it
 Optional Systems has no umbrella ZEN menu. Some contained systems expose their own live tools elsewhere but most are intentionally 3DEN controlled.
 
 
-## Common Troubleshooting
+## Troubleshooting
 
 * If an optional feature is absent, check both its master checkbox toggle and any addiitonal settings that might prevent it from appearing (such as required items etc.)
 * If settings appear duplicated, remove legacy hidden settings modules from older test missions (this only really applies to myself for v1 testing as I have older versions of modules present in my testing files)

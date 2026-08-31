@@ -1,12 +1,14 @@
 # Garage
 
+## Overview
+
 Garage combines limited vehicle deployment, vehicle servicing and appearance/component customisation behind synchronized access objects and a themed dialog.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - Garage > Garage** module, synchronize it to the access object, and provide the spawn-point module required by each vehicle family in the catalogue.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### Garage
 
@@ -50,7 +52,7 @@ Place the relevant module where that vehicle family should appear and orient it 
 4. Enable only the service operations required by the mission.
 5. Leave enough clear space around each spawn point and test vehicle direction.
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

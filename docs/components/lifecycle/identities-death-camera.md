@@ -1,12 +1,14 @@
 # Identities and Death Camera
 
+## Overview
+
 Identities generates a new character for each player life, while Death Camera gives that character a short cinematic ending. The presentation may show the generated identity, a quotation, or randomly choose between them.
 
-## Enable the components
+## How to set up the component
 
 Place **[JMF] - Core > Optional Systems**. Enable **Character Identities** when using identity presentation, then choose a non-disabled **Death Presentation**.
 
-## 3DEN settings
+## 3DEN Module Settings
 
 These systems are configured in the **Optional Systems** module; legacy standalone Identity and Death Camera modules are hidden and should not be used.
 
@@ -58,7 +60,7 @@ class CfgJMFDeathCameraQuotePools {
 
 **Mixed is assembled automatically from Serious and Fun; do not define a separate Mixed class.**{ .jmf-emphasis }
 
-## Zeus modules
+## ZEN Modules
 
 Identities and Death Camera have no ZEN modules. They are deliberately mission-level presentation choices.
 

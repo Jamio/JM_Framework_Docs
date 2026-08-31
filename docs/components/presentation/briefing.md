@@ -1,5 +1,7 @@
 # BRIEFING
 
+## Overview
+
 The Briefing component is an easy way for mission-makers to provide nicely formatted diary entries for briefing information, without having to use the vanilla tools. The aim is the same, but the framework system uses a single module rather than several new diary modules which often ends up happening in vanilla.
 
 The module functions will take basic text entries and handle headings, ordering, fonts and any side-specific restrictions.
@@ -57,7 +59,7 @@ These settings are present in the respective 3DEN modules, and can be edited to 
 
 Briefing has no ZEN module. Its records are authored in 3DEN and created locally for eligible players when the briefing state is refreshed.
 
-## Common Troubleshooting
+## Troubleshooting
 
 * If a custom subject does not appear, ensure every entry uses the same subject ID and that it contains no spaces.
 * If the main briefing is split across records, replace multiple setup modules with one **Briefing Setup** module.

@@ -1,12 +1,14 @@
 # Aid Stations
 
+## Overview
+
 Aid Stations let an eligible ACE medic deploy a single framework medical-facility composition in front of them. Deploying again removes the previous station, preserving one authoritative station and map marker.
 
-## Enable the component
+## How to set up the component
 
 Place **[JMF] - Core > Optional Systems** and enable **Aid Station** under Lightweight Systems.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 Aid Stations have no dedicated visible 3DEN module and no object attributes. The Optional Systems checkbox is the complete mission-maker configuration for v1.
 
@@ -16,7 +18,7 @@ Eligible medics receive the deployment ACE self-action. The player must be alive
 
 The deployed invisible anchor is marked as an ACE medical facility, and the surrounding composition plus map marker are created on the server.
 
-## Zeus modules
+## ZEN Modules
 
 Aid Stations have no dedicated ZEN module. Zeus may interact with the resulting world objects normally, but the framework's deploy/remove lifecycle remains tied to the medic action.
 

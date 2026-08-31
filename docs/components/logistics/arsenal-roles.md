@@ -1,12 +1,16 @@
 # Arsenal and Roles
 
+## Overview
+
 Arsenal supplies either a side-aware restricted ACE Arsenal or a role-picker dialog that applies complete mission-defined loadouts. The shared Roles service also limits concurrent slots and exposes traits to Rally, Redeploy, Supply and other components.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - Arsenal > Arsenal & Loadouts Settings** module and synchronize **Arsenal Object** modules to the props players will use.
 
-## 3DEN modules
+Role presentation is configured under **Deployment Information** in the Optional Systems module. It can show each player a delayed Role Assignment card and maintain a live **ORBAT** diary record grouped by squad, role, equipment and qualifications.
+
+## 3DEN Module Settings
 
 ### Arsenal & Loadouts Settings
 
@@ -34,7 +38,7 @@ Mission definitions may provide global and side-specific restricted pools, compl
 
 Role limits are server-approved. A player only receives the loadout after the server confirms that the slot remains available.
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |

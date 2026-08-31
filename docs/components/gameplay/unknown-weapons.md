@@ -1,12 +1,14 @@
 # Unknown Weapons
 
+## Overview
+
 Unknown Weapons makes unauthorized firearms inaccurate and mechanically unreliable by integrating with ACE overheating/jamming. The whitelist is built from the mission's Arsenal and role definitions rather than maintained separately.
 
-## Enable the component
+## How to set up the component
 
 Configure Unknown Weapons in **[JMF] - Core > Optional Systems** and ensure Arsenal/loadout definitions are loaded.
 
-## 3DEN settings
+## 3DEN Module Settings
 
 | Attribute | Default | What it does |
 | --- | --- | --- |
@@ -22,7 +24,7 @@ Configure Unknown Weapons in **[JMF] - Core > Optional Systems** and ensure Arse
 
 Whitelists include global and side-specific restricted Arsenal pools, role loadout weapons and explicit extras. Thrown grenades, UGL ammunition and placed explosives are not treated as unfamiliar firearms.
 
-## Zeus modules
+## ZEN Modules
 
 Unknown Weapons has no ZEN module. Live whitelisting changes should be performed through the Arsenal/role systems that supply its approved pool.
 

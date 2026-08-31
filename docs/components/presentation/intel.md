@@ -1,12 +1,14 @@
 # Intel
 
+## Overview
+
 Intel provides two distinct player experiences: collectable documents that become permanent diary records, and readable image intel that must be inspected and remembered. Both use ACE interactions and optional world labels.
 
-## Enable the component
+## How to set up the component
 
 Place one **[JMF] - Intel > Intel Settings** module and leave **Enable Intel** selected.
 
-## 3DEN modules
+## 3DEN Module Settings
 
 ### Intel Settings
 
@@ -59,7 +61,7 @@ The default image path is:
 z\ace\addons\intelitems\ui\document_ca.paa
 ```
 
-## Zeus modules
+## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
 | --- | --- | --- |
