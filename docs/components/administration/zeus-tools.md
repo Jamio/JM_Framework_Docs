@@ -2,7 +2,7 @@
 
 ## Overview
 
-Zeus Tools provides reusable cinematic, environmental and utility effects that do not belong to a gameplay component. Tools are grouped into **Utilities**, **Effects** and **Fun** rather than exposed as mission-maker settings.
+Zeus Tools is a broad component that contains several tools for Zeus to enhance an in-progress mission. Tools are grouped into **Utilities**, **Effects** and **Fun** rather than exposed as mission-maker settings.
 
 ## How to set up the component
 
