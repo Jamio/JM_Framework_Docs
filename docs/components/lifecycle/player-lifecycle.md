@@ -12,7 +12,7 @@ There is no visible Player Lifecycle settings module. The addon starts automatic
 
 Player Lifecycle has no 3DEN attributes. Configure the systems that consume it:
 
-- **Optional Systems** for Identities and Death Camera;
+- **Identities** and **Death Camera** for optional character and death presentation;
 - **Medical Settings** for unconscious presentation;
 - **Tickets Settings** for reinforcement cost;
 - **Permadeath Settings** for the waiting gate;

@@ -83,21 +83,26 @@ nav:
   - Component Guides:
       - Catalogue: components/index.md
       - Aid Stations: components/logistics/aid-stations.md
-      - Arsenal and Roles: components/logistics/arsenal-roles.md
+      - Ambient Sound Areas: components/administration/ambient-sound-areas.md
+      - Arsenal: components/logistics/arsenal.md
       - Briefing: components/presentation/briefing.md
       - CBRN: components/gameplay/cbrn.md
       - Cleanup: components/foundation/cleanup.md
-      - Core and UI: components/foundation/core.md
+      - Client Quality of Life: components/gameplay/client-qol.md
+      - Core: components/foundation/core.md
       - Cutscenes: components/presentation/cutscenes.md
+      - Death Camera: components/lifecycle/death-camera.md
       - Debriefing: components/presentation/debriefing.md
+      - Earplugs: components/gameplay/earplugs.md
+      - Field Procedures: components/gameplay/field-procedures.md
       - Forestry: components/gameplay/forestry.md
       - Fortify: components/logistics/fortify.md
       - Garage: components/logistics/garage.md
-      - Identities and Death Camera: components/lifecycle/identities-death-camera.md
+      - Identities: components/lifecycle/identities.md
       - Intel: components/presentation/intel.md
       - JTAC: components/administration/jtac.md
       - Medical: components/lifecycle/medical.md
-      - Minigames and Field Procedures: components/gameplay/minigames.md
+      - Minigames: components/gameplay/minigames.md
       - Mission Control: components/administration/mission-control.md
       - Mission Validator: components/administration/mission-validator.md
       - Nametags: components/gameplay/nametags.md
@@ -108,13 +113,16 @@ nav:
       - Private Messages: components/administration/private-messages.md
       - Rally Points: components/logistics/rally-points.md
       - Redeployment: components/logistics/redeployment.md
+      - Roles: components/logistics/roles.md
       - Safe Start: components/foundation/safe-start.md
       - Sound Player: components/administration/sound-player.md
+      - Stamina: components/gameplay/stamina.md
       - Supply: components/logistics/supply.md
       - Tasks: components/administration/tasks.md
       - Tickets: components/lifecycle/tickets.md
       - Unknown Weapons: components/gameplay/unknown-weapons.md
       - Vehicle Paths: components/logistics/vehicle-paths.md
+      - World Labels: components/presentation/world-labels.md
       - Zeus Tools: components/administration/zeus-tools.md
   - Zeus Guide:
       - Overview: zeus/index.md
