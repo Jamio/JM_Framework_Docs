@@ -2,7 +2,11 @@
 
 ## Overview
 
-Rally Points allow explicitly assigned squad and platoon leaders to deploy shared reinforcement anchors through ACE self-actions. Active rallies also become destinations for the Redeployment system.
+Rally Points allow designated leaders to establish temporary reinforcement anchors as a unit advances. A squad or platoon leader uses an ACE self-interaction to deploy the appropriate rally at their position, creating a shared destination that can be used by the Redeployment system. The feature gives player leadership control over a mobile reinforcement point without granting broader Zeus powers.
+
+Mission-makers decide which rally types are available, which framework roles may deploy them and how replacement or removal should behave. Each active rally has an authoritative world position and presentation, and deploying a new point can replace the previous point for that scope rather than leaving obsolete destinations across the map. Rally state can also be inspected or controlled live when the mission requires administrative intervention.
+
+This component creates and manages the anchors; it does not itself move dead or living players. The themed destination interface, safety validation and actual transfer belong to [Redeployment](redeployment.md). Keeping the two responsibilities separate allows rallies to be disabled while retaining fixed redeployment options, or used as one destination among several.
 
 ## How to set up the component
 

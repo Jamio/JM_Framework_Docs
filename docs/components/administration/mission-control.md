@@ -2,7 +2,13 @@
 
 ## Overview
 
-Mission Control is a live framework dashboard for Zeus, server administrators and authorised mission controllers. It brings common mission controls into one tabbed menu so a mission-maker can take part in the operation without repeatedly returning to Zeus or placing modules.
+Mission Control is the framework's central live-management dashboard. It is designed for Zeus operators, server administrators and authorised mission controllers who need to adjust an operation after it has started. Instead of searching through the ZEN module tree for every action, common controls are collected into a readable tabbed dialog and presented alongside the current state of the relevant systems.
+
+The dashboard provides quick access to broad mission functions such as Safe Start, cleanup, JTAC availability, tickets and permadeath, environmental effects and other framework utilities. It is particularly useful when the mission-maker is also taking part as a player: authorised users can make controlled changes without repeatedly entering Zeus or placing temporary modules in the world. ZEN modules remain available for spatial or unit-specific actions, while Mission Control handles the systems that benefit from a single persistent overview.
+
+Mission Control does not replace the individual components or bypass their validation. It calls the same framework events and server-owned functions that their modules use, so permissions, public state and multiplayer behaviour remain consistent whichever interface initiates the change. Its contents can also grow with the framework, providing one predictable place for future live controls rather than adding unrelated actions to the player menu.
+
+<!-- IMAGE PLACEHOLDER: Mission Control open on one of its system tabs. -->
 
 ## How to set up the component
 

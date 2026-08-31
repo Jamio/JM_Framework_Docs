@@ -2,9 +2,13 @@
 
 ## Overview
 
-The cutscenes component handles the setup and execution of cinematic sequences that are created in advance by the mission-maker.
+Cutscenes provides an organised way to register and execute cinematic sequences authored by the mission-maker. It does not attempt to generate camera work automatically; instead, it supplies the lifecycle, playback and multiplayer handling around prepared camera scripts so an opening, transition or ending can be invoked consistently without duplicating display and input-management code in every mission.
 
-Cutscenes are divided by into three types, 1) Intro - the cutscene that will player on mission start (or when palyers join, depending on settings), 2) Mid-mission - a cutscene that can be triggered at any point during the mission, 3) Outro - the cutscene that plays at the end of the mission, and can automatically lead directly into the debrief. 
+Sequences are divided into three broad uses. **Intro** cutscenes establish the operation at mission start and can define how players who join in progress are handled. **Mid-mission** cutscenes can be triggered whenever the scenario requires a controlled transition or reveal. **Outro** cutscenes close the playable action and can hand directly into the framework Debriefing. Mission-makers can configure which sequences are available, their trigger conditions, whether clients may skip them and how normal player control is restored.
+
+The component is designed to coexist with other startup and ending presentation. Role Assignment waits until opening displays have cleared, while an outro can pass the chosen mission result to Debriefing. Camera and interface work remains local to each viewer, but the decision to start a shared sequence is synchronised so multiplayer clients see the intended event at the right point.
+
+<!-- IMAGE PLACEHOLDER: A representative intro or mid-mission cinematic frame. -->
 
 ## How to set up the component
 

@@ -2,7 +2,11 @@
 
 ## Overview
 
-Private Messages adds a compact panel to the right side of the Escape menu for sending text to an individual player, active Zeus operators or logged-in server administrators.
+Private Messages adds a discreet communication panel to the Escape menu for messages that should not be sent through global chat. A player can address an individual participant, the active Zeus operators or logged-in server administrators, making it suitable for reporting technical problems, asking an out-of-character question or passing information to mission staff without interrupting everyone else.
+
+The component is intentionally small and unobtrusive. It uses the current multiplayer player list, routes the message only to the selected recipients and clearly identifies the sender at the receiving end. It is not intended to replace in-character radio systems, nor does it attempt to become a general chat client; its role is to provide a reliable private route to the people administering the mission.
+
+Mission-makers can decide whether the panel is available through the shared optional settings. The interface is client-facing, while recipient resolution is handled carefully so that active curators and administrators remain reachable even when their playable unit or role changes.
 
 ## How to set up the component
 

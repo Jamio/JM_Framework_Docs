@@ -2,7 +2,13 @@
 
 ## Overview
 
-Arsenal provides either a side-aware restricted ACE Arsenal or a role-loadout picker that applies complete mission-defined equipment sets. It controls which equipment and loadouts are available; the separate [Roles](roles.md) component stores player qualifications and specialist assignments.
+Arsenal provides the framework's controlled equipment-distribution tools. A mission can offer a side-aware restricted ACE Arsenal, a themed role-loadout picker, or both, depending on how much freedom players should have. The aim is to let mission-makers define a reliable equipment baseline once and reuse it across access objects, respawns, supply generation and other framework systems rather than maintaining several unrelated whitelists.
+
+Restricted Arsenal mode determines which weapons, magazines, uniforms, equipment and items are available to each side while retaining ACE's familiar loadout interface. Role-loadout mode presents complete mission-defined kits through a themed dialog, allowing a player to select an assignment and preview the associated equipment before it is applied. Definitions may be stored as framework presets, extended by the mission and grouped to suit different factions or eras.
+
+Arsenal data is also consumed elsewhere: Supply can generate relevant ammunition, Unknown Weapons can recognise issued firearms, and the role picker can assign framework roles alongside a loadout. That integration does not make those systems part of Arsenal. Equipment availability remains separate from the [Roles](roles.md) component, which stores qualifications and permissions after they have been assigned.
+
+<!-- IMAGE PLACEHOLDER: Restricted ACE Arsenal and the themed role-loadout picker. -->
 
 ## How to set up the component
 

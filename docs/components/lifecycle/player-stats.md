@@ -2,7 +2,11 @@
 
 ## Overview
 
-Player Statistics records combat, survival, medical and movement performance for the custom Debriefing screen. It is designed for mission-level summaries, not persistent player progression.
+Player Statistics records a focused set of activity from the current operation so that the custom Debriefing can show players what happened beyond a simple success or failure message. Depending on configuration, this can include combat, survival, medical and movement information, together with values used for team commendations. The aim is an engaging mission summary, not a competitive ranking system.
+
+Collection is tied into the framework's lifecycle and relevant gameplay events so statistics follow the correct player through death and respawn. The component is optional and avoids installing its tracking handlers when disabled. Mission-makers can choose which categories are appropriate for the scenario, preventing an infantry patrol, medical exercise and vehicle mission from all presenting the same irrelevant figures.
+
+Statistics exist for the duration of the mission and feed framework presentation such as Debriefing. They are not a persistent profile, do not unlock equipment and are not intended as an authoritative anti-cheat or analytics system. The data should be understood as a readable account of the operation rather than a complete record of every engine event.
 
 ## How to set up the component
 

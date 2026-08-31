@@ -2,7 +2,11 @@
 
 ## Overview
 
-Forestry adds ACE Equipment actions for clearing grass, removing bushes and felling trees. It is a lightweight quality-of-life system intended for deliberate field preparation, not bulk terrain editing.
+Forestry provides simple ACE Equipment actions for small-scale terrain clearance during play. Players can flatten obstructive grass, remove nearby bushes and fell individual trees when preparing a firing position, clearing a vehicle route or improving visibility around a defensive site. It is intended to give players a practical answer to troublesome vegetation without requiring Zeus to edit the terrain for them.
+
+Mission-makers can enable the grass, bush and tree actions independently and control the distances or permissions used by the interaction. Tree felling is deliberate rather than instantaneous bulk removal, while grass and bush clearance are constrained to the player's local working area. The system does not continuously scan or rewrite the map and is not intended as a general terrain editor.
+
+Because it changes world objects, the authoritative result is synchronised so that other players see the cleared vegetation. The feature lives in Optional Systems because it is useful quality of life for particular mission styles but unnecessary for every operation.
 
 ## How to set up the component
 

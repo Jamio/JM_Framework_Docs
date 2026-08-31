@@ -2,7 +2,11 @@
 
 ## Overview
 
-Unknown Weapons makes unauthorized firearms inaccurate and mechanically unreliable by integrating with ACE overheating/jamming. The whitelist is built from the mission's Arsenal and role definitions rather than maintained separately.
+Unknown Weapons discourages players from treating every captured firearm as immediately familiar and combat-ready. When a player uses a weapon outside the mission's authorised equipment pool, the component can reduce practical accuracy and increase mechanical unreliability through ACE overheating and jamming behaviour. The intention is to create a meaningful distinction between issued equipment and unfamiliar battlefield pickups without hard-blocking the player from firing them.
+
+The recognised weapon list is assembled from the framework's Arsenal presets and role loadouts, so mission-makers do not have to maintain a second whitelist. This also means that a weapon intentionally issued to any configured role can be treated as known even if a particular player did not begin with it. Broad enablement and effect strength are controlled through Optional Systems, while the source equipment definitions remain with Arsenal and loadouts.
+
+The component is most suitable for scenarios where logistics and captured equipment matter. It can be left disabled for sandbox missions or settings where universal weapon familiarity is appropriate. Its effects are applied only when the relevant framework option is active and ACE provides the underlying weapon-state mechanics.
 
 ## How to set up the component
 

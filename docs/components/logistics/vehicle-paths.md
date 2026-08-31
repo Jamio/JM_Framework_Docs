@@ -2,7 +2,15 @@
 
 ## Overview
 
-Vehicle Paths wraps Arma's scripted path-driving behaviour in reusable 3DEN and ZEN tools. It is designed for movements that ordinary AI waypoints handle poorly, such as armour crossing a precise field route, trucks following a forest track or vehicles entering a defensive position at a controlled speed.
+Vehicle Paths packages Arma's scripted `driveOnPath` behaviour into reusable 3DEN and ZEN workflows. It is intended for choreographed movement that ordinary AI waypoints often handle poorly: armour crossing a precise line through a field, trucks following a narrow forest track, a convoy arriving at a defensive position, or an off-screen vehicle entering the play area on cue. The route guides the vehicle directly while leaving its weapons and crew available for the mission around it.
+
+In 3DEN, mission-makers define a route from synchronised path points and attach one or more vehicles or reusable spawn definitions. A route can begin immediately, wait for a trigger or be activated live. Vehicles may start hidden with simulation disabled, be revealed only when the route begins, stop precisely at the final point, resume normal behaviour, have driver simulation disabled or be deleted after leaving the scene. Reusable routes can create fresh vehicles for repeated attack waves without rebuilding the path.
+
+In ZEN, a curator can select a vehicle and draw a route from the current camera perspective, with visible route feedback and configurable completion behaviour. Context-menu access makes repeated use faster than placing a module for each order. Execution is routed to the vehicle's locality and includes the initial hand-off needed to avoid the common first-run failure of scripted paths.
+
+The component is a precision movement tool, not a replacement for waypoints or full convoy AI. It works best where the intended route and endpoint matter more than autonomous navigation and tactical path selection.
+
+<!-- IMAGE PLACEHOLDER: A ZEN-drawn 3D vehicle route and its configuration menu. -->
 
 ## How to set up the component
 

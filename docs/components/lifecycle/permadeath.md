@@ -2,7 +2,11 @@
 
 ## Overview
 
-Permadeath is a server-controlled respawn gate. When active, dead players enter a waiting spectator state until Zeus releases them or the system is disabled; Tickets may still impose a second requirement.
+Permadeath is a server-controlled gate that allows a mission to suspend reinforcement after a player dies. While the gate is active, casualties enter a waiting spectator state instead of returning to play. Zeus or an authorised Mission Control user can later release the waiting players together, making the component suitable for wave respawns, narrative pauses, limited reinforcement windows or genuinely permanent loss for the remainder of an operation.
+
+The system is deliberately separate from Tickets. Permadeath answers whether reinforcement is currently allowed; Tickets answer whether the player's side can afford it. A mission may use either component alone or require both conditions to be satisfied. This separation lets Zeus open a reinforcement window without granting extra tickets, or add tickets while still holding the next wave.
+
+State is authoritative on the server and applied through the shared Player Lifecycle, including disconnects and players joining in progress. Mission-makers can define the starting state in 3DEN and then change it live through ZEN or Mission Control without altering the respawn template manually.
 
 ## How to set up the component
 

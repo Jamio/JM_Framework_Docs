@@ -2,7 +2,13 @@
 
 ## Overview
 
-Intel provides two distinct player experiences: collectable documents that become permanent diary records, and readable image intel that must be inspected and remembered. Both use ACE interactions and optional world labels.
+Intel provides two deliberately different ways for players to discover written or visual information in the world. **Collectable intel** represents material that the force records and keeps: once collected, a formatted entry is added to the authorised players' diaries. **Readable intel** opens a document, photograph, screen or other image with supporting text but does not create a permanent record, requiring players to inspect, discuss and remember what they found.
+
+The distinction lets the mission-maker decide how reliable and shareable each discovery should be. A commander's log or recovered orders can become a polished diary entry for the whole side, while a hurried note, map photograph or computer display can remain a transient clue. Entries can use a framework default document image or a mission-supplied texture, and their titles, body text, ownership and collection behaviour can be tailored. ACE actions provide a consistent interaction in place of mixed add-actions and hold-actions, with optional World Labels making important objects easier to recognise.
+
+The component builds on familiar BIS diary and leaflet presentation while wrapping the awkward object variables and locality concerns in reusable modules. It is intended for authored narrative and clues rather than random loot generation, and it does not automatically reveal an intel object's contents to players who are not authorised recipients.
+
+<!-- IMAGE PLACEHOLDER: Collectable diary intel beside a readable image-intel display. -->
 
 ## How to set up the component
 

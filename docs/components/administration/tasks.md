@@ -2,7 +2,11 @@
 
 ## Overview
 
-Tasks lets mission makers author structured BIS tasks in 3DEN, reveal or resolve them through conditions, and manage them live through ZEN. The server owns state while the vanilla task framework handles client synchronization.
+Tasks provides a framework-friendly way to author and control Arma 3 objectives without building a chain of task modules and synchronised state modules for every objective. Mission-makers define the task's title, description, destination, type, ownership and initial visibility in 3DEN, then choose whether it should appear immediately or respond to mission conditions. The result still uses the familiar vanilla task interface seen by players.
+
+The system is designed to support both planned and reactive operations. Tasks may be revealed, assigned, succeeded, failed or cancelled through scripted conditions, triggers and ZEN controls. Zeus can therefore adapt the objective structure during play without creating a second, unrelated set of tasks. Parent and child relationships can be used for more structured plans, while side or group ownership keeps information limited to the intended recipients.
+
+Task state is authoritative on the server and passed through the BIS task framework for synchronisation, including players who join in progress. The component does not change how players read or select tasks; it concentrates on making their creation and lifecycle easier to configure and safer to manage in multiplayer.
 
 ## How to set up the component
 

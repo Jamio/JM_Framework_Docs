@@ -2,7 +2,11 @@
 
 ## Overview
 
-Tickets maintains a server-authoritative reinforcement pool for each side. Death/respawn consumes tickets, while synchronized bodybag recovery points let players return casualties for replenishment.
+Tickets provides a limited, server-authoritative reinforcement pool for each side. It is designed for missions where casualties should have a shared operational cost without requiring every death to be permanent. When a player returns to play, the appropriate side pool is reduced; when no tickets remain, further reinforcement is held until Zeus, Mission Control or a configured recovery mechanic adds more.
+
+Mission-makers set the starting pools and decide how tickets interact with the mission's respawn flow. Synchronised bodybag recovery points can reward casualty recovery by returning tickets when bodies are brought back, giving medical and logistics teams a practical reason to recover the fallen. Live controls allow tickets to be inspected or adjusted when the mission narrative provides reinforcements or suffers an additional loss.
+
+Tickets is separate from Permadeath and can be used with or without it. A ticket represents reinforcement capacity, while Permadeath controls whether a reinforcement window is open. Both components use the shared Player Lifecycle so deductions, waiting states and respawns occur in a predictable order and remain consistent for multiplayer clients.
 
 ## How to set up the component
 

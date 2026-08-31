@@ -2,7 +2,13 @@
 
 ## Overview
 
-Redeployment combines rally points, living squadmates, fixed terminals, a Mobile Redeploy Vehicle (MRV) and reinsertion requests in one themed map dialog. The server validates every destination before moving the player.
+Redeployment gives players a controlled way to return to their unit or move between authorised reinforcement points. Its themed map dialog brings together active rally points, eligible living squadmates, fixed destinations and a Mobile Redeploy Vehicle (MRV), while also allowing a stranded player to request reinsertion when no automatic destination is suitable. The aim is to reduce administrative teleporting without turning movement around the battlefield into unrestricted fast travel.
+
+Mission-makers choose which destination families are available, who may use them, how access terminals are presented and what safety conditions must be met. The MRV can act as a moving reinforcement hub, while rally points reflect decisions made by player leadership. Squadmate deployment helps a returning casualty rejoin the correct group, and fixed terminals support bases, ships or other permanent staging areas. The interface shows destination state and location before the player commits.
+
+Every request is checked by the server at the time of use. A destination that has been destroyed, moved into danger or become otherwise invalid is rejected rather than trusting stale client data. Redeployment therefore coordinates several components, but does not own their source state: Rally Points manages rallies, Roles identifies relevant leaders, and the Player Lifecycle determines when a casualty is permitted to return.
+
+<!-- IMAGE PLACEHOLDER: Redeployment dialog showing the left destination panel and map. -->
 
 ## How to set up the component
 

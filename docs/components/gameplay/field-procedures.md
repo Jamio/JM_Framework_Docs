@@ -2,9 +2,13 @@
 
 ## Overview
 
-Field Procedures attaches an interactive equipment challenge to a mission object. Procedures include wire cutting, lock picking, keypad entry, radio tuning, repair and several other configurable challenges while retaining Waldo's original interface style.
+Field Procedures turns ordinary mission objects into short, hands-on equipment challenges. Instead of resolving every technical task with a progress bar, the player is presented with an interactive procedure such as cutting the correct wires, picking a lock, entering a keypad code, tuning a radio or carrying out a repair. The original Waldo mission-script aesthetic is deliberately retained because these interfaces are part of the character and readability of the procedures rather than generic framework dialogs.
 
-Table games are a separate system documented under [Minigames](minigames.md).
+Mission-makers select the procedure, attach it to an appropriate object and configure its solution, difficulty, timing and success behaviour where supported. The surrounding mission decides what completion means: a successful challenge can set a variable, activate a trigger or form one step in a larger objective. This makes the component useful for bomb-disposal scenes, communications repair, forced entry, technical objectives and other moments where a small amount of player skill is more memorable than waiting for an animation.
+
+The procedures are designed to be self-contained and multiplayer-safe, with interaction ownership and completion state handled consistently. They are not competitive table games; those social activities are provided separately by [Minigames](minigames.md).
+
+<!-- IMAGE PLACEHOLDER: A representative Field Procedure interface in use. -->
 
 ## How to set up the component
 

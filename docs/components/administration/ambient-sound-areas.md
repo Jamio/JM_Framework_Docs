@@ -2,9 +2,11 @@
 
 ## Overview
 
-Ambient Sound Areas play a repeating, non-directional ambience track locally while a player is inside a defined area. They are intended for location-specific soundscapes such as caves, distant fighting, machinery or environmental noise.
+Ambient Sound Areas allow a mission-maker to give particular locations their own continuous soundscape. When a player enters a configured area, its ambience fades in locally as a non-directional track; when they leave, it fades away again. This is intended for environmental layers such as cave interiors, distant fighting, industrial machinery, bad weather or wildlife, where a conventional 3D sound source would feel too localised and repeated triggers would be awkward to maintain.
 
-The system uses available `CfgSounds`, but it is separate from the [Sound Player](sound-player.md) used for individual Zeus audio cues.
+Each area can use a framework-provided sound or a mission-defined entry from `CfgSounds`, with control over its size, volume and transition behaviour. Because playback is handled separately for each player, the system can follow movement through overlapping locations without broadcasting unnecessary audio across the network. Ambient Sound Areas are therefore best treated as part of the environment rather than as an event or announcement.
+
+This component is deliberately separate from the [Sound Player](sound-player.md). Sound Player exposes individual mission sounds for dynamic playback by Zeus, while Ambient Sound Areas maintain a looping bed of audio based on where each player is standing.
 
 ## How to set up the component
 

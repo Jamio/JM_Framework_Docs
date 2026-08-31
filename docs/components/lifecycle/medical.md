@@ -2,7 +2,13 @@
 
 ## Overview
 
-Medical augments ACE with a delayed restricted spectator for unconscious players, a compact vitals HUD and optional 3D markers above nearby unconscious friendlies. It does not replace ACE Medical.
+Medical adds presentation and lifecycle support around ACE Medical rather than replacing its treatment model. Its main purpose is to give unconscious players and nearby teammates clearer, configurable feedback while allowing ACE to remain authoritative for wounds, vitals, treatment and recovery. The component is therefore compatible with a group's chosen ACE settings and can expose selected KAT information when KAT is present without requiring KAT as a dependency.
+
+For the casualty, the framework can delay entry into a restricted unconscious spectator and present a compact medical HUD containing useful condition information. Mission-makers decide what should be visible and when, avoiding the need to reveal every internal medical variable. For nearby friendlies, optional 3D indicators can make an unconscious casualty easier to locate without becoming a permanent nametag system.
+
+The spectator, HUD and marker features can be configured independently to suit different difficulty levels. They follow the shared Player Lifecycle so that recovery, death, respawn and join-in-progress do not leave stale displays or camera states behind. CBRN diagnosis and treatment use ACE interactions but remain part of the separate CBRN component.
+
+<!-- IMAGE PLACEHOLDER: Medical HUD displayed for an unconscious player. -->
 
 ## How to set up the component
 

@@ -2,7 +2,17 @@
 
 ## Overview
 
-CBRN is an ACE-integrated contamination, diagnosis, treatment and decontamination system. Environmental sources expose inadequately protected players; symptoms progress silently; medics diagnose exact agents through bioassay and apply subtype-specific treatment.
+CBRN is a configurable, lightweight threat system for adding chemical, biological and radiological hazards to an operation. It is designed to create an understandable gameplay loop rather than simulate every aspect of real-world contamination: players must detect a hazardous environment, use suitable protective equipment, recognise that exposure may have occurred, obtain a proper diagnosis and choose an appropriate treatment or decontamination method. The system integrates with ACE interactions and medical workflows while remaining usable without KAT.
+
+Mission-makers build hazards from zones and source objects, select a threat family and subtype, define the protection level required, and control exposure strength, radius, persistence and visible particle preset. Chemical, biological and radiological agents have distinct treatment families and symptom descriptions. Biological agents can spread between nearby people, including configurable behaviour around PPE, while a custom-agent profile allows a mission to define its own transmission and treatment characteristics without adding another hard-coded subtype.
+
+Players do not receive an explicit warning merely for crossing an invisible boundary. A watch-slot detector provides fluctuating readings when deliberately activated, and general status checks describe vague symptoms rather than revealing the exact agent. Qualified medics can use the CBRN bioassay to identify type, subtype, severity and treatment burden; completing an assay also improves the effectiveness of the correct medication. Untreated exposure can progress through subtle visual disturbance and pain into collapse, unconsciousness, vomiting and, where configured, death. Optional KAT compatibility adds appropriate consequences when KAT Chemical is loaded, with invasive injury types such as pneumothorax remaining separately controllable.
+
+Decontamination is distinct from medical treatment. Personal kits and shower stations remove contamination from a person, while contaminated bodies, vehicles and containers can continue to spread exposure until wiped down, sealed with foam, placed in a lined container or secured in a CBRN body bag as appropriate. Zeus inspection and overlay tools make the hidden state manageable during testing and live direction without exposing diagnostic certainty to ordinary players.
+
+<!-- IMAGE PLACEHOLDER: CBRN detector HUD beside a visible threat zone. -->
+
+<!-- IMAGE PLACEHOLDER: Medic bioassay display and the ACE treatment actions. -->
 
 ## How to set up the component
 

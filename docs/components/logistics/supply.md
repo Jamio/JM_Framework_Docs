@@ -2,7 +2,13 @@
 
 ## Overview
 
-Supply lets players request mission-defined crates through a themed terminal. Definitions can contain fixed cargo or generate ammunition from Arsenal/loadout data, starting loadouts or the inventories of living players.
+Supply gives players access to a curated logistics catalogue through synchronised request objects and a themed terminal. It is designed to replace piles of pre-placed crates and one-off resupply scripts with reusable definitions that clearly show what can be requested and what each crate contains. Spawned crates are made practical logistics assets, including framework handling for ACE carrying and dragging rather than inheriting an unsuitable mass from their contents.
+
+Mission-makers can define fixed crates with exact weapons, magazines, items and quantities, or use dynamic ammunition generation. Dynamic requests can derive useful magazines from the framework Arsenal and role loadouts, the starting equipment of playable units, or the current inventories of living players. This allows one resupply definition to remain relevant when the mission's issued weapons change, while fixed definitions remain available for specialist equipment and carefully balanced supplies.
+
+Access objects, available request sets, crate placement and presentation are configurable. The server performs the actual creation and cargo population so all clients observe one authoritative crate. Supply concerns requested equipment; vehicle deployment and servicing remain part of Garage, while Arsenal controls the equipment pools that dynamic requests may consult.
+
+<!-- IMAGE PLACEHOLDER: Supply request dialog with a crate contents list. -->
 
 ## How to set up the component
 

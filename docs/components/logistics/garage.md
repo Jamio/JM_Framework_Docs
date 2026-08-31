@@ -2,7 +2,13 @@
 
 ## Overview
 
-Garage combines limited vehicle deployment, vehicle servicing and appearance/component customisation behind synchronized access objects and a themed dialog.
+Garage combines controlled vehicle deployment and field servicing in one logistics component. It is designed for missions where players should have access to a curated motor pool without opening the unrestricted vanilla Garage or relying on Zeus for every replacement vehicle. Synchronised access objects open a themed interface that lists only the definitions and actions provided by the mission-maker.
+
+Vehicle deployment uses configurable entries with class, display and availability information, allowing a mission to provide suitable transport, armour or specialist platforms while retaining control over quantity and placement. The same component can expose vehicle servicing—repair, refuel and rearm behaviour—and appearance or component customisation where the selected vehicle supports it. These functions can be restricted independently so an object may act as a deployment terminal, a service point or both.
+
+Spawning and servicing are validated where the authoritative vehicle state exists, reducing locality problems and preventing different clients from creating conflicting results. The themed modern, historical and science-fiction skins share one calibrated control layout, allowing the interface to match the mission without changing its function.
+
+<!-- IMAGE PLACEHOLDER: Garage vehicle list and details panel using one theme. -->
 
 ## How to set up the component
 

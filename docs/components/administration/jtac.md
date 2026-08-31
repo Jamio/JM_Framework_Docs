@@ -2,7 +2,13 @@
 
 ## Overview
 
-JTAC provides server-executed artillery and cosmetic CAS through a themed player terminal. Mission makers combine tested delivery presets with per-mission availability, targeting and timing rather than tuning raw projectile trajectories for every strike.
+JTAC provides a complete player-facing fire-support system for calling artillery and simulated close air support during a mission. Its purpose is to make support feel deliberate and coordinated without requiring the mission-maker to build bespoke triggers, aircraft waypoints and projectile scripts for every fire mission. Players work through a themed terminal, select an available support type, acquire a target and choose an ingress direction before transmitting the request.
+
+Mission-makers decide which fire missions are available and how players may target them. The system supports map and coordinate targeting, coloured smoke, and captured targets from binoculars or laser-designating optics. Fire missions can be enabled at mission start or held back until an objective is completed, then controlled live through ZEN or Mission Control. Tested presets cover artillery, gun runs, rocket runs and vertical bomb delivery while still allowing their timing, ammunition, spread, aircraft presentation and availability to be tailored.
+
+The server owns validation and execution so that every player observes the same strike and the system remains suitable for multiplayer use. The aircraft used for cosmetic fly-bys does not have to perform unreliable AI attack behaviour: the framework controls the effects and synchronises the presentation while preserving the impression of an aircraft making the run.
+
+<!-- IMAGE PLACEHOLDER: JTAC terminal showing the target method, fire-mission list and map. -->
 
 ## How to set up the component
 
