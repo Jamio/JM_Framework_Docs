@@ -4,7 +4,7 @@
 
 Safe Start provides a controlled ready-up period at the beginning of an operation. It can block firing, prevent player damage and stop player-driven vehicles while groups organise, then release everyone together with a HUD message and sound.
 
-The platoon leader can release the initial Safe Start once. Any later changes remain under Zeus or Mission Control authority.
+The platoon leader can release the initial Safe Start via an ACE self-interaction. Any additional safe start changes remain with a Zeus or Mission Control panel.
 
 ## How to set up the component
 
