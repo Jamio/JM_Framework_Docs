@@ -10,7 +10,13 @@ Each area can use a framework sound or a mission sound from `CfgSounds`. Its siz
 
 Place **[JMF] - Tools > Ambient Sound Area**, resize its standard 3DEN area and enter a framework or mission `CfgSounds` classname. The framework includes `JMF_Ambience_DistantShooting` as a ready-made ambience track.
 
-Mission-defined ambient sounds should provide their true duration and mark themselves as ambient:
+Mission-defined ambience uses the same `sounds.hpp` file described in [Sound Player](sound-player.md). Include it from `description.ext`:
+
+```cpp
+#include "sounds.hpp"
+```
+
+Example `sounds.hpp` entry:
 
 ```cpp
 class CfgSounds {
@@ -25,6 +31,8 @@ class CfgSounds {
     };
 };
 ```
+
+`jmfDuration` must match the complete loop length in seconds. An incorrect duration can restart the sound early or leave silence before the next loop. `jmfAmbient = 1` marks the entry as ambience for framework integrations.
 
 ## 3DEN Module Settings
 

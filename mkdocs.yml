@@ -49,6 +49,13 @@ extra_javascript:
 plugins:
   - search
 
+# These sections are being kept as drafts until they are ready for public use.
+exclude_docs: |
+  zeus/
+  reference/
+  development/
+  component_template.md
+
 markdown_extensions:
   - abbr
   - admonition
@@ -80,6 +87,7 @@ nav:
       - Installation: getting-started/installation.md
       - Dependencies: getting-started/dependencies.md
       - Build Your First Mission: getting-started/first-mission.md
+      - Custom Mission Files: getting-started/custom-mission-files.md
   - Component Guides:
       - Catalogue: components/index.md
       - Aid Stations: components/logistics/aid-stations.md
@@ -124,18 +132,4 @@ nav:
       - Vehicle Paths: components/logistics/vehicle-paths.md
       - World Labels: components/presentation/world-labels.md
       - Zeus Tools: components/administration/zeus-tools.md
-  - Zeus Guide:
-      - Overview: zeus/index.md
-  - Reference:
-      - Configuration Files: reference/configuration.md
-      - Public API: reference/public-api.md
-      - Mission Validator: reference/mission-validator.md
-      - Troubleshooting: reference/troubleshooting.md
-  - Development:
-      - Architecture: development/architecture.md
-      - Locality and JIP: development/locality-jip.md
-      - Component Page Template: development/component-page-template.md
-      - Contributing: development/contributing.md
-      - Changelog: development/changelog.md
-
 copyright: Copyright &copy; JM Framework contributors

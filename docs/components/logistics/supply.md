@@ -48,6 +48,62 @@ Place one **[JMF] - Supply > Supply Settings** module and at least one **Supply 
 
 **Definition IDs must match exactly between `supplies.hpp`, 3DEN filters and ZEN dialogs.**{ .jmf-emphasis }
 
+## Custom `supplies.hpp`
+
+Place `supplies.hpp` in the mission root, or enter another mission-relative path in **Mission Definition File**. The file assigns entries to `JMF_supplyDefinitions`:
+
+```sqf
+JMF_supplyDefinitions append [
+    [
+        "RIFLE_AMMO",
+        "Rifle Ammunition",
+        "Box_NATO_Ammo_F",
+        "Ammunition",
+        [
+            ["magazine", "30Rnd_65x39_caseless_mag", 40],
+            ["magazine", "1Rnd_HE_Grenade_shell", 12],
+            ["item", "ACE_EarPlugs", 8]
+        ],
+        [
+            ["description", "Standard section ammunition resupply."],
+            ["sides", ["WEST"]]
+        ]
+    ]
+];
+```
+
+Each definition uses this order:
+
+```sqf
+[id, displayName, crateClassname, category, contents, metadata]
+```
+
+Cargo entries use `[type, classname, quantity]`. Valid types are `item`, `magazine`, `weapon` and `backpack`.
+
+Supported metadata fields are:
+
+| Field | Value | Purpose |
+| --- | --- | --- |
+| `description` | String | Text shown in the request details. |
+| `sides` | Array | Any of `WEST`, `EAST`, `GUER` and `CIV`. Omit to allow all sides. |
+| `enabled` | Boolean | Set to `false` to keep a definition unavailable. |
+| `generator` | `"arsenalDefinitions"` | Generates ammunition from the configured Arsenal definitions instead of the static contents list. |
+
+An Arsenal-generated crate can therefore use an empty contents list:
+
+```sqf
+[
+    "PLATOON_AMMO",
+    "Platoon Ammunition Resupply",
+    "Box_NATO_Ammo_F",
+    "Ammunition",
+    [],
+    [["generator", "arsenalDefinitions"], ["sides", ["WEST"]]]
+]
+```
+
+Use `append` as shown when **Include Built-in Crates** is enabled. The built-ins are loaded first, so assigning a new array with `JMF_supplyDefinitions = [...]` intentionally replaces them.
+
 ## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |

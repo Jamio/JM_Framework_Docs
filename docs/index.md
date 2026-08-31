@@ -32,23 +32,7 @@ Build modular Arma 3 missions with configurable Eden systems, multiplayer-safe r
 
     [:octicons-arrow-right-24: Browse components](components/index.md)
 
--   :material-lightning-bolt:{ .lg .middle } **Zeus Guide**
-
-    ---
-
-    Adjust framework state and create mission effects safely during play.
-
-    [:octicons-arrow-right-24: Open Zeus guide](zeus/index.md)
-
--   :material-code-braces:{ .lg .middle } **Development**
-
-    ---
-
-    Learn the addon architecture, locality model, JIP strategy and contribution workflow.
-
-    [:octicons-arrow-right-24: Read architecture](development/architecture.md)
-
 </div>
 
-!!! note "Pre-v1 documentation"
-    JM Framework is still being prepared for its first public release. Pages describe implemented behaviour unless they are explicitly marked as planned or experimental.
+!!! note "Alpha documentation"
+    These pages cover the current alpha build. Settings and behaviour may change as mission-maker testing continues.

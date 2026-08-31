@@ -23,7 +23,47 @@ Place **[JMF] - Core > Optional Systems**, enable **Character Identities**, and 
 | Latest Birth Year | `1925` | Upper end of generated birth years. |
 | Mission / Death Year | `1944` | Year used by identity presentation. |
 
-Mission `CfgJMFIdentityPools` classes can add names, ranks and formats for a particular operation.
+## Custom `identities.hpp`
+
+Identity pools are description-config classes. Create `identities.hpp`, then include it from the mission's `description.ext`:
+
+```cpp
+#include "identities.hpp"
+```
+
+A complete custom pool looks like this:
+
+```cpp
+class CfgJMFIdentityPools {
+    class MY_CUSTOM_POOL {
+        firstNames[] = {"Alex", "Jamie", "Morgan", "Sam"};
+        lastNames[] = {"Baker", "Cooper", "Morgan", "Taylor"};
+        noMiddleNames[] = {""};
+        initials[] = {"A.", "J.", "M.", "S."};
+        middleNames[] = {"James", "Lee", "Morgan"};
+        nicknames[] = {"'Doc'", "'Red'", "'Sparks'"};
+        rankTier1[] = {"Pte.", "Cpl."};
+        rankTier2[] = {"Sgt."};
+        rankTier3[] = {"Lt."};
+    };
+};
+```
+
+Enter `MY_CUSTOM_POOL` in the Optional Systems module's custom/default pool field. Tier 1 is used for ordinary roles, tier 2 for Squad Leaders and tier 3 for Platoon Leaders.
+
+Mission classes can also extend a built-in pool without copying it in full:
+
+```cpp
+class CfgJMFIdentityPools {
+    class MODERN_GENERIC_WEST {
+        appendFirstNames[] = {"Ashley", "Cameron"};
+        appendLastNames[] = {"Hughes", "Palmer"};
+        appendNicknames[] = {"'Boss'", "'Lucky'"};
+    };
+};
+```
+
+Use the normal property name, such as `firstNames[]`, to replace that part of a pool. Prefix it with `append`, such as `appendFirstNames[]`, to add entries instead. The same replacement and append forms are available for all nine arrays shown in the complete example.
 
 ## ZEN Modules
 

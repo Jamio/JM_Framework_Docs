@@ -50,6 +50,37 @@ Place one **[JMF] - Fortify > Fortify Settings** module, then synchronize **Cons
 
 Mission catalogues are assigned to `JMF_fortifyCatalogues` in `fortify.hpp`. Each buildable entry supplies an object classname and cost. Keep costs proportional to the crate budget and test modded objects for placement collisions.
 
+```sqf
+JMF_fortifyCatalogues = [
+    [
+        "WOODLAND_DEFENCE",
+        "Woodland Defences",
+        [
+            ["Land_BagFence_Short_F", 5, "Sandbags"],
+            ["Land_BagFence_Long_F", 10, "Sandbags"],
+            ["Land_BagBunker_Small_F", 50, "Bunkers"],
+            ["Land_CzechHedgehog_01_new_F", 25, "Obstacles"]
+        ]
+    ]
+];
+```
+
+Each catalogue uses this order:
+
+```sqf
+[catalogueID, displayName, buildableObjects]
+```
+
+Each buildable object uses:
+
+```sqf
+[objectClassname, cost, category]
+```
+
+Set the Construction Crate's **Catalogue ID** to `WOODLAND_DEFENCE` to use the example above. Catalogue IDs are converted to upper case. Invalid object classnames are ignored.
+
+The built-in `FIELD` catalogue remains available. If the same object appears in several catalogues, its first registered cost is used everywhere so that refunds remain consistent.
+
 ## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |

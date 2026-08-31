@@ -8,7 +8,13 @@ If Crow's Electronic Warfare is loaded, the framework also adds the mission soun
 
 ## How to set up the component
 
-Define named `CfgSounds` entries in the mission's `description.ext` and package the referenced OGG files with the mission.
+Create `sounds.hpp`, include it from `description.ext`, and package the referenced OGG files with the mission.
+
+```cpp
+#include "sounds.hpp"
+```
+
+Example `sounds.hpp`:
 
 ```cpp
 class CfgSounds {
@@ -23,7 +29,11 @@ class CfgSounds {
 };
 ```
 
-`jmfDuration` is used by integrations that need to know the file length. It should match the audio where possible.
+The four values in `sound[]` are the mission-relative file path, volume, pitch and audible distance. `titles[]` can contain normal Arma subtitle timings, or remain empty when the sound has no subtitles.
+
+`jmfDuration` is the clip length in seconds. Enter the true duration where possible, especially if the sound may also be used by an Ambient Sound Area.
+
+If the mission already has a `CfgSounds` block, add the JMF sound classes to it instead of creating a second one.
 
 ## 3DEN Module Settings
 

@@ -34,7 +34,70 @@ Synchronise this module to each crate, terminal or prop that should open the con
 | Enable Floating Text | Enabled | Shows a world label above synchronised objects. |
 | Interaction / Label Name | JMF Arsenal | ACE action and label text. |
 
-Mission definitions may provide global and side-specific pools and complete loadout entries. Use exact Arma classnames and test every configured loadout.
+## Custom `loadouts.hpp`
+
+Select **Mission File** as the definition source and place `loadouts.hpp` in the mission root. The file defines restricted-Arsenal categories and role-picker loadouts:
+
+```sqf
+JMF_allowedArsenalItems = [
+    ["BasicGear", [
+        "U_B_CombatUniform_mcam",
+        "V_PlateCarrier1_rgr",
+        "H_HelmetB",
+        "arifle_MX_F",
+        "30Rnd_65x39_caseless_mag"
+    ]],
+    ["BasicItems", [
+        "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio",
+        "ACE_fieldDressing", "ACE_tourniquet"
+    ]],
+    ["RIFLEMAN", [
+        "SmokeShell", "HandGrenade"
+    ]]
+];
+
+JMF_roleLoadouts = [
+    [
+        "RIFLEMAN",
+        [
+            ["arifle_MX_F", "", "", "", ["30Rnd_65x39_caseless_mag", 30], [], ""],
+            [],
+            [],
+            ["U_B_CombatUniform_mcam", []],
+            ["V_PlateCarrier1_rgr", [["30Rnd_65x39_caseless_mag", 6, 30]]],
+            [],
+            "H_HelmetB",
+            "",
+            [],
+            ["ItemMap", "", "ItemRadio", "ItemCompass", "ItemWatch", ""]
+        ],
+        [],
+        -1,
+        ["WEST"]
+    ]
+];
+```
+
+`BasicGear` and `BasicItems` are available to everyone using the restricted Arsenal. A category whose ID matches the player's selected role is added for that role.
+
+Each role entry uses this order:
+
+```sqf
+[roleID, unitLoadout, roleProperties, slotLimit, allowedSides]
+```
+
+- `unitLoadout` is the array returned by `getUnitLoadout`. In 3DEN, right-click a prepared unit and use the framework loadout-copy tool to obtain it.
+- `roleProperties` accepts `medic` and `engineer` levels from `0` to `2`, plus the Boolean properties `eod`, `jtac`, `squadLeader`, `platoonLeader`, `pilot`, `crewman` and `logistics`.
+- `slotLimit` is the maximum simultaneous users of the role. Use `-1` for unlimited.
+- `allowedSides` accepts `WEST`, `EAST`, `INDEPENDENT`, `CIVILIAN` or `ALL`. Omit it or use `[]` to allow every side.
+
+For example, a medic role can use:
+
+```sqf
+[["medic", 2]]
+```
+
+Only add properties that matter. Unknown classnames, duplicate IDs and malformed entries are skipped and reported in the RPT.
 
 ## ZEN Modules
 

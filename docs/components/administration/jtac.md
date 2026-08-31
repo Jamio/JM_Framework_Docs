@@ -55,6 +55,55 @@ Built-in presets include 82 mm HE, 155 mm HE, 120 mm smoke, GBU-12, 20 mm and 30
 
 **Prefer a tested preset and change only uses, cooldown, ETA and aircraft classname first.**{ .jmf-emphasis } Modded rocket/bomb ammunition can have unexpected simulation behaviour.
 
+## Custom `jtac.hpp`
+
+Most missions should use Fire Mission modules and the tested delivery presets. Use `jtac.hpp` when a support requires ammunition or delivery values that the modules do not provide.
+
+```sqf
+JMF_jtacSupports = [
+    [
+        "custom_mortar_he",
+        "Custom 82 mm HE Barrage",
+        "ARTILLERY",
+        [1],
+        "ARTILLERY",
+        "Sh_82mm_AMOS",
+        8,
+        35,
+        0.35,
+        8,
+        90,
+        4,
+        "",
+        0,
+        0
+    ]
+];
+```
+
+Each support uses this order:
+
+```sqf
+[
+    id, displayName, category, allowedSides, deliveryType,
+    ammoClassname, projectileCount, spreadOrRunLength, interval,
+    eta, cooldown, availableUses, flyoverAircraft, flyoverHeight,
+    flyoverSpeed
+]
+```
+
+| Field | Accepted values |
+| --- | --- |
+| `allowedSides` | `1` BLUFOR, `2` OPFOR, `3` Independent, `4` Civilian. Several may be supplied. |
+| `deliveryType` | `ARTILLERY`, `BOMB`, `GUN` or `ROCKET`. |
+| `ammoClassname` | A valid `CfgAmmo` classname, not a magazine classname. |
+| `availableUses` | Use `-1` for unlimited requests. |
+| `flyoverAircraft` | Vehicle classname, or an empty string for no flyby. |
+
+`spreadOrRunLength` is an impact radius for artillery and bombs, and the length of the impact line for gun and rocket runs. Aircraft height and speed are only used when a flyover aircraft is configured.
+
+Definitions from `jtac.hpp` and placed Fire Mission modules are combined. The built-in fallback examples are only used when neither source provides a valid support.
+
 ## ZEN Modules
 
 | ZEN module | Place on | Dialog options / result |
