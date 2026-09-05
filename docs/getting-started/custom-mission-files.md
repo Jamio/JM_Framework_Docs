@@ -19,13 +19,20 @@ The first four files are loaded directly by their component modules. Enter the m
 config\supplies.hpp
 ```
 
-`identities.hpp` and `sounds.hpp` contain description-config classes, so include them from `description.ext`:
+`identities.hpp` contains its own description-config class and can be included directly. `sounds.hpp` contains individual sound classes and belongs inside `CfgSounds`:
 
 ```cpp
 #include "identities.hpp"
-#include "sounds.hpp"
+
+class CfgSounds
+{
+    sounds[] = {};
+    #include "sounds.hpp"
+};
 ```
 
 Do not include the same file twice. If the mission already defines `CfgSounds` or `CfgJMFIdentityPools`, add the new classes to the existing block instead.
 
 Each component guide contains a working example and a description of every field.
+
+See [Mission `description.ext`](description-ext.md) for a complete starting file.
