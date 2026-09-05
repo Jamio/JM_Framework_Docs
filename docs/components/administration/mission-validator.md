@@ -2,7 +2,7 @@
 
 ## Overview
 
-Mission Validator checks a mission for common framework setup mistakes. It can find missing or duplicate settings modules, invalid classnames, broken synchronisation and options that conflict with one another.
+Mission Validator checks a mission for common framework setup mistakes. It can find missing or duplicate settings modules, invalid classnames, broken synchronisation, missing BASE respawn positions and options that conflict with one another.
 
 The results are grouped by severity so that important errors are easy to separate from warnings and suggestions. The validator does not change the mission automatically. It is best used before testing or publishing a mission, especially after changing its framework modules.
 
@@ -22,4 +22,5 @@ Mission Validator has no separate ZEN module. An authorised user can run it agai
 
 - Search the RPT for `[JM Framework 3][Mission Validator]` to find the complete report.
 - Treat errors as broken or unsafe configuration. Warnings usually identify a feature that is incomplete or cannot work as configured.
+- If it reports a missing respawn position, place a vanilla **Multiplayer > Respawn Position** module for that side or add the correct respawn marker.
 - The validator cannot prove that arbitrary SQF, mission audio or multiplayer logic is correct; those still require normal testing.

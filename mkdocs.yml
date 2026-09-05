@@ -88,6 +88,7 @@ nav:
       - Dependencies: getting-started/dependencies.md
       - Build Your First Mission: getting-started/first-mission.md
       - Mission description.ext: getting-started/description-ext.md
+      - Player Slots and Respawning: getting-started/respawning.md
       - Custom Mission Files: getting-started/custom-mission-files.md
   - Component Guides:
       - Catalogue: components/index.md

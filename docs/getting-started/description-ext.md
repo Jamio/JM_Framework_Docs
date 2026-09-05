@@ -78,7 +78,7 @@ class CfgSounds
 
 - Replace the mission name, author and description.
 - Set `maxPlayers` to the number of playable slots.
-- Add vanilla respawn markers or **Respawn Position** modules when using `MenuPosition`.
+- Add a vanilla **Respawn Position** module or correctly named marker for every playable side. See [Player Slots and Respawning](respawning.md).
 - Replace the framework placeholder image with a mission-relative image when required.
 - Remove the `CfgSounds` block if the mission has no `sounds.hpp` file.
 
