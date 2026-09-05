@@ -33,8 +33,8 @@ class Header
 };
 
 // Vanilla respawn placement remains responsible for creating the new unit.
-// Add respawn_west, respawn_east or equivalent markers, or use 3DEN Respawn
-// Position modules. JMF handles tickets, permadeath and post-respawn systems.
+// Add respawn_west, respawn_east or the equivalent marker for each playable
+// side. JMF handles tickets, permadeath and post-respawn systems.
 respawn = 3;
 respawnDelay = 15;
 respawnOnStart = -1;
@@ -78,7 +78,7 @@ class CfgSounds
 
 - Replace the mission name, author and description.
 - Set `maxPlayers` to the number of playable slots.
-- Add a vanilla **Respawn Position** module or correctly named marker for every playable side. See [Player Slots and Respawning](respawning.md).
+- Add a correctly named respawn marker for every playable side. See [Player Slots and Respawning](respawning.md).
 - Replace the framework placeholder image with a mission-relative image when required.
 - Remove the `CfgSounds` block if the mission has no `sounds.hpp` file.
 

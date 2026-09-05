@@ -14,9 +14,9 @@ Save the scenario, open its mission folder and create [`description.ext`](descri
 
 ## 3. Set up respawning
 
-Place a vanilla **Multiplayer > Respawn Position** module for every side that has playable units. Set each module to the correct side and give the position a useful name such as `Main Base`.
+Place a marker at the intended spawn location for every side that has playable units. Name it for that side, such as `respawn_west` for BLUFOR or `respawn_east` for OPFOR.
 
-The module works with `respawn = 3` and the `MenuPosition` template in the example `description.ext`. Named respawn markers can be used instead. See [Player Slots and Respawning](respawning.md) for both methods.
+These markers work with `respawn = 3` and the `MenuPosition` template in the example `description.ext`. See [Player Slots and Respawning](respawning.md) for the complete list of marker names.
 
 ## 4. Place Core Settings
 

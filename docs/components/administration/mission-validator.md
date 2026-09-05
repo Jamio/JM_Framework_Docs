@@ -22,5 +22,5 @@ Mission Validator has no separate ZEN module. An authorised user can run it agai
 
 - Search the RPT for `[JM Framework 3][Mission Validator]` to find the complete report.
 - Treat errors as broken or unsafe configuration. Warnings usually identify a feature that is incomplete or cannot work as configured.
-- If it reports a missing respawn position, place a vanilla **Multiplayer > Respawn Position** module for that side or add the correct respawn marker.
+- If it reports a missing respawn position, add the correct named marker for that side.
 - The validator cannot prove that arbitrary SQF, mission audio or multiplayer logic is correct; those still require normal testing.
